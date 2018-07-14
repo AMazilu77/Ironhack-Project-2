@@ -1,8 +1,284 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; // background: linear-gradient(to bottom, white, black);
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+}
+
+#lamp {
+  height: 250px;
+  width: auto;
+}
+
+#played-numbers-box {
+  border: 3px;
+  border-color: black;
+  border-style: solid;
+  background-color: pink;
+}
+
+#genie-render {
+  width: 40%;
+  height: auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+table#t01 th {
+  background-color: black;
+  color: white;
+}
+
+.boxes {
+  border: 2px;
+  border-style: solid;
+  height: 600px;
+  width: 600px;
+  background-color: pink;
+  padding: 0 100px 0 0;
+}
+
+#thefirst {
+  position: relative;
+  height: 160px;
+  width: 80px;
+  background-color: white;
+}
+
+#thesecond {
+  position: relative;
+  left: 100px;
+  height: 160px;
+  width: 80px;
+  background-color: white;
+}
+
+#thethird {
+  position: relative;
+  left: 100px;
+  height: 160px;
+  width: 80px;
+  background-color: white;
+}
+
+#thefourth {
+  position: relative;
+  left: 100px;
+  height: 160px;
+  width: 80px;
+  background-color: white;
+}
+
+.row {
+  position: relative;
+  left: 50px;
+  top: 25px;
+}
+
+#first {
+  font-size: 60px;
+}
+
+#sec {
+  font-size: 60px;
+}
+
+#third {
+  font-size: 60px;
+}
+
+#fourth {
+  font-size: 60px;
+}
+
+#four {
+  background-color: green;
+}
+
+.numBox4 {
+  background-color: pink;
+  border: 2px;
+  height: 30%;
+  width: 100%;
+}
+
+.innerbox11 {
+  position: relative;
+  background-color: white;
+  top: 20px;
+  left: 30px;
+  height: 130px;
+  width: 90px;
+  border: 2px;
+}
+
+.innerbox22 {
+  position: relative;
+  background-color: white;
+  left: 150px;
+  height: 130px;
+  width: 90px;
+  bottom: 170px;
+}
+
+.innerbox33 {
+  position: relative;
+  background-color: white;
+  left: 265px;
+  height: 130px;
+  width: 90px;
+  bottom: 360px;
+}
+
+.innerbox44 {
+  position: relative;
+  background-color: white;
+  left: 385px;
+  height: 130px;
+  width: 90px;
+  bottom: 300px;
+}
+
+// #p4 {
+//   background-color: green;
+//   border: 2px;
+//   border-style: solid;
+//   width: 30%;
+//   height: 150px;
+// }
+#gen44 {
+  height: 30%;
+  width: 40%;
+  position: relative;
+  top: 250px;
+  background-color: lightgrey;
+  border: 2px;
+  border-style: solid;
+}
+
+#pick4gen {
+  position: relative;
+  left: 350px;
+  bottom: 800px;
+  border: 1px;
+  border-style: solid;
+}
+
+#big22area {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  border: 1px;
+  border-style: solid;
+}
+
+#square12 {
+  position: relative;
+  top: 100px;
+  left: 70px;
+  width: 150px;
+  height: 250px;
+  background-color: orange;
+  border: 1px;
+  border-style: solid;
+}
+
+#square22 {
+  position: relative;
+  left: 250px;
+  bottom: 150px;
+  width: 150px;
+  height: 250px;
+  background-color: yellow;
+  border: 1px;
+  border-style: solid;
+}
+
+#firstnumber2 {
+  font-size: 60px;
+}
+
+#number22 {
+  font-size: 60px;
+}
+
+.innerbox115 {
+  position: relative;
+  background-color: blue;
+  top: 60px;
+  left: 30px;
+  height: 130px;
+  width: 90px;
+  border: 2px;
+  border: 1px;
+  border-style: solid;
+}
+
+.innerbox225 {
+  position: relative;
+  background-color: red;
+  top: -70px;
+  left: 150px;
+  height: 130px;
+  width: 90px;
+  bottom: 230px;
+  border: 1px;
+  border-style: solid;
+}
+
+.innerbox335 {
+  position: relative;
+  background-color: orange;
+  top: -200px;
+  left: 265px;
+  height: 130px;
+  width: 90px;
+  bottom: 360px;
+  border: 1px;
+  border-style: solid;
+}
+
+.innerbox445 {
+  position: relative;
+  background-color: teal;
+  top: -330px;
+  left: 385px;
+  height: 130px;
+  width: 90px;
+  bottom: 300px;
+  border: 1px;
+  border-style: solid;
+}
+
+.innerbox555 {
+  position: relative;
+  bottom: 500px;
+  left: 500px;
+  background-color: green;
+  top: -460px;
+  height: 130px;
+  width: 90px;
+  border: 1px;
+  border-style: solid;
 }

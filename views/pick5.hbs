@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel='stylesheet' href='/stylesheets/style.scss' />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pick5</title>
+</head>
+
+<body>
+
+
+
+    <div id="gen55">
+
+
+
+        <script src='/javascripts/script.js'></script>
+        <div> Number Generator</div>
+        <button id="pick-5-master" onclick="randomGenMaster55()"> Give me a number! </button>
+        <button> Come Closer</button>
+
+
+
+        <div class='numBox4'>
+            <div class='innerbox115'>
+                <h1 id="first5"> 0 </h1>
+            </div>
+
+            <div class='innerbox225'>
+                <h1 id="sec5"> 0 </h1>
+            </div>
+        </div>
+        <div class='innerbox335'>
+            <h1 id="third5"> 0 </h1>
+        </div>
+    </div>
+    <div class='innerbox445'>
+        <h1 id="fourth5"> 0 </h1>
+    </div>
+
+    <div class='innerbox555'>
+        <h1 id="fifth5"> 0 </h1>
+    </div>
+
+    </div>
+
+
+
+
+    </div>
+
+    <img id='pick5gen' src="/images/geniworkinge2.jpg"> Pick 5!</img>
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+
+        const randomGenMaster55 = function () {
+            let print1 = document.getElementById('first5');
+            let print2 = document.getElementById('sec5');
+            let print3 = document.getElementById('third5');
+            let print4 = document.getElementById('fourth5');
+            let print5 = document.getElementById('fifth5');
+
+
+            let num1 = Math.floor(Math.random() * 10);
+            let num2 = Math.floor(Math.random() * 10);
+            let num3 = Math.floor(Math.random() * 10);
+            let num4 = Math.floor(Math.random() * 10);
+            let num5 = Math.floor(Math.random() * 10);
+
+            print1.innerHTML = num1;
+            print2.innerHTML = num2;
+            print3.innerHTML = num3;
+            print4.innerHTML = num4;
+            print5.innerHTML = num5;
+            console.log(num1, num2, num3, num4, num5);
+
+
+
+            document.getElementById('first5').innerHTML = num1;
+            document.getElementById('sec5').innerHTML = num2;
+            document.getElementById('third5').innerHTML = num3;
+            document.getElementById('fourth5').innerHTML = num4;
+            document.getElementById('fifth5').innerHTML = num5;
+
+        };
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

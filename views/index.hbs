@@ -1,2 +1,18 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<center>
+    <h1>{{title}}</h1>
+    <p>Welcome to {{title}}</p>
+
+
+
+    <img id='lamp' src='./images/genie-magic-lamp-6-4531.jpg'>
+
+    <p> This Djinni has been bound to your device, and is safely trapped inside the digital realm. Touch the lamp to awaken.</p>
+
+</center>
+<script>
+    let lamp2 = document.getElementById('lamp');
+
+    lamp2.addEventListener('mouseover', (event) => {
+        alert("The Genie has been been summoned!")
+        location.href = '/signup';
+    })</script>

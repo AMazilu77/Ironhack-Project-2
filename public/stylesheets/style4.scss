@@ -1,0 +1,57 @@
+.boxes {
+    border: 2px;
+    border-style: solid;
+    height: 600px;
+    width: 600px;
+    background-color: lightblue;
+    padding: 0 100px 0 0;
+}
+
+#thefirst {
+    position: relative;
+    height: 160px;
+    width: 80px;
+    background-color: white;
+}
+
+#thesecond {
+    position: relative;
+    left: 100px;
+    height: 160px;
+    width: 80px;
+    background-color: white;
+}
+
+#thethird {
+    position: relative;
+    left: 100px;
+    height: 160px;
+    width: 80px;
+    background-color: white;
+}
+
+#thefourth {
+    position: relative;
+    left: 100px;
+    height: 160px;
+    width: 80px;
+    background-color: white;
+}
+
+.row {
+    position: relative;
+    left: 50px;
+    top: 25px;
+    #first {
+        font-size: 60px;
+    }
+    #sec {
+        font-size: 60px;
+    }
+    #third {
+        font-size: 60px;
+    }
+    #fourtha {
+        font-size: 60px
+    }
+}
