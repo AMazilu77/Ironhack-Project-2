@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel='stylesheet' href='/stylesheets/style.scss' />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fantasy Five</title>
+</head>
+
+<body>
+
+
+
+    <div id="gen5fantasy">
+
+
+
+        <script src='/javascripts/script.js'></script>
+        <div> Number Generator</div>
+        <button id="pick-5-master" onclick="randomGenMaster55()"> Give me a number! </button>
+        <button> Come Closer</button>
+
+
+
+        <div class='numBox5fantasy'>
+            <div class='innerboxfantasy1'>
+                <h1 id="first5fantasy"> 0 </h1>
+            </div>
+
+            <div class='innerbox2fantasy'>
+                <h1 id="sec5"> 0 </h1>
+            </div>
+        </div>
+        <div class='innerboxfantasy3'>
+            <h1 id="third5"> 0 </h1>
+        </div>
+    </div>
+    <div class='innerboxfantasy4'>
+        <h1 id="fourth5"> 0 </h1>
+    </div>
+
+    <div class='innerboxfantasy5'>
+        <h1 id="fifth5"> 0 </h1>
+    </div>
+
+    </div>
+
+
+    <script>
+
+
+
+
+
+
+        const randomGenMaster55fantasy = function () {
+            let print1 = document.getElementById('first5fantasy');
+            let print2 = document.getElementById('sec5fantasy');
+            let print3 = document.getElementById('third5fantasy');
+            let print4 = document.getElementById('fourth5fantasy');
+            let print5 = document.getElementById('fifth5fantasy');
+
+
+            let num1 = Math.floor(Math.random() * 10);
+            let num2 = Math.floor(Math.random() * 10);
+            let num3 = Math.floor(Math.random() * 10);
+            let num4 = Math.floor(Math.random() * 10);
+            let num5 = Math.floor(Math.random() * 10);
+
+            print1.innerHTML = num1;
+            print2.innerHTML = num2;
+            print3.innerHTML = num3;
+            print4.innerHTML = num4;
+            print5.innerHTML = num5;
+            console.log(num1, num2, num3, num4, num5);
+
+
+
+            document.getElementById('first').innerHTML = num1;
+            document.getElementById('sec5').innerHTML = num2;
+            document.getElementById('third5').innerHTML = num3;
+            document.getElementById('fourth5').innerHTML = num4;
+            document.getElementById('fifth5').innerHTML = num5;
+
+        };
+
+
+    </script>

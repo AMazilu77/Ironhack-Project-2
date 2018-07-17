@@ -1,84 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel='stylesheet' href='/stylesheets/style.scss' />
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pick3</title>
-</head>
-
-<body>
+<button> Come Closer</button>
+<div id="gen2">
+    <span id="numberArea"> Here is your number:
+        <h2 id='final'> Your number is:
+            <h4 id="theone">
+                <h4 id='thetwo'>
+                    <h4 id='thethree'> </h4>
+                </h4>
+            </h4>
 
 
-
-    <div id="gen3">
+        </h2>
 
 
 
-        <script src='/javascripts/script.js'></script>
-        <div> Number Generator</div>
-        <button id="pick-3-master" onclick="randomGenMaster()"> Give me a number! </button>
-        <button> Come Closer</button>
-        <div id="gen2">
-            <span id="numberArea"> Here is your number:
-                <h2 id='final'> Your number is:
-                    <h4 id="theone">
-                        <h4 id='thetwo'>
-                            <h4 id='thethree'> </h4>
-                        </h4>
-                    </h4>
+    </span>
 
+</div>
+</div>
 
-                </h2>
+<div class='boxes'>
+    <span class="row">
+        <div id='thefirst'>
+            <div id='first'> 0</div>
+            <div id='thesecond'>
+                <div id='sec'> 0
 
-
-
-            </span>
+                </div>
+                <div id='thethird'>
+                    <div id='third'>0 </div>
+                </div>
+            </div>
 
         </div>
-    </div>
-
-    <div class='boxes'>
-        <span class="row">
-            <div id='thefirst'>
-                <div id='first'> 0</div>
-                <div id='thesecond'>
-                    <div id='sec'> 0
-
-                    </div>
-                    <div id='thethird'>
-                        <div id='third'>0 </div>
-                    </div>
-                </div>
-
-            </div>
-        </span>
-    </div>
-    <script>
+    </span>
+</div>
+<script>
 
 
-        const randomGenMaster = function () {
-            let print1 = document.getElementById('first');
-            let print2 = document.getElementById('sec');
-            let print3 = document.getElementById('third');
-            let x = [];
-            let num1 = Math.floor(Math.random() * 10);
-            let num2 = Math.floor(Math.random() * 10);
-            let num3 = Math.floor(Math.random() * 10);
+    const randomGenMaster = function () {
+        let print1 = document.getElementById('first');
+        let print2 = document.getElementById('sec');
+        let print3 = document.getElementById('third');
+        let x = [];
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        let num3 = Math.floor(Math.random() * 10);
 
-            print1.innerHTML = num1, print2.innerHTML = num2, print3.innerHTML = num3;
+        print1.innerHTML = num1, print2.innerHTML = num2, print3.innerHTML = num3;
 
 
 
 
-        }
+    }
 
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
 
 </body>

@@ -65,4 +65,10 @@ router.get("/powerBall", (req, res, next) => {
   res.render("powerBall");
 });
 
+router.get("/PBWinners", (req, res, next) => {
+  res.send("Time to see the winners")
+  populate()
+  res.render("powerBall");
+});
+
 module.exports = router;
