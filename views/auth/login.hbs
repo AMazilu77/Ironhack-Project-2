@@ -7,6 +7,8 @@
         <label for="password">Password:</label>
         <input type="password" name="password">
     </div>
+
+
     {{#if message}}
     <div class="error-message">{{ message }}</div>
     {{/if}}
@@ -15,3 +17,5 @@
     </div>
     <img src="./images/genie-lamp.jpg" alt="">
 </form>
+
+<button id="signUp" onclick="location.href='/signup';"> New User? Sign up here</button>

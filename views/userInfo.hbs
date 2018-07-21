@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Info</title>
+</head>
+
+<body>
+
+    <form> Hello {{User}} </form>
+    <h2> Wishes remaining: {{Wishes}} </h2>
+
+    <h2> Favorite Numbers</h2>
+    <div id='favoriteNumbers'> Your favorite number are: </di>
+
+
+
+
+        <input id="data" size="30">
+        <button id="btn">Click me</button>
+        <br>
+        <br>
+        <div id="display">
+            <table style="width:100%">
+                <th>
+                    <center> Favorite Numbers</center>
+                </th>
+                <tr id='firstrow'></tr>
+                <tr id='next'> </tr>
+            </table>
+        </div>
+        <br>
+
+        <script> 
+            const favNumbers = [];
+
+            "use strict";
+
+            function clicked() {
+                var input_value = document.getElementById('data').value;
+                document.getElementById('firstrow').innerHTML = input_value;
+                input_value = luckyNumber
+
+
+            }
+
+            document.getElementById('btn').addEventListener('click', clicked);;
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+</body>
+
+</html>

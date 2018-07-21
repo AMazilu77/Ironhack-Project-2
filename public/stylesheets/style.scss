@@ -4,6 +4,13 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; // background: linear-gradient(to bottom, white, black);
 }
 
+.btn {
+  size: 25px;
+  height: 35px;
+  width: auto;
+  font-size: 20px;
+}
+
 a {
   color: black;
 }
@@ -281,5 +288,12 @@ table#t01 th {
   height: 130px;
   width: 90px;
   border: 1px;
+  border-style: solid;
+}
+
+#display {
+  width: 350px;
+  height: 350px;
+  border-width: 2px;
   border-style: solid;
 }

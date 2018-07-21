@@ -5,16 +5,25 @@ const userSchema = new Schema({
     username: String,
     password: String,
     facebookID: String,
-    googleID: String
+    googleID: String,
+    numbersPlayed: {
+        type: [Number]
+    },
+
+    wishes: {
+        type: Number,
+
+    },
+
+    luckyNumbers: Number,
 }, {
     timestamps: {
         createdAt: "created_at",
         updatedAt: "updated_at"
     },
 
-    numbersPlayed: {
-        numbers: [Number]
-    }
+
+
 
 
 

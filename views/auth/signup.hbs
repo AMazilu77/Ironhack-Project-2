@@ -7,7 +7,20 @@
     <br>
     <br>
     <label for="password">Password</label>
-    <input id="password" type="password" name="password" placeholder="Your password"> {{#if message}}
+
+
+    <input id="password" type="password" name="password" placeholder="Your password">
+    <br>
+
+
+    <label for="email">Email</label>
+
+    <input type="text"> </input>{{!--
+    <label for="address">Address</label>
+    <input id="street" type="text"> street </input> --}} {{#if message}}
+
+    <br>
+
     <div class="error-message">{{ message }}</div>
     {{/if}}
     <br>
