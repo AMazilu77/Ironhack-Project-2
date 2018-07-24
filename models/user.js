@@ -6,16 +6,12 @@ const userSchema = new Schema({
     password: String,
     facebookID: String,
     googleID: String,
+    wishes: Number,
+    luckyNumbers: Number,
     numbersPlayed: {
         type: [Number]
     },
 
-    wishes: {
-        type: Number,
-
-    },
-
-    luckyNumbers: Number,
 }, {
     timestamps: {
         createdAt: "created_at",

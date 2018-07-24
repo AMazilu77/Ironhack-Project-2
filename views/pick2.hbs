@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pick2</title>
 </head>
+<button onclick="location.href='/dashBoard';"> Back </button>
 
 <body>
 
@@ -26,7 +27,7 @@
 
         <br>
         <br>
-        <button class='playthisnumber' onclick="saveNumber()"> I will play this Number, save it </button>
+        <button class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
         <button class='Dontplaythisnumber' onclick="randomGenMaster22()"> I don't like this number, give me another </button>
         <div id='big22area'>
             <div id='square12'>
@@ -48,7 +49,7 @@
 
 
     <script>
-
+        numbersPlayed = [];
 
         const randomGenMaster22 = function () {
             let print1 = document.getElementById('firstnumber2');
@@ -68,6 +69,10 @@
             document.getElementById('firstnumber2').innerHTML = num1;
             document.getElementById('number22').innerHTML = num2;
         };
+
+        const saveNumber22 = function () {
+            numbersPlayed.push(num1, num2);
+        }
 
 
 

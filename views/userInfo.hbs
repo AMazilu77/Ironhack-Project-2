@@ -7,20 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User Info</title>
 </head>
+<button onclick="location.href='/dashBoard';"> Back </button>
+<br>
+<br>
+<hr>
 
 <body>
 
-    <form> Hello {{User}} </form>
-    <h2> Wishes remaining: {{Wishes}} </h2>
+    <form> Hello {{this.username}} </form>
+    <h2> Wishes remaining: {{this.wishes}} </h2>
+    <button> Buy More Wishes</button>
+    <button> Send Someone a wish</button>
 
     <h2> Favorite Numbers</h2>
     <div id='favoriteNumbers'> Your favorite number are: </di>
 
-
-
-
         <input id="data" size="30">
-        <button id="btn">Click me</button>
+        <button id="btn">Click me to add Lucky Numbers</button>
         <br>
         <br>
         <div id="display">
@@ -35,14 +38,17 @@
         <br>
 
         <script> 
-            const favNumbers = [];
-
+            const numbersPlayed = [];
+            let luckyNumber = [];
             "use strict";
 
             function clicked() {
+
                 var input_value = document.getElementById('data').value;
                 document.getElementById('firstrow').innerHTML = input_value;
-                input_value = luckyNumber
+
+                luckyNumber.push(input_value)
+                console.log(luckyNumber);
 
 
             }
@@ -55,8 +61,11 @@
 
 
 
+
         </script>
 
+
+        <button onclick='allLuckyNumbers()'>Show me all my lucky numbers</button>
 
 
 

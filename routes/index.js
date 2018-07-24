@@ -106,8 +106,8 @@ router.get("/floridaLotto", (req, res, next) => {
   res.render("floridaLotto");
 });
 
-router.get("/megaMillions", (req, res, next) => {
-  res.render("megaMillions");
+router.get("/megaMillionsGenerator", (req, res, next) => {
+  res.render("megaMillionsGenerator");
 });
 
 router.get("/powerBall", (req, res, next) => {

@@ -46,7 +46,8 @@ authRoutes.post("/signup", (req, res, next) => {
                 username,
                 password: hashPass,
                 wishes: 3,
-                luckyNumbers: []
+                luckyNumbers: [],
+                numbersPlayed: []
             });
 
             newUser.save((err) => {

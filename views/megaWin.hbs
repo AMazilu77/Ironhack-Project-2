@@ -1,6 +1,18 @@
-<h1> date </h1>
+<button onclick="location.href='/dashBoard';"> back</button>
 
-{{#each winning}}
-<h5> The winning numbers on {{this.drawDate}} are : {{this.winningNumbers}}, Megaball: {{this.megaBall}}</h5>
+<center>
+    <u>
+        <h1> MegaMillions Winning Number History </h1>
+    </u>
 
-{{/each}}
+    <br>
+    <br> {{#each winning}}
+    <br>
+    <h5>
+
+
+        Megaball: {{this.megaBall}} </h5>
+    <br>
+    <br>
+    <br> {{/each}}
+</center>{{!-- {{/each}} {{this.drawDate}} are : {{this.winningNumbers}}, Megaball: {{this.megaBall}}</h5> --}}

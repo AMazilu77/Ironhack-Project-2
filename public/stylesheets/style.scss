@@ -297,3 +297,35 @@ table#t01 th {
   border-width: 2px;
   border-style: solid;
 }
+
+.megaMil {
+  display: flex;
+  align-self: center;
+  order: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: blue;
+  width: 50px;
+  height: 80px;
+}
+
+.innerMegaMil {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 40px;
+  height: 75px;
+}
