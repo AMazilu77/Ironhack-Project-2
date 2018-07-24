@@ -9,7 +9,10 @@
 <center>
 
     <body>
-        <h1>The Numbers you have played are: </h1>
+        <h1>The Numbers you have played are here </h1>
+        <h3> Different combinations can win different prizes. Enter your numbers here, and turn on notification alerts to recieve
+            updates on how your numbers played. </h3>
+        <button>Yes, Turn on notifications</button>
         <div id="played-numbers-box"> Numbers History
 
             </style>
@@ -17,8 +20,8 @@
 
             <body>
 
-                <h2>Pick 3</h2>
-
+                {{!--
+                <h2>Pick 3</h2> --}} {{!--
                 <table id="t01">
                     <tr id="game-book-header">
                         <th>Date
@@ -27,8 +30,8 @@
                             <tr>{{this.winningNumber}}</tr>
                             <th>Winning Number</th>
                             <th> % </th>
-                    </tr>
-                    <tr>
+                    </tr> --}} {{!--
+                    <tr class="numbersPlayedMega" id="numbersPlayed">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -66,13 +69,13 @@
                     </tr>
                 </table>
                 <br>
-                <h2></h2>
+                <h2></h2> --}}
                 <table id="t01">
                     <tr>
-                        <th>Date</th>
-                        <th>Numbers Played</th>
-                        <th>Winning Numbers</th>
-                        <th> % </th>
+                        <th class="numbersPlayedHeader">Date</th>
+                        <th class="numbersPlayedHeader">Numbers Played</th>
+                        <th class="numbersPlayedHeader">Winning Numbers</th>
+                        <th class="numbersPlayedHeader"> % </th>
                     </tr>
                     <tr>
                         <td></td>
