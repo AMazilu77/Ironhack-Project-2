@@ -21,7 +21,7 @@
         <script src='/javascripts/script.js'></script>
         <div> Number Generator</div>
         <button id="pick-4-master" onclick="randomGenMaster44()"> Give me a number! </button>
-        <button> Come Closer</button>
+        <button onclick="saveNumber44()"> save this number</button>
 
         <span id='align'>
 
@@ -60,7 +60,7 @@
 
 
     <script>
-
+        let numbersPlayed4 = [];
 
 
 
@@ -82,7 +82,16 @@
             print2.innerHTML = num2;
             print3.innerHTML = num3;
             print4.innerHTML = num4;
-            console.log(num1, num2, num3, num4);
+
+            p41 = num1;
+            p42 = num2;
+            p43 = num3;
+            p44 = num4;
+
+
+
+
+
 
 
 
@@ -91,7 +100,14 @@
             document.getElementById('third').innerHTML = num3;
             document.getElementById('fourth').innerHTML = num4;
 
+            console.log(p41, p42, p43, p44);
+
         };
+
+        const saveNumber44 = function () {
+            numbersPlayed4.push(num1, num2, num3, num4);
+            document.getElementById('theone').innerHTML = numbersPlayed3
+        }
 
 
     </script>

@@ -8,31 +8,106 @@
     <title>Mega-Millions</title>
 </head>
 <button onclick="location.href='/dashBoard';"> Back </button>
+<br>
+<br>
 
 <body>
     Mega Millions Generator
-
+    <br>
+    <br>
+    <button onclick="randomGenMasterMEGA()"> I wish for a number</button>
+    <button> I'll pass, remind me when it becomes a fair game</button>
 
     <div>
         <div class='megaMil' id='mega1'>
             <div class='innerMegaMil' id='innerMega1'> 1</div>
         </div>
         <div class='megaMil' id='mega2'>
-            <div class='innerMegaMil' id='innerMega1'>2 </div>
+            <div class='innerMegaMil' id='innerMega2'>2 </div>
         </div>
         <div class='megaMil' id='mega3'>
-            <div class='innerMegaMil' id='innerMega1'> 3</div>
+            <div class='innerMegaMil' id='innerMega3'> 3</div>
         </div>
         <div class='megaMil' id='mega4'>
-            <div class='innerMegaMil' id='innerMega1'> 4</div>
+            <div class='innerMegaMil' id='innerMega4'> 4</div>
         </div>
         <div class='megaMil' id='mega5'>
-            <div class='innerMegaMil' id='innerMega1'> 5</div>
+            <div class='innerMegaMil' id='innerMega5'> 5</div>
         </div>
         <div class='megaMil' id='megaBall'>
-            <div class='innerMegaMil' id='innerMega1'> 6</div>
+            <div class='innerMegaMil' id='innerMegaBall'> 6</div>
         </div>
     </div>
+
+    <script>
+
+        const randomGenMasterMEGA = function () {
+            let print1 = document.getElementById('innerMega1');
+            let print2 = document.getElementById('innerMega2');
+            let print3 = document.getElementById('innerMega3');
+            let print4 = document.getElementById('innerMega4');
+            let print5 = document.getElementById('innerMega5');
+            let print6 = document.getElementById('innerMegaBall');
+
+            let num1 = Math.floor(Math.random() * 70);
+            let num2 = Math.floor(Math.random() * 70);
+            let num3 = Math.floor(Math.random() * 70);
+            let num4 = Math.floor(Math.random() * 70);
+            let num5 = Math.floor(Math.random() * 70);
+            let num6 = Math.floor(Math.random() * 25);
+
+
+
+            if (num1 === 0) {
+                num1 = 1
+            }
+            if (num2 === 0) {
+                num2 = 1
+            }
+            if (num3 === 0) {
+                num3 = 1
+            }
+            if (num4 === 0) {
+                num4 = 1
+            }
+            if (num5 === 0) {
+                num5 = 1
+            }
+
+            if (num6 === 0) {
+                num6 = 1
+            }
+
+
+
+
+
+
+            print1.innerHTML = num1;
+            print2.innerHTML = num2;
+            print3.innerHTML = num3;
+            print4.innerHTML = num4;
+            print5.innerHTML = num5;
+            print6.innerHTML = num6;
+            console.log(num1, num2, num3, num4, num5, num6);
+
+
+
+            document.getElementById('innermega1').innerHTML = num1;
+            document.getElementById('innermega2').innerHTML = num2;
+            document.getElementById('innermega3').innerHTML = num3;
+            document.getElementById('innermega4').innerHTML = num4;
+            document.getElementById('innermega5').innerHTML = num5;
+            document.getElementById('innerMegaBall').innerHTML = num6;
+
+        }
+
+    </script>
+
+
+
+
+
 </body>
 
 </html>

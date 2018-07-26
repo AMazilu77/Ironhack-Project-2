@@ -22,7 +22,7 @@ const User = require("./models/user");
 
 mongoose.Promise = Promise;
 mongoose
-  .connect('mongodb://localhost/the-lottery-genie', {
+  .connect(process.env.MONGODB_URI, {
     useMongoClient: true
   })
   .then(() => {
@@ -154,7 +154,8 @@ passport.use(new GoogleStrategy({
     }
 
     const newUser = new User({
-      googleID: profile.id
+      googleID: profile.id,
+      wishes: 3
     });
 
     newUser.save((err) => {

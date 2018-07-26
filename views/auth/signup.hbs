@@ -1,19 +1,13 @@
-<h1> Who hath summoned me?</h1>
+<!-- views/auth/signup.hbs -->
 <h2>Signup</h2>
 
 <form action="/signup" method="POST" id="form-container">
     <label for="username">Username</label>
-    <input id="username" type="text" name="username" placeholder="Who are you?">
+    <input id="username" type="text" name="username" placeholder="JonSnow">
     <br>
     <br>
     <label for="password">Password</label>
-
-
-    <input id="password" type="password" name="password" placeholder="Your password">
-    <br> {{#if message}}
-
-    <br>
-
+    <input id="password" type="password" name="password" placeholder="Your password"> {{#if message}}
     <div class="error-message">{{ message }}</div>
     {{/if}}
     <br>
@@ -26,13 +20,3 @@
         <a href="/login">Login</a>
     </p>
 </form>
-
-<a href="/auth/facebook"> Login With Facebook </a>
-
-{{#unless user}}
-<div>
-    <a href="/auth/google">Login With Google</a>
-</div>
-{{/unless}}
-
-<img src="./images/genie-lamp.jpg" alt="">

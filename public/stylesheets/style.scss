@@ -68,6 +68,10 @@ table#t01 th {
 }
 
 #thefirst {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
   position: relative;
   height: 160px;
   width: 80px;
@@ -76,6 +80,11 @@ table#t01 th {
 
 #thesecond {
   position: relative;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-direction: row;
   left: 100px;
   height: 160px;
   width: 80px;
@@ -83,7 +92,11 @@ table#t01 th {
 }
 
 #thethird {
-  position: relative;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-direction: row;
   left: 100px;
   height: 160px;
   width: 80px;
@@ -91,7 +104,10 @@ table#t01 th {
 }
 
 #thefourth {
-  position: relative;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
   left: 100px;
   height: 160px;
   width: 80px;
@@ -168,13 +184,6 @@ table#t01 th {
   bottom: 300px;
 }
 
-// #p4 {
-//   background-color: green;
-//   border: 2px;
-//   border-style: solid;
-//   width: 30%;
-//   height: 150px;
-// }
 #gen44 {
   height: 30%;
   width: 40%;
@@ -233,7 +242,7 @@ table#t01 th {
 
 .innerbox115 {
   position: relative;
-  background-color: blue;
+  background-color: white;
   top: 60px;
   left: 30px;
   height: 130px;
@@ -245,7 +254,7 @@ table#t01 th {
 
 .innerbox225 {
   position: relative;
-  background-color: red;
+  background-color: white;
   top: -70px;
   left: 150px;
   height: 130px;
@@ -257,7 +266,7 @@ table#t01 th {
 
 .innerbox335 {
   position: relative;
-  background-color: orange;
+  background-color: white;
   top: -200px;
   left: 265px;
   height: 130px;
@@ -269,7 +278,7 @@ table#t01 th {
 
 .innerbox445 {
   position: relative;
-  background-color: teal;
+  background-color: white;
   top: -330px;
   left: 385px;
   height: 130px;
@@ -283,7 +292,7 @@ table#t01 th {
   position: relative;
   bottom: 500px;
   left: 500px;
-  background-color: green;
+  background-color: white;
   top: -460px;
   height: 130px;
   width: 90px;
@@ -299,7 +308,10 @@ table#t01 th {
 }
 
 .megaMil {
-  display: flex;
+  position: relative;
+  top: 80px;
+  display: inline-flex;
+  flex-direction: row;
   align-self: center;
   order: 1;
   flex-direction: row;
@@ -310,8 +322,8 @@ table#t01 th {
   border-style: solid;
   border-color: black;
   background-color: blue;
-  width: 50px;
-  height: 80px;
+  width: 75px;
+  height: 120px;
 }
 
 .innerMegaMil {
@@ -326,6 +338,7 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   border-color: black;
-  width: 40px;
-  height: 75px;
+  width: 85%;
+  height: 85%;
+  font-size: 30px;
 }

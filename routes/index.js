@@ -55,7 +55,7 @@ router.get("/WinningNumbers", (req, res, next) => {
 router.get("/megaWin", (req, res, next) => {
   Winning.find()
     .then(winning => {
-      console.log("Mega!!!")
+      console.log("Mega win time!!!")
 
       res.render("megaWin", {
         winning
@@ -68,6 +68,7 @@ router.get("/megaWin", (req, res, next) => {
 })
 
 router.get("/yourNumbers", (req, res, next) => {
+
   res.render("yourNumbers");
 });
 

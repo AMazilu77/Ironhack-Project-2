@@ -23,12 +23,12 @@
             <h2>Number Generator</h2>
         </div>
         <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
-        <img src='/images/genie2g.jpg'>
+        <img src='/images/geniworkinge2.jpg'>
 
         <br>
         <br>
         <button class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
-        <button class='Dontplaythisnumber' onclick="randomGenMaster22()"> I don't like this number, give me another </button>
+        <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me another </button>
         <div id='big22area'>
             <div id='square12'>
                 <div id='firstnumber2'>
@@ -62,6 +62,8 @@
 
             print1.innerHTML = num1;
             print2.innerHTML = num2;
+            y2 = num1
+            x2 = num2
             console.log(num1, num2);
 
 
@@ -71,9 +73,9 @@
         };
 
         const saveNumber22 = function () {
-            numbersPlayed.push(num1, num2);
+            numbersPlayed.push(y2, x2);
         }
 
-
+        const theListOfNumbersPlayed = numbersPlayed;
 
     </script>

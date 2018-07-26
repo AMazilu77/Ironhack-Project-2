@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>User Info</title>
 </head>
-<button onclick="location.href='/dashBoard';"> Back </button>
+<button type="button" onclick="location.href='/dashBoard';"> Back </button>
 <br>
 <br>
 <hr>
@@ -19,8 +19,8 @@
     <button> Buy More Wishes</button>
     <button> Send Someone a wish</button>
 
-    <h2> Favorite Numbers</h2>
-    <div id='favoriteNumbers'> Your favorite number are: </di>
+    <h2> Luck Numbers</h2>
+    <div id='favoriteNumbers'> Your lucky number are: </di>
 
         <input id="data" size="30">
         <button id="btn">Click me to add Lucky Numbers</button>
@@ -51,12 +51,17 @@
                 console.log(luckyNumber);
 
 
+
             }
 
             document.getElementById('btn').addEventListener('click', clicked);;
 
 
+            function allLuckyNumbers() {
+                console.log(luckyNumber)
+                document.getElementById('firstrow').innerHTML = luckyNumber;
 
+            }
 
 
 
