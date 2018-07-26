@@ -4,7 +4,10 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     username: String,
     password: String,
-    wishes: Number,
+    wishes: {
+        type: Number,
+        default: 3
+    },
     luckyNumbers: [],
     numbersPlayed: []
 }, {

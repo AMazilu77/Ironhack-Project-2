@@ -20,7 +20,7 @@ router.get("/userInfo", (req, res, next) => {
 });
 
 router.post("userInfo", (req, res, next) => {
-  input_value.push(favNumbers)
+  input_value.push(luckyNumbers)
 })
 
 router.get("/numberGen", (req, res, next) => {

@@ -53,6 +53,7 @@ authRoutes.post("/signup", (req, res, next) => {
                         message: "Something went wrong"
                     });
                 } else {
+
                     res.redirect("/dashBoard");
                 }
             });
