@@ -14,12 +14,13 @@
 
 <body>
 
-    <form> Hello {{this.username}} </form>
+    <h1> Hello {{this.username}} </h1>
+    <p> Here you can find information about your account</p>
     <h2> Wishes remaining: {{this.wishes}} </h2>
     <button> Buy More Wishes</button>
     <button> Send Someone a wish</button>
 
-    <h2> Luck Numbers</h2>
+    <h2> Lucky Numbers</h2>
     <div id='favoriteNumbers'> Your lucky number are: </di>
 
         <input id="data" size="30">
@@ -29,7 +30,10 @@
         <div id="display">
             <table style="width:100%">
                 <th>
-                    <center> Favorite Numbers</center>
+                    <center> Lucky Numbers</center>
+                    {{!-- {{#each}}
+                    <p>{{this.luckyNumber}}</p>
+                    {{/each}} --}}
                 </th>
                 <tr id='firstrow'></tr>
                 <tr id='next'> </tr>
@@ -60,7 +64,8 @@
             function allLuckyNumbers() {
                 console.log(luckyNumber)
                 document.getElementById('firstrow').innerHTML = luckyNumber;
-
+                const luckForm = document.getElementById('Luck');
+                luckForm.submit();
             }
 
 
@@ -69,8 +74,11 @@
 
         </script>
 
-
+        <button onclick="location.href='/LuckyNumbersPage';"> The Real Lucky Numbers</button>
         <button onclick='allLuckyNumbers()'>Show me all my lucky numbers</button>
+
+        <form id='Luck' action='/userInfoLuck' method="post">
+            <input type='hidden' name='hiddennumber'> </form>
 
 
 

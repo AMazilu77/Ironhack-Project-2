@@ -4,12 +4,19 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema({
     username: String,
     password: String,
+    luckyNumbers: [],
+    numbersPlayed: [],
+    experiencePoints: {
+        type: Number,
+        default: 1
+    },
+
     wishes: {
         type: Number,
         default: 3
     },
-    luckyNumbers: [],
-    numbersPlayed: []
+
+
 }, {
     timestamps: {
         createdAt: "created_at",

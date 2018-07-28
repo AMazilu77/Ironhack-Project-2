@@ -1,13 +1,38 @@
 const mongoose = require('mongoose');
 const Winning = require('../models/winModel');
+const luck = require('../models/luckyNumber');
 const dbtitle = 'the-lottery-genie';
 
 mongoose.connect(`mongodb://localhost/${dbtitle}`);
 
 Winning.collection.drop();
+luck.collection.drop();
 
-const luckyNumbers = [];
-const XP = 1;
+
+
+const luckynumber = [{
+        luckyNumber: 33,
+        comments: "Favorite"
+    },
+
+    {
+        luckyNumber: 13,
+        comments: "number of kids saved from cave flood in Tialand"
+    },
+
+
+    {
+        luckyNumber: 3,
+        comments: "Trinity"
+    },
+
+    {
+        luckyNumber: 1,
+        comments: "Starting point"
+
+    }
+];
+const experiencePoints = 1;
 const wishes = 0;
 const megaNum = [{
 
@@ -361,6 +386,7 @@ const megaNum = [{
     }
 ];
 
+
 const WinnerList = megaNum.map(number => {
     const NumberX = new Winning(number)
     return NumberX.save()
@@ -370,6 +396,18 @@ const WinnerList = megaNum.map(number => {
         .catch(error => {
             throw new Error(`Impossible to add the winner. ${error}`)
         })
+})
+
+const FavNum = luckynumber.map(zxc => {
+    const numPrint = new luck(zxc);
+    return numPrint.save()
+        .then(numPrint => {
+            return numPrint.luckynumber
+        })
+        .catch(error => {
+            throw new Error(`Impossible to add your lucky Number. ${error}`)
+        })
+
 })
 
 

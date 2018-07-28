@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 const UserModel = require('../models/user');
 const Winning = require('../models/winModel.js');
+const luck = require('../models/luckyNumber');
 const assert = require('assert');
 const axios = require('axios');
+
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -20,8 +22,34 @@ router.get("/userInfo", (req, res, next) => {
 });
 
 router.post("userInfo", (req, res, next) => {
-  input_value.push(luckyNumbers)
-})
+  // console.log(req.body)
+});
+
+
+router.get("/userInfoLuck", (req, res, next) => {
+  luck.find()
+    .then(luck => {
+      console.log("pure unadulterated luck!!")
+
+      res.render("./userInfoLuck", {
+        luck
+      })
+    })
+
+    .catch(error => {
+      console.log(error)
+    })
+});
+
+// router.get("userInfoLuck", (req, res, next) => {
+//       res.render("userInfoLuck");
+//     };
+
+router.post("userInfoLuck", (req, res, next) => {
+
+
+  // console.log(req.body)
+});
 
 router.get("/numberGen", (req, res, next) => {
   res.render("numberGen");
@@ -72,12 +100,33 @@ router.get("/yourNumbers", (req, res, next) => {
   res.render("yourNumbers");
 });
 
+
+
+
+
 router.get("/numberGenGamePick", (req, res, next) => {
   res.render("numberGenGamePick");
 });
 router.get("/pick2", (req, res, next) => {
   res.render("pick2");
 });
+
+// router.post("/pick2", (req, res, next) => {
+//   User.numbersPlayed.find()
+//   .then(numbersPlayed => {
+//     console.log(" Number Posted!")
+
+//     res.render("pick2", {
+//       winning
+//     })
+//   })
+
+//   .catch(error => {
+//     console.log(error)
+//   })
+// })
+
+// })
 
 router.get("/pick3", (req, res, next) => {
   res.render("pick3");
@@ -118,6 +167,67 @@ router.get("/powerBall", (req, res, next) => {
 router.get("/PBWinners", (req, res, next) => {
   res.render("powerBall");
 });
+
+
+
+// router.get('/LuckyNumbersPage/:id', (req, res, next) => {
+//   let NumId = req.params.id;
+//   if (!/^[0-9]{24}$/.test(NumId)) {
+//     return res.status(404).render('not-found');
+//   }
+//   luckyNumbers.findOne({
+//       '_id': NumId
+//     })
+//     .populate('luckyNumber')
+//     .then(luck => {
+//       if (!luck) {
+//         return res.status(404).render('not-found');
+//       }
+//       res.render("/LuckyNumbersPage", {
+//         luck
+//       })
+//     })
+//     .catch(next)
+// });
+
+
+
+router.get("/LuckyNumbersPage", (req, res, next) => {
+  luck.find()
+    .then(luck => {
+      console.log("two luck routes? Yes!")
+
+      res.render("./LuckyNumbersPage", {
+        luck
+      })
+    })
+
+    .catch(error => {
+      console.log(error)
+    })
+})
+
+router.get("/LuckyNumbersPage/add", (req, res, next) => {
+  res.render("./LuckyNumbersPage/luckyNumbers-add");
+});
+
+router.post('/LuckyNumbersPage/add', (req, res, next) => {
+
+});
+
+// router.get('/LuckyNumbersPage/edit', (req, res, next) => {
+//   luck.findOne({
+//       _id: req.query.Numid
+//     })
+//     .then((book) => {
+//       res.render("/LuckyNumbersPage", {
+//         luck
+//       });
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+// });
 
 
 

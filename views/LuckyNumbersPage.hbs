@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Luck Numbers</title>
+</head>
+
+<body>
+
+    <h1> Your Lucky Numbers</h1>
+    <h2> You can make changes to this list at any time</h2>
+    <input id="data" size="30">
+    <button class='btn'> Add new Favorite Numbers</button>
+
+    {{#each luck}}
+
+    <P> This week you listed the number {{this.luckyNumber}} as a lucky number because "{{this.comments}}"
+        <button> edit </button>
+        <button> Delete</button>
+        {{/each}}</P>
+
+    <script> 
+        function clicked() {
+
+            var input_value = document.getElementById('data').value;
+            document.getElementById('firstrow').innerHTML = input_value;
+
+            luckyNumber.push(input_value)
+            console.log(luckyNumber);
+
+
+
+        }
+
+        document.getElementById('btn').addEventListener('click', clicked);;
+
+    </script>
+
+</body>
+
+</html>
