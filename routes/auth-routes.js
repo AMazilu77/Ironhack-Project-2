@@ -1,7 +1,7 @@
 const express = require("express");
 const authRoutes = express.Router();
 const passport = require("passport");
-// const ensureLogin = require("connect-ensure-login");
+const ensureLogin = require("connect-ensure-login");
 // const FbStrategy = require('passport-facebook').Strategy;
 // const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 
