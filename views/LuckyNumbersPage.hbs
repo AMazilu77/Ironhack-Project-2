@@ -11,10 +11,9 @@
 
     <h1> Your Lucky Numbers</h1>
     <h2> You can make changes to this list at any time</h2>
-    <input id="data" size="30">
-    <button onclick='clicked()' class='btn'> Add new Favorite Numbers</button>
-
-    {{#each luck}}
+    {{!--
+    <input id="data" size="30"> --}}
+    <button onclick='location.href="/LuckyNumbersPage/luckyNumbersAdd";' class='btn'> Add new Favorite Numbers</button> {{#each luck}}
 
     <P> This week you listed the number {{this.luckyNumber}} as a lucky number because "{{this.comments}}"
         <button> edit </button>

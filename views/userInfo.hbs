@@ -74,8 +74,9 @@
 
         </script>
 
-        <button onclick="location.href='/LuckyNumbersPage';"> The Real Lucky Numbers</button>
-        <button onclick='allLuckyNumbers()'>Show me all my lucky numbers</button>
+        <button onclick="location.href='/LuckyNumbersPage';"> Show me the Lucky Numbers</button>
+        {{!--
+        <button onclick='allLuckyNumbers()'>Show me all my lucky numbers</button> --}}
 
         <form id='Luck' action='/userInfoLuck' method="post">
             <input type='hidden' name='hiddennumber'> </form>

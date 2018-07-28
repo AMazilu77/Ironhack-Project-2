@@ -207,18 +207,36 @@ router.get("/LuckyNumbersPage", (req, res, next) => {
     })
 })
 
-router.get("/LuckyNumbersPage/add", (req, res, next) => {
-  res.render("./LuckyNumbersPage/luckyNumbers-add");
+
+
+router.get('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
+  res.render('luckyNumbersAdd')
 });
 
-router.post('/LuckyNumbersPage/add', (req, res, next) => {
 
+router.post('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
+  const {
+    luckyNumber,
+    comments,
+  } = req.body;
+  const newNumber = new luck({
+    luckyNumber,
+    comments
+  });
+  newNumber.save()
+    .then((luckyNumber) => {
+      res.redirect('/userInfo');
+    })
+    .catch((error) => {
+      console.log(error);
+    });
 });
 
-router.get('/LuckyNumbersPage/:NumId', luck.findOne);
+
+// router.get('/LuckyNumbersPage/:NumId', luck.findOne);
 
 
-router.put('/LuckyNumberPage/:NumId', luck.update);
+// router.put('/LuckyNumberPage/:NumId', luck.update);
 
 // router.delete('/LuckyNumbersPage:NumId', luck.delete);
 
