@@ -1,8 +1,8 @@
 const express = require("express");
 const authRoutes = express.Router();
 const passport = require("passport");
-const ensureLogin = require("connect-ensure-login");
-const FbStrategy = require('passport-facebook').Strategy;
+// const ensureLogin = require("connect-ensure-login");
+// const FbStrategy = require('passport-facebook').Strategy;
 // const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 // User model
@@ -102,16 +102,16 @@ authRoutes.get("/auth/facebook/callback", passport.authenticate("facebook", {
     failureRedirect: "/"
 }));
 
-authRoutes.get("/auth/google", passport.authenticate("google", {
-    scope: ["https://www.googleapis.com/auth/plus.login",
-        "https://www.googleapis.com/auth/plus.profile.emails.read"
-    ]
-}));
+// authRoutes.get("/auth/google", passport.authenticate("google", {
+//     scope: ["https://www.googleapis.com/auth/plus.login",
+//         "https://www.googleapis.com/auth/plus.profile.emails.read"
+//     ]
+// }));
 
-authRoutes.get("/auth/google/callback", passport.authenticate("google", {
-    failureRedirect: "/",
-    successRedirect: "/private-page"
-}));
+// authRoutes.get("/auth/google/callback", passport.authenticate("google", {
+//     failureRedirect: "/",
+//     successRedirect: "/private-page"
+// }));
 
 
 
