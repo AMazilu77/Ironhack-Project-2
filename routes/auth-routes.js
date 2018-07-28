@@ -96,11 +96,11 @@ authRoutes.get("/logout", (req, res) => {
     res.redirect("/");
 });
 
-authRoutes.get("/auth/facebook", passport.authenticate("facebook"));
-authRoutes.get("/auth/facebook/callback", passport.authenticate("facebook", {
-    successRedirect: "/private-page",
-    failureRedirect: "/"
-}));
+// authRoutes.get("/auth/facebook", passport.authenticate("facebook"));
+// authRoutes.get("/auth/facebook/callback", passport.authenticate("facebook", {
+//     successRedirect: "/private-page",
+//     failureRedirect: "/"
+// }));
 
 // authRoutes.get("/auth/google", passport.authenticate("google", {
 //     scope: ["https://www.googleapis.com/auth/plus.login",
