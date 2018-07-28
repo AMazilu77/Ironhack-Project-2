@@ -215,6 +215,14 @@ router.post('/LuckyNumbersPage/add', (req, res, next) => {
 
 });
 
+router.get('/LuckyNumbersPage/:NumId', luck.findOne);
+
+
+router.put('/LuckyNumberPage/:NumId', luck.update);
+
+// router.delete('/LuckyNumbersPage:NumId', luck.delete);
+
+
 // router.get('/LuckyNumbersPage/edit', (req, res, next) => {
 //   luck.findOne({
 //       _id: req.query.Numid
