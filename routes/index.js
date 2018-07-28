@@ -4,7 +4,7 @@ const UserModel = require('../models/user');
 const Winning = require('../models/winModel.js');
 const luck = require('../models/luckyNumber');
 const assert = require('assert');
-const axios = require('axios');
+// const axios = require('axios');
 
 
 /* GET home page */
