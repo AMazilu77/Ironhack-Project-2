@@ -8,7 +8,7 @@ const userSchema = new Schema({
     numbersPlayed: [],
     experiencePoints: {
         type: Number,
-        default: 1
+        default: 100
     },
 
     wishes: {
