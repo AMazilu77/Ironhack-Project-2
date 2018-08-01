@@ -109,34 +109,34 @@ passport.use(new LocalStrategy({
     });
 }));
 
-// passport.use(new FbStrategy({
-//   clientID: process.env.fbClientID,
-//   clientSecret: process.env.fbClientSecret,
-//   callbackURL: "/auth/facebook/callback"
-// }, (accessToken, refreshToken, profile, done) => {
-//   User.findOne({
-//     facebookID: profile.id
-//   }, (err, user) => {
-//     if (err) {
-//       return done(err);
-//     }
-//     if (user) {
-//       return done(null, user);
-//     }
+passport.use(new FbStrategy({
+  clientID: process.env.fbClientID,
+  clientSecret: process.env.fbClientSecret,
+  callbackURL: "/auth/facebook/callback"
+}, (accessToken, refreshToken, profile, done) => {
+  User.findOne({
+    facebookID: profile.id
+  }, (err, user) => {
+    if (err) {
+      return done(err);
+    }
+    if (user) {
+      return done(null, user);
+    }
 
-//     const newUser = new User({
-//       facebookID: profile.id
-//     });
+    const newUser = new User({
+      facebookID: profile.id
+    });
 
-//     newUser.save((err) => {
-//       if (err) {
-//         return done(err);
-//       }
-//       done(null, newUser);
-//     });
-//   });
+    newUser.save((err) => {
+      if (err) {
+        return done(err);
+      }
+      done(null, newUser);
+    });
+  });
 
-// }));
+}));
 
 // passport.use(new GoogleStrategy({
 //   clientID: process.env.googleClientID,

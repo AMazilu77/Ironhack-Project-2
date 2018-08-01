@@ -2,7 +2,7 @@ const express = require("express");
 const authRoutes = express.Router();
 const passport = require("passport");
 const ensureLogin = require("connect-ensure-login");
-// const FbStrategy = require('passport-facebook').Strategy;
+const FbStrategy = require('passport-facebook').Strategy;
 // const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 // User model
@@ -96,22 +96,22 @@ authRoutes.get("/logout", (req, res) => {
     res.redirect("/");
 });
 
-// authRoutes.get("/auth/facebook", passport.authenticate("facebook"));
-// authRoutes.get("/auth/facebook/callback", passport.authenticate("facebook", {
-//     successRedirect: "/private-page",
-//     failureRedirect: "/"
-// }));
+authRoutes.get("/auth/facebook", passport.authenticate("facebook"));
+authRoutes.get("/auth/facebook/callback", passport.authenticate("facebook", {
+    successRedirect: "/private-page",
+    failureRedirect: "/"
+}));
 
-// authRoutes.get("/auth/google", passport.authenticate("google", {
-//     scope: ["https://www.googleapis.com/auth/plus.login",
-//         "https://www.googleapis.com/auth/plus.profile.emails.read"
-//     ]
-// }));
+authRoutes.get("/auth/google", passport.authenticate("google", {
+    scope: ["https://www.googleapis.com/auth/plus.login",
+        "https://www.googleapis.com/auth/plus.profile.emails.read"
+    ]
+}));
 
-// authRoutes.get("/auth/google/callback", passport.authenticate("google", {
-//     failureRedirect: "/",
-//     successRedirect: "/private-page"
-// }));
+authRoutes.get("/auth/google/callback", passport.authenticate("google", {
+    failureRedirect: "/",
+    successRedirect: "/private-page"
+}));
 
 
 
@@ -119,19 +119,8 @@ module.exports = authRoutes;
 
 
 
-// const express = require("express");
-// const authRoutes = express.Router();
-// const passport = require("passport");
-// const ensureLogin = require("connect-ensure-login");
 
 
-
-// // User model
-// const User = require("../models/user");
-
-// // Bcrypt to encrypt passwords
-// const bcrypt = require("bcrypt");
-// const bcryptSalt = 10;
 
 // authRoutes.get("/signup", (req, res, next) => {
 //     res.render("auth/signup");
@@ -185,15 +174,15 @@ module.exports = authRoutes;
 //         })
 // });
 
-// authRoutes.get("/login", (req, res, next) => {
-//     res.render("auth/login", {
-//         "message": req.flash("error")
-//     });
-// });
+authRoutes.get("/login", (req, res, next) => {
+    res.render("auth/login", {
+        "message": req.flash("error")
+    });
+});
 
-// authRoutes.post("/login", passport.authenticate("local", {
-//     successRedirect: "/private-page",
-//     failureRedirect: "/login",
-//     failureFlash: true,
-//     passReqToCallback: true
-// }));
+authRoutes.post("/login", passport.authenticate("local", {
+    successRedirect: "/private-page",
+    failureRedirect: "/login",
+    failureFlash: true,
+    passReqToCallback: true
+}));
