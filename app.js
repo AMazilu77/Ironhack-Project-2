@@ -138,35 +138,34 @@ passport.use(new FbStrategy({
 
 }));
 
-// passport.use(new GoogleStrategy({
-//   clientID: process.env.googleClientID,
-//   clientSecret: process.env.googleClientSecret,
-//   callbackURL: "/auth/google/callback"
-// }, (accessToken, refreshToken, profile, done) => {
-//   User.findOne({
-//     googleID: profile.id
-//   }, (err, user) => {
-//     if (err) {
-//       return done(err);
-//     }
-//     if (user) {
-//       return done(null, user);
-//     }
+passport.use(new GoogleStrategy({
+  clientID: process.env.googleClientID,
+  clientSecret: process.env.googleClientSecret,
+  callbackURL: "/auth/google/callback"
+}, (accessToken, refreshToken, profile, done) => {
+  User.findOne({
+    googleID: profile.id
+  }, (err, user) => {
+    if (err) {
+      return done(err);
+    }
+    if (user) {
+      return done(null, user);
+    }
 
-//     const newUser = new User({
-//       googleID: profile.id,
-//       wishes: 3
-//     });
+    const newUser = new User({
+      googleID: profile.id
+    });
 
-//     newUser.save((err) => {
-//       if (err) {
-//         return done(err);
-//       }
-//       done(null, newUser);
-//     });
-//   });
+    newUser.save((err) => {
+      if (err) {
+        return done(err);
+      }
+      done(null, newUser);
+    });
+  });
 
-// }));
+}));
 
 app.use(passport.initialize());
 app.use(passport.session());

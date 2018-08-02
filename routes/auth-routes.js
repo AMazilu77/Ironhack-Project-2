@@ -3,7 +3,7 @@ const authRoutes = express.Router();
 const passport = require("passport");
 const ensureLogin = require("connect-ensure-login");
 const FbStrategy = require('passport-facebook').Strategy;
-// const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
+const GoogleStrategy = require("passport-google-oauth").OAuth2Strategy;
 
 // User model
 const User = require("../models/user");
@@ -108,7 +108,7 @@ authRoutes.get("/auth/google", passport.authenticate("google", {
     ]
 }));
 
-authRoutes.get("/auth/google/callback", passport.authenticate("google", {
+authRoutes.get("auth/google/callback", passport.authenticate("google", {
     failureRedirect: "/",
     successRedirect: "/private-page"
 }));

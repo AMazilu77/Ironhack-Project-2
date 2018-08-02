@@ -174,11 +174,14 @@ table#t01 th {
   border-style: solid; }
 
 #big22area {
+  position: relative;
+  bottom: 500px;
   width: 500px;
   height: 500px;
   background-color: lightblue;
-  border: 1px;
-  border-style: solid; }
+  border: 2px;
+  border-style: solid;
+  padding: 15px; }
 
 #square12 {
   position: relative;
@@ -187,7 +190,7 @@ table#t01 th {
   width: 150px;
   height: 250px;
   background-color: orange;
-  border: 1px;
+  border: 2px;
   border-style: solid; }
 
 #square22 {
@@ -197,7 +200,7 @@ table#t01 th {
   width: 150px;
   height: 250px;
   background-color: yellow;
-  border: 1px;
+  border: 2px;
   border-style: solid; }
 
 #firstnumber2 {
@@ -300,5 +303,37 @@ table#t01 th {
   width: 85%;
   height: 85%;
   font-size: 30px; }
+
+#megaBall {
+  background-color: red; }
+
+#pick2genie {
+  display: flex;
+  position: relative;
+  left: 700px;
+  top: 50px;
+  bottom: 0px; }
+
+#gen22 {
+  position: relative; }
+
+#geniepick2advice {
+  position: relative;
+  left: 600px;
+  top: 20px;
+  background-color: lightgreen;
+  width: 650px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 12px; }
+
+#oddsPick2 {
+  background-color: lightgrey;
+  border-width: 2px;
+  border-style: solid;
+  width: 650px;
+  position: relative;
+  left: 600px;
+  padding: 12px; }
 
 /*# sourceMappingURL=style.css.map */

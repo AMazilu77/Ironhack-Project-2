@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pick2</title>
+    <title>Pick 2</title>
 </head>
 <button onclick="location.href='/dashBoard';"> Back </button>
 
@@ -21,22 +21,61 @@
         <script src='/javascripts/script.js'></script>
         <div>
             <h2>Number Generator</h2>
+
         </div>
         <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
-        <img src='/images/geniworkinge2.jpg'>
+        <div class="text">
+            <h3>Rules </h3>
+            <p>1. Select one number (from 0 through 9) from each column for a total of two digits
+            </p>
+            <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Front Number, or Back Number. </p>
+            <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1)</p>
+            <p>
+                <b>During the PICK 2 drawing, 2 numbers will be drawn at random. If your 2-digit number is a Straight match
+                    to the numbers, you win $25. Or, if any of your 1-OFF numbers match the PICK 2 numbers drawn, you win
+                    $3.
+                </b>
+            </p>
 
-        <br>
-        <br>
-        <button class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
-        <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me another </button>
+        </div>
+        <div id="oddsPick2">
+            <h2>Odds</h2>
+            <h3>
+                <b>Pick 2</b>
+            </h3>
+            <p> You have a 1/100 chance of winning 25$ with a strait matching both numbers, and a 1/25 odds of hitting a one-off
+                number on either and/or both numbers for a $3.00 payout.
+            </p>
+
+        </div>
+
+        <div id="geniepick2advice">
+            <h2>Genie Advice</h2>
+            <h3>
+                <b>Play 1-Off</b>
+            </h3>
+            <p> Ever feel like you're close, but you've somehow missed the mark? With 1-OFF® you can miss by one and still win
+                a cash prize. That's 8 more chances to win!
+            </p>
+
+        </div>
+        <img id="pick2genie" src='/images/geniworkinge2.jpg'>
+
         <div id='big22area'>
+
+            <button class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
+            <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me another </button>
+            <h2>Rules </h2>
+            {{!-- card area containing numbers --}}
             <div id='square12'>
+
                 <div id='firstnumber2'>
                     0
                 </div>
             </div>
 
             <div id='square22'>
+
                 <div id='number22'>0</div>
 
             </div>
