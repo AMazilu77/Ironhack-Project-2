@@ -336,4 +336,52 @@ table#t01 th {
   left: 600px;
   padding: 12px; }
 
+.pick3 {
+  position: relative;
+  top: 80px;
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+  order: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: blue;
+  width: 120px;
+  height: 160px; }
+
+.innerPick3 {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #cbdfcb;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 85%;
+  height: 85%;
+  font-size: 30px;
+  margin: auto;
+  position: relative; }
+
+.pick3box {
+  background-color: lightcyan;
+  height: 300px;
+  width: 55%;
+  border: 2px;
+  border-style: solid;
+  position: relative;
+  top: 40px;
+  right: 25px;
+  display: flex;
+  padding: 10px; }
+
 /*# sourceMappingURL=style.css.map */

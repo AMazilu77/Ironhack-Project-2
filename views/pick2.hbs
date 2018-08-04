@@ -54,8 +54,7 @@
             <h3>
                 <b>Play 1-Off</b>
             </h3>
-            <p> Ever feel like you're close, but you've somehow missed the mark? With 1-OFF® you can miss by one and still win
-                a cash prize. That's 8 more chances to win!
+            <p> You can miss by one and still win a cash prize. That's 8 more chances to win.
             </p>
 
         </div>
@@ -63,9 +62,11 @@
 
         <div id='big22area'>
 
-            <button class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
+            <button id="" class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
             <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me another </button>
-            <h2>Rules </h2>
+            <h2>You have chosen to play the numbers:
+                <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
+            </h2>
             {{!-- card area containing numbers --}}
             <div id='square12'>
 
@@ -113,8 +114,15 @@
 
         const saveNumber22 = function () {
             numbersPlayed.push(y2, x2);
+            console.log(numbersPlayed);
+            document.getElementById("numbersPlayedAreaPick2").innerHTML = "..." + numbersPlayed + "..."
+            if (numbersPlayed.length > 2) {
+                return "..." + numbersPlayed + "..." + "...";;
+
+            }
         }
 
-        const theListOfNumbersPlayed = numbersPlayed;
+
+
 
     </script>

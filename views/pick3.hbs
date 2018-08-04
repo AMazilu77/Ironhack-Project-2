@@ -3,41 +3,77 @@
 <br>
 <button onclick="randomGenMaster333()"> I wish you would give me a number! </button>
 <button onclick="saveNumber33()">Save number</button>
+
 <div id="gen2">
-    <span id="numberArea"> Here is your number:
-        <h2 id='final'> Your number is: </h2>
-        <h4 id="theone">
-            <h4 id='thetwo'>
-                <h4 id='thethree'> </h4>
-            </h4>
-        </h4>
+    <span id="numberArea3"> Here is your number:
 
+        <div class="pick3box">
+            <h2 id='final'> Your number is: </h2>
 
-        </h2>
-
-
-
-    </span>
-
-</div>
-</div>
-
-<div class='boxes'>
-
-    <div id='thefirst'>
-        <div id='first'> 0</div>
-        <div id='thesecond'>
-            <div id='sec'> 0
-
+            <div>
+                <div class='pick3' id='pick3-1'>
+                    <div class='innerPick3' id='innerPick3-1'> 1</div>
+                </div>
+                <div class='pick3' id='pick3-2'>
+                    <div class='innerPick3' id='innerPick3-2'>2 </div>
+                </div>
+                <div class='pick3' id='pick3-3'>
+                    <div class='innerPick3' id='innerPick3-3'> 3</div>
+                </div>
             </div>
-            <div id='thethird'>
-                <div id='third'>0 </div>
-            </div>
+
+        </div>
+        <div class="text">
+            <br>
+            <br>
+            <h3>Rules </h3>
+            <p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a Front Pair play,
+                select numbers from the first two columns only; and, for a Back Pair play, select numbers from the last two
+                columns only.
+
+            </p>
+            <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
+            <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays
+                cost $1.50 to $6.00).</p>
+            <p>
+                <b>Players who match all three of the winning numbers drawn in the official PICK 3™ drawing for the date played
+                    can win up to $500, depending on the play type purchased and the amount played. Front Pair or Back Pair
+                    players who match two numbers in exact order can win up to $50.
+                </b>
+            </p>
+
+            <h3>How to win</h3>
+            <p>3-WAY: Select a 3-digit number with two like digits and get 3 ways to win (Example: Play numbers '112' winning
+                combination '112','121','211'.
+            </p>
+            <p>6-WAY: Select a 3-digit number with all different digits and get 6 ways to win. (Example: play numbers '123';
+                winning combinations, '123','132','213','231','312','321'</p>
+
+            <p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
         </div>
 
-    </div>
+        <div id="oddsPick2">
+            <h2>Odds</h2>
+            <h3>
+                <b>Pick 3</b>
+            </h3>
+            <p> You have a 1/1000 chance of winning 500$ with a strait matching exact numbers numbers in order on a $1.00 play
+                or, $250 jackpot with a strait on $0.50 play. 1:333.33 odds of $160 jackpot hitting a 3-way on a $1.00 play,
+                or $80.00 for a $0.50 play Matching in ANY order. 1:66.67 odds of a number on either and/or both numbers
+                for a $3.00 payout.
+            </p>
+
+        </div>
+
+
+
+
     </span>
+
 </div>
+</div>
+
+
 <script>
 
 
@@ -45,9 +81,9 @@
         numbersPlayed3 = [];
 
 
-        let print1 = document.getElementById('first');
-        let print2 = document.getElementById('sec');
-        let print3 = document.getElementById('third');
+        let print1 = document.getElementById('innerPick3-1');
+        let print2 = document.getElementById('innerPick3-2');
+        let print3 = document.getElementById('innerPick3-3');
         let x = [];
         let num1 = Math.floor(Math.random() * 10);
         let num2 = Math.floor(Math.random() * 10);
