@@ -161,7 +161,7 @@ table#t01 th {
   height: 30%;
   width: 40%;
   position: relative;
-  top: 250px;
+  top: 50px;
   background-color: lightgrey;
   border: 2px;
   border-style: solid; }
@@ -315,7 +315,9 @@ table#t01 th {
   bottom: 0px; }
 
 #gen22 {
-  position: relative; }
+  position: relative;
+  border: 2px;
+  border-style: solid; }
 
 #geniepick2advice {
   position: relative;
@@ -370,7 +372,9 @@ table#t01 th {
   height: 85%;
   font-size: 30px;
   margin: auto;
-  position: relative; }
+  position: relative;
+  font-size: 70px;
+  font-style: bold; }
 
 .pick3box {
   background-color: lightcyan;
@@ -383,5 +387,74 @@ table#t01 th {
   right: 25px;
   display: flex;
   padding: 10px; }
+
+#pick2genie3 {
+  position: relative;
+  left: 745px;
+  bottom: 300px;
+  width: 30%;
+  height: auto; }
+
+.text3 {
+  position: relative;
+  bottom: 170px; }
+
+.pick4 {
+  position: relative;
+  top: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+  order: 1;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: blue;
+  width: 120px;
+  height: 160px;
+  margin: auto; }
+
+.innerPick4 {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-flow: row wrap;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #cbdfcb;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 85%;
+  height: 85%;
+  font-size: 30px;
+  margin: 10px;
+  position: relative;
+  font-size: 70px;
+  font-style: bold; }
+
+.pick4box {
+  border: 2px;
+  border-style: solid;
+  background-color: lightgreen;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  left: 0 px; }
+
+#googlebtn {
+  height: 53px;
+  width: auto; }
+
+#login {
+  position: relative;
+  top: 220px;
+  left: 550px; }
 
 /*# sourceMappingURL=style.css.map */

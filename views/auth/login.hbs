@@ -1,49 +1,42 @@
-<form action="/login" method="POST">
+<h2> who hasth summoned me?</h2>
 
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" name="username">
-    </div>
-    <div>
-        <label for="password">Password:</label>
-        <input type="password" name="password">
-    </div>
-    {{#if message}}
-    <div class="error-message">{{ message }}</div>
-    {{/if}}
-    <div>
-        <input type="submit" value="Log In">
-        <button type="button" onclick="location.href='/signup';"> new user </button>
-    </div>
-    <br>
-    <br>
-    <a href="/auth/facebook">
-        <img src="/images/fbbutton.png">
 
+<div id="login">
+
+    <form action="/login" method="POST">
+
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password">
+        </div>
+        {{#if message}}
+        <div class="error-message">{{ message }}</div>
+        {{/if}}
+        <div>
+            <input type="submit" value="Log In">
+            <button type="button" onclick="location.href='/signup';"> new user </button>
+        </div>
         <br>
         <br>
-        <a href="/auth/google">
-            <img id="googlebtn" src="/images/btn_google_signin_light_normal_web@2x.png">
+        <a href="/auth/facebook">
+            <img id="fb" src="/images/fbbutton.png">
+
+            <br>
+            <br>
+            <a href="/auth/google">
+                <img id="googlebtn" src="/images/btn_google_signin_light_normal_web@2x.png">
 
 
-            </img>
-        </a>
+                </img>
+            </a>
 
 
 
 
-</form>
-{{!--
-<div id="fb-root"></div>
-<script>  FB.XFBML.parse()(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=2120672984882147&autoLogAppEvents=1';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+    </form>
 
-</script>
-
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="continue_with" data-show-faces="true"
-    data-auto-logout-link="false" data-use-continue-as="true"> Login With Facebook</div> --}}
+</div>
