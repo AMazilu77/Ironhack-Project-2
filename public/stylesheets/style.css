@@ -457,4 +457,27 @@ table#t01 th {
   top: 220px;
   left: 550px; }
 
+#geniepick4advice {
+  position: relative;
+  display: flex;
+  bottom: 650px;
+  left: 600px;
+  background-color: lightgoldenrodyellow;
+  border: 2px;
+  border-style: solid;
+  width: 50%;
+  height: auto;
+  padding: 10px; }
+
+#pick4gen {
+  position: relative;
+  left: 570px;
+  top: 175px; }
+
+#oddsPick4 {
+  background-color: lightblue;
+  border: 2px;
+  border-style: solid;
+  padding: 15px; }
+
 /*# sourceMappingURL=style.css.map */
