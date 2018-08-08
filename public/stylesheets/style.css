@@ -475,9 +475,30 @@ table#t01 th {
   top: 175px; }
 
 #oddsPick4 {
-  background-color: lightblue;
+  background-color: lightgreen;
   border: 2px;
   border-style: solid;
+  padding: 15px; }
+
+#oddsPick3 {
+  position: relative;
+  background-color: lightseagreen;
+  border: 2px;
+  border-style: solid;
+  width: 55%;
+  left: -25px;
+  bottom: 100px;
+  padding: 10px;
+  right: 55px; }
+
+#geniepick3advice {
+  position: relative;
+  left: 750px;
+  bottom: 315px;
+  background-color: lightcoral;
+  border: 2px;
+  border-style: solid;
+  width: 30%;
   padding: 15px; }
 
 /*# sourceMappingURL=style.css.map */

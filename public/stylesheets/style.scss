@@ -541,3 +541,28 @@ table#t01 th {
   border-style: solid;
   padding: 15px;
 }
+
+#oddsPick3 {
+  // display: flex;
+  position: relative;
+  background-color: lightseagreen;
+  border: 2px;
+  border-style: solid;
+  width: 55%;
+  left: -25px;
+  bottom: 100px;
+  padding: 10px;
+  right: 55px;
+}
+
+#geniepick3advice {
+  // display: flex;
+  position: relative;
+  left: 750px;
+  bottom: 315px;
+  background-color: lightcoral;
+  border: 2px;
+  border-style: solid;
+  width: 30%;
+  padding: 15px;
+}

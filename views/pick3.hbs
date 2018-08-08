@@ -3,6 +3,32 @@
 <br>
 <button onclick="randomGenMaster333()"> I wish you would give me a number! </button>
 <button onclick="saveNumber33()">Save number</button>
+<h3>Rules </h3>
+<p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a Front Pair play, select numbers
+    from the first two columns only; and, for a Back Pair play, select numbers from the last two columns only.
+
+</p>
+<p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
+<p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays cost $1.50 to
+    $6.00).
+</p>
+<p>
+    <b>Players who match all three of the winning numbers drawn in the official PICK 3™ drawing for the date played can win
+        up to $500, depending on the play type purchased and the amount played. Front Pair or Back Pair players who match
+        two numbers in exact order can win up to $50.
+    </b>
+</p>
+
+<h3>How to win</h3>
+<p>3-WAY: Select a 3-digit number with two like digits and get 3 ways to win (Example: Play numbers '112' winning combination
+    '112','121','211'.
+</p>
+<p>6-WAY: Select a 3-digit number with all different digits and get 6 ways to win. (Example: play numbers '123'; winning combinations,
+    '123','132','213','231','312','321'
+</p>
+
+<p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
+</div>
 
 <div id="gen2">
     <span id="numberArea3"> Here is your number:
@@ -27,55 +53,30 @@
         <img id="pick2genie3" src='/images/geniworkinge2.jpg'>
         <div class="text3">
 
-            <h3>Rules </h3>
-            <p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a Front Pair play,
-                select numbers from the first two columns only; and, for a Back Pair play, select numbers from the last two
-                columns only.
 
-            </p>
-            <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
-            <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays
-                cost $1.50 to $6.00).</p>
-            <p>
-                <b>Players who match all three of the winning numbers drawn in the official PICK 3™ drawing for the date played
-                    can win up to $500, depending on the play type purchased and the amount played. Front Pair or Back Pair
-                    players who match two numbers in exact order can win up to $50.
-                </b>
-            </p>
+            <div id="oddsPick3">
+                <h2>Odds and prizes</h2>
+                <h3>
+                    <b>Pick 3</b>
+                </h3>
+                <p> - You have a 1:1000 odds of winning 500$ with a strait matching exact numbers numbers in order on a $1.00
+                    play or, $250 jackpot with a strait on $0.50 play. </p>
 
-            <h3>How to win</h3>
-            <p>3-WAY: Select a 3-digit number with two like digits and get 3 ways to win (Example: Play numbers '112' winning
-                combination '112','121','211'.
-            </p>
-            <p>6-WAY: Select a 3-digit number with all different digits and get 6 ways to win. (Example: play numbers '123';
-                winning combinations, '123','132','213','231','312','321'</p>
+                <p> - 1:333 odds of $160 jackpot hitting a 3-way on a $1.00 play, or $80.00 for a $0.50 play Matching in ANY
+                    order. 1:666 odds of a number on either and/or both numbers for a $3.00 payout.
+                </p>
 
-            <p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
-        </div>
+            </div>
 
-        <div id="oddsPick2">
-            <h2>Odds and prizes</h2>
-            <h3>
-                <b>Pick 3</b>
-            </h3>
-            <p> You have a 1:1000 odds of winning 500$ with a strait matching exact numbers numbers in order on a $1.00 play
-                or, $250 jackpot with a strait on $0.50 play. </p>
-
-            <p> 1:333 odds of $160 jackpot hitting a 3-way on a $1.00 play, or $80.00 for a $0.50 play Matching in ANY order.
-                1:666 odds of a number on either and/or both numbers for a $3.00 payout.
-            </p>
-
-        </div>
-
-        <div id="geniepick2advice">
-            <h2>Genie Advice</h2>
-            <h3>
-                <b>Play 1-Off</b>
-            </h3>
-            <p> Play 1-OFF®! You can miss by one and still win a cash prize. That's 26 more chances to win! All possible combinations
-                in which each of the three (3) digits either matches or is one (1) number higher or lower than each of the
-                player's three (3) digits in exact order. 26 ways to win.
-            </p>
+            <div id="geniepick3advice">
+                <h2>Genie Advice</h2>
+                <h3>
+                    <b>Play 1-Off</b>
+                </h3>
+                <p> Play 1-OFF®! You can miss by one and still win a cash prize. That's 26 more chances to win! All possible
+                    combinations in which each of the three (3) digits either matches or is one (1) number higher or lower
+                    than each of the player's three (3) digits in exact order. 26 ways to win.
+                </p>
 
 
 
@@ -87,47 +88,52 @@
 
 
     </div>
-</div>
+    </div>
 
 
-<script>
+    <script>
 
 
-    const randomGenMaster333 = function () {
-        numbersPlayed3 = [];
+        const randomGenMaster333 = function () {
 
 
-        let print1 = document.getElementById('innerPick3-1');
-        let print2 = document.getElementById('innerPick3-2');
-        let print3 = document.getElementById('innerPick3-3');
-        let x = [];
-        let num1 = Math.floor(Math.random() * 10);
-        let num2 = Math.floor(Math.random() * 10);
-        let num3 = Math.floor(Math.random() * 10);
 
-        print1.innerHTML = num1;
-        print2.innerHTML = num2;
-        print3.innerHTML = num3;
+            let print1 = document.getElementById('innerPick3-1');
+            let print2 = document.getElementById('innerPick3-2');
+            let print3 = document.getElementById('innerPick3-3');
+            let numbersPlayed3 = [];
+            let num1 = Math.floor(Math.random() * 10);
+            let num2 = Math.floor(Math.random() * 10);
+            let num3 = Math.floor(Math.random() * 10);
 
-        p3 = num1
-        p3two = num2;
-        p3three = num3;
-        console.log(num1, num2, num3)
+            print1.innerHTML = num1;
+            print2.innerHTML = num2;
+            print3.innerHTML = num3;
 
-
-    }
-
-    const saveNumber33 = function () {
-        numbersPlayed3.push(p3, p3two, p3three);
-        document.getElementById('theone').innerHTML = numbersPlayed3
-    }
+            p3 = num1
+            p3two = num2;
+            p3three = num3;
+            console.log(num1, num2, num3)
 
 
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+        }
+
+        const saveNumber33 = function () {
+            numbersPlayed3.push(p3, p3two, p3three);
+            console.log(numbersPlayed3);
+            document.getElementById("numberArea3").innerHTML = "..." + numbersPlayed3 + "..."
+            if (numbersPlayed3.length > 2) {
+                return "..." + numbersPlayed3 + "..." + "...";;
+
+            }
+        }
 
 
-</body>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
 
-</html>
+
+    </body>
+
+    </html>
