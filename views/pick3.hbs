@@ -1,33 +1,34 @@
 <button onclick="location.href='/dashBoard';"> Take me back </button>
 <br>
 <br>
-<button onclick="randomGenMaster333()"> I wish you would give me a number! </button>
-<button onclick="saveNumber33()">Save number</button>
-<h3>Rules </h3>
-<p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a Front Pair play, select numbers
-    from the first two columns only; and, for a Back Pair play, select numbers from the last two columns only.
+<div class="gen22">
+    <button onclick="randomGenMaster333()"> I wish you would give me a number! </button>
+    <button onclick="saveNumber33()">Save number</button>
+    <h3>Rules </h3>
+    <p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a Front Pair play, select numbers
+        from the first two columns only; and, for a Back Pair play, select numbers from the last two columns only.
 
-</p>
-<p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
-<p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays cost $1.50 to
-    $6.00).
-</p>
-<p>
-    <b>Players who match all three of the winning numbers drawn in the official PICK 3™ drawing for the date played can win
-        up to $500, depending on the play type purchased and the amount played. Front Pair or Back Pair players who match
-        two numbers in exact order can win up to $50.
-    </b>
-</p>
+    </p>
+    <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
+    <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays cost $1.50
+        to $6.00).
+    </p>
+    <p>
+        <b>Players who match all three of the winning numbers drawn in the official PICK 3™ drawing for the date played can
+            win up to $500, depending on the play type purchased and the amount played. Front Pair or Back Pair players who
+            match two numbers in exact order can win up to $50.
+        </b>
+    </p>
 
-<h3>How to win</h3>
-<p>3-WAY: Select a 3-digit number with two like digits and get 3 ways to win (Example: Play numbers '112' winning combination
-    '112','121','211'.
-</p>
-<p>6-WAY: Select a 3-digit number with all different digits and get 6 ways to win. (Example: play numbers '123'; winning combinations,
-    '123','132','213','231','312','321'
-</p>
+    <h3>How to win</h3>
+    <p>3-WAY: Select a 3-digit number with two like digits and get 3 ways to win (Example: Play numbers '112' winning combination
+        '112','121','211'.
+    </p>
+    <p>6-WAY: Select a 3-digit number with all different digits and get 6 ways to win. (Example: play numbers '123'; winning
+        combinations, '123','132','213','231','312','321'
+    </p>
 
-<p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
+    <p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
 </div>
 
 <div id="gen2">
@@ -47,6 +48,7 @@
                     <div class='innerPick3' id='innerPick3-3'> 3</div>
                 </div>
             </div>
+            <div id="numberAreaList"> </div>
 
         </div>
 
@@ -89,51 +91,53 @@
 
     </div>
     </div>
+</div>
 
 
-    <script>
+<script>
+    let numbersPlayed3 = [];
+    let newList = [];
+    const randomGenMaster333 = function () {
 
 
-        const randomGenMaster333 = function () {
+
+        let print1 = document.getElementById('innerPick3-1');
+        let print2 = document.getElementById('innerPick3-2');
+        let print3 = document.getElementById('innerPick3-3');
+
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
+        let num3 = Math.floor(Math.random() * 10);
+
+        print1.innerHTML = num1;
+        print2.innerHTML = num2;
+        print3.innerHTML = num3;
+
+        p3 = num1
+        p3two = num2;
+        p3three = num3;
+        console.log(num1, num2, num3)
 
 
+    }
 
-            let print1 = document.getElementById('innerPick3-1');
-            let print2 = document.getElementById('innerPick3-2');
-            let print3 = document.getElementById('innerPick3-3');
-            let numbersPlayed3 = [];
-            let num1 = Math.floor(Math.random() * 10);
-            let num2 = Math.floor(Math.random() * 10);
-            let num3 = Math.floor(Math.random() * 10);
+    const saveNumber33 = function () {
+        numbersPlayed3.push(p3, p3two, p3three);
+        console.log(numbersPlayed3);
+        document.getElementById("numberAreaList").innerHTML = "[" + numbersPlayed3 + "]";
+        if (numbersPlayed3.length > 2) {
 
-            print1.innerHTML = num1;
-            print2.innerHTML = num2;
-            print3.innerHTML = num3;
-
-            p3 = num1
-            p3two = num2;
-            p3three = num3;
-            console.log(num1, num2, num3)
-
+            return numbersPlayed3.push(newList)
 
         }
-
-        const saveNumber33 = function () {
-            numbersPlayed3.push(p3, p3two, p3three);
-            console.log(numbersPlayed3);
-            document.getElementById("numberArea3").innerHTML = "..." + numbersPlayed3 + "..."
-            if (numbersPlayed3.length > 2) {
-                return "..." + numbersPlayed3 + "..." + "...";;
-
-            }
-        }
+    }
 
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
 
-    </body>
+</body>
 
-    </html>
+</html>

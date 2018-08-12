@@ -363,6 +363,7 @@ table#t01 th {
   position: relative;
   border: 2px;
   border-style: solid;
+  padding: 10px;
 }
 
 #geniepick2advice {
@@ -559,10 +560,38 @@ table#t01 th {
   // display: flex;
   position: relative;
   left: 750px;
-  bottom: 315px;
+  bottom: 31px;
   background-color: lightcoral;
   border: 2px;
   border-style: solid;
   width: 30%;
   padding: 15px;
+}
+
+.gen22 {
+  border: 2px;
+  border-style: solid;
+  padding: 10px;
+}
+
+#Saved-Numbers-Area {
+  border: 2px;
+  border-style: solid;
+  width: 95%;
+  height: 450px;
+  position: relative;
+  bottom: 450px;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+}
+
+#Played-Numbers-Box {
+  border: 2px;
+  border-style: solid;
+  width: 95%;
+  height: 450x;
+  position: relative;
+  bottom: parent;
+  background-color: lightgreen;
+  padding: 10px;
 }

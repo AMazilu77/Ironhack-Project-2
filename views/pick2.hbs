@@ -20,7 +20,7 @@
 
         <script src='/javascripts/script.js'></script>
         <div>
-            <h2>Number Generator</h2>
+            <h2>Pick-2 Number Generator</h2>
 
         </div>
         <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
@@ -82,7 +82,12 @@
             </div>
         </div>
 
-
+        <div id="Saved-Numbers-Area">
+            <center> Saved Numbers </center>
+            <div id="Played-Numbers-Box">
+                <h2> Saved Numbers </h2>
+            </div>
+        </div>
 
 
     </div>
@@ -115,7 +120,7 @@
         const saveNumber22 = function () {
             numbersPlayed.push(y2, x2);
             console.log(numbersPlayed);
-            document.getElementById("numbersPlayedAreaPick2").innerHTML = "..." + numbersPlayed + "..."
+            document.getElementById("Played-Numbers-Box").innerHTML = "[" + numbersPlayed + " ]"
             if (numbersPlayed.length > 2) {
                 return "..." + numbersPlayed + "..." + "...";;
 
