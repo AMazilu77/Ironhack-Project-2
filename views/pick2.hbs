@@ -95,6 +95,7 @@
 
     <script>
         numbersPlayed = [];
+        newlistpick2 = [];
 
         const randomGenMaster22 = function () {
             let print1 = document.getElementById('firstnumber2');
@@ -120,9 +121,9 @@
         const saveNumber22 = function () {
             numbersPlayed.push(y2, x2);
             console.log(numbersPlayed);
-            document.getElementById("Played-Numbers-Box").innerHTML = "[" + numbersPlayed + " ]"
+            document.getElementById("Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
             if (numbersPlayed.length > 2) {
-                return "..." + numbersPlayed + "..." + "...";;
+                return "-", numbersPlayed.push(newlistpick2);
 
             }
         }
