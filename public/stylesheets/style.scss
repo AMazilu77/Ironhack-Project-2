@@ -468,7 +468,7 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   border-color: black;
-  background-color: blue;
+  background-color: rgb(95, 95, 255);
   width: 120px;
   height: 160px;
   margin: auto;
@@ -546,12 +546,12 @@ table#t01 th {
 #oddsPick3 {
   // display: flex;
   position: relative;
-  background-color: lightseagreen;
+  background-color: rgb(221, 255, 236);
   border: 2px;
   border-style: solid;
   width: 55%;
   left: -25px;
-  bottom: 100px;
+  bottom: 00px;
   padding: 10px;
   right: 55px;
 }
@@ -560,8 +560,8 @@ table#t01 th {
   // display: flex;
   position: relative;
   left: 750px;
-  bottom: 31px;
-  background-color: lightcoral;
+  bottom: 231px;
+  background-color: rgb(92, 241, 112);
   border: 2px;
   border-style: solid;
   width: 30%;
@@ -571,6 +571,8 @@ table#t01 th {
 .gen22 {
   border: 2px;
   border-style: solid;
+  padding: 10px;
+  background-color: rgb(209, 193, 255);
   padding: 10px;
 }
 
@@ -594,4 +596,14 @@ table#t01 th {
   bottom: parent;
   background-color: lightgreen;
   padding: 10px;
+}
+
+#pick3SavedNumberBox {
+  position: relative;
+  display: flex;
+  width: 66%;
+  height: 40%;
+  background-color: lightcyan;
+  border: 2px;
+  border-style: solid;
 }
