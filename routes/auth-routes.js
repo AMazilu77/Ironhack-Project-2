@@ -108,7 +108,7 @@ authRoutes.get("/auth/google", passport.authenticate("google", {
     ]
 }));
 
-authRoutes.get("auth/google/callback", passport.authenticate("google", {
+authRoutes.get("/auth/google/callback", passport.authenticate("google", {
     failureRedirect: "/",
     successRedirect: "/private-page"
 }));
