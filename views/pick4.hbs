@@ -11,115 +11,116 @@
 <button onclick="location.href='/dashBoard';"> Back </button>
 
 <body>
-    <div class="text4">
-        <br>
-        <br>
-        <h3>Pick 4 Rules </h3>
-        <p>1.Select one number (from 0 through 9) from each column for a total of four digits. For a Front Pair play, select
-            numbers from the first two columns only; for a Mid Pair play, select numbers from the middle two columns only;
-            and, for a Back Pair play, select numbers from the last two columns only.
+    <div id="pick4border">
+        <div class="text4">
+            <br>
+            <br>
+            <h3>Pick 4 Rules </h3>
+            <p>1.Select one number (from 0 through 9) from each column for a total of four digits. For a Front Pair play, select
+                numbers from the first two columns only; for a Mid Pair play, select numbers from the middle two columns
+                only; and, for a Back Pair play, select numbers from the last two columns only.
 
-        </p>
-        <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
-        <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays cost
-            $2 to $24).</p>
-        <p> 4. Select the draw time. Select MID for the midday drawing (1:30 p.m. ET), EVE for the evening drawing (7:57 p.m.
-            ET) draw, or BOTH for both the midday and evening drawings. If no draw time is marked, the terminal will automatically
-            print a ticket for the next available draw. If BOTH is selected, two separate tickets will print – one for the
-            midday drawing and one for the evening drawing.
-            <b>Players who match all four of the winning numbers drawn in the official PICK 4™ drawing for the date played can
-                win up to $5,000, depending on the play type purchased and the amount played. Front Pair, Mid Pair and Back
-                Pair players who match two numbers in exact order can win up to $50.
-            </b>
-        </p>
+            </p>
+            <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Combo, Front Pair, or Back Pair. </p>
+            <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1; Combo plays
+                cost $2 to $24).</p>
+            <p> 4. Select the draw time. Select MID for the midday drawing (1:30 p.m. ET), EVE for the evening drawing (7:57
+                p.m. ET) draw, or BOTH for both the midday and evening drawings. If no draw time is marked, the terminal
+                will automatically print a ticket for the next available draw. If BOTH is selected, two separate tickets
+                will print – one for the midday drawing and one for the evening drawing.
+                <b>Players who match all four of the winning numbers drawn in the official PICK 4™ drawing for the date played
+                    can win up to $5,000, depending on the play type purchased and the amount played. Front Pair, Mid Pair
+                    and Back Pair players who match two numbers in exact order can win up to $50.
+                </b>
+            </p>
 
-        <h3>How to win</h3>
-
-
-        <p>4-WAY: Select a 4-digit number with three like digits and get 4 ways to win (Example: Play numbers '1112' winning
-            combination '1112', '1121', '1211', '2111'
-        </p>
-        <p>6-WAY: Select a 4-digit number with two pairs and get 6 ways to win. (Example: play numbers '1122'; winning combinations,
-            '1122', '1212', '1221', '2112', '2121', '2211'</p>
-
-        <p> Strait: Match in exact order (Example: Play numbers '1234'; winning combination '1234'</p>
-    </div>
-    <img id='pick4gen' src="/images/geniworkinge2.jpg"> Pick 4!</img>
-
-    <div id="gen44">
+            <h3>How to win</h3>
 
 
+            <p>4-WAY: Select a 4-digit number with three like digits and get 4 ways to win (Example: Play numbers '1112' winning
+                combination '1112', '1121', '1211', '2111'
+            </p>
+            <p>6-WAY: Select a 4-digit number with two pairs and get 6 ways to win. (Example: play numbers '1122'; winning combinations,
+                '1122', '1212', '1221', '2112', '2121', '2211'</p>
 
-        <script src='/javascripts/script.js'></script>
-        <div> Number Generator</div>
-        <button id="pick-4-master" onclick="randomGenMaster44()"> Give me a number! </button>
-        <button onclick="saveNumber44()"> save this number</button>
+            <p> Strait: Match in exact order (Example: Play numbers '1234'; winning combination '1234'</p>
+        </div>
+        <img id='pick4gen' src="/images/geniworkinge2.jpg"> Pick 4!</img>
+
+        <div id="gen44">
 
 
 
+            <script src='/javascripts/script.js'></script>
+            <div> Number Generator</div>
+            <button id="pick-4-master" onclick="randomGenMaster44()"> Give me a number! </button>
+            <button onclick="saveNumber44()"> save this number</button>
 
-        <div class="pick4box">
-            <h2> Your number is: </h2>
 
-            <div>
-                <div class='pick4' id='pick4-1'>
-                    <div class='innerPick4' id='innerPick4-1'> 1</div>
+
+
+            <div class="pick4box">
+                <h2> Your number is: </h2>
+
+                <div>
+                    <div class='pick4' id='pick4-1'>
+                        <div class='innerPick4' id='innerPick4-1'> 1</div>
+                    </div>
+
+
+                    <div class='pick4' id='pick4-2'>
+                        <div class='innerPick4' id='innerPick4-2'>2 </div>
+                    </div>
+
+
+                    <div class='pick4' id='pick3-4'>
+                        <div class='innerPick4  ' id='innerPick4-3'> 3</div>
+                    </div>
+
+                    <div class='pick4' id='pick4-4'>
+                        <div class='innerPick4' id='innerPick4-4'> 4</div>
+                    </div>
+
+
                 </div>
-
-
-                <div class='pick4' id='pick4-2'>
-                    <div class='innerPick4' id='innerPick4-2'>2 </div>
-                </div>
-
-
-                <div class='pick4' id='pick3-4'>
-                    <div class='innerPick4  ' id='innerPick4-3'> 3</div>
-                </div>
-
-                <div class='pick4' id='pick4-4'>
-                    <div class='innerPick4' id='innerPick4-4'> 4</div>
-                </div>
-
 
             </div>
+
+
 
         </div>
 
 
 
-    </div>
+        <div id="oddsPick4">
+            <h2>Odds and prizes</h2>
+            <h3>
+                <b>Pick 4</b>
+            </h3>
+            <p> - You have a 1:10,000 odds of winning 5000$ with a strait matching exact numbers numbers in order on a $1.00
+                play or, $2500 jackpot with a strait on $0.50 play. </p>
+
+            <p> - 1:10,000 & 1:2,500 odds of winning $3099 hitting a 4-way on a $1.00 play, or $599 for a $0.50 play Matching
+                4-way in ANY order. plus more ways to win
+            </p>
+
+        </div>
+
+        <div id="geniepick4advice">
+            <h2>Genie Advice</h2>
+            <br>
+            <h3>
+                {{!--
+                <b>Play 1-Off</b> --}}
+            </h3>
+            <br>
+            <p> Play 1-OFF®! Ever feel like you're close, but you've somehow missed the mark? Well, the Florida Lottery has a
+                brand new way to play PICK 4™ where it pays to be close. With 1-OFF® you can miss by one and still win a
+                cash prize. That's 80 more chances to win!
+            </p>
 
 
-
-    <div id="oddsPick4">
-        <h2>Odds and prizes</h2>
-        <h3>
-            <b>Pick 4</b>
-        </h3>
-        <p> - You have a 1:10,000 odds of winning 5000$ with a strait matching exact numbers numbers in order on a $1.00 play
-            or, $2500 jackpot with a strait on $0.50 play. </p>
-
-        <p> - 1:10,000 & 1:2,500 odds of winning $3099 hitting a 4-way on a $1.00 play, or $599 for a $0.50 play Matching 4-way
-            in ANY order. plus more ways to win
-        </p>
-
-    </div>
-
-    <div id="geniepick4advice">
-        <h2>Genie Advice</h2>
-        <br>
-        <h3>
-            {{!--
-            <b>Play 1-Off</b> --}}
-        </h3>
-        <br>
-        <p> Play 1-OFF®! Ever feel like you're close, but you've somehow missed the mark? Well, the Florida Lottery has a brand
-            new way to play PICK 4™ where it pays to be close. With 1-OFF® you can miss by one and still win a cash prize.
-            That's 80 more chances to win!
-        </p>
-
-
-
+        </div>
 
 
 
