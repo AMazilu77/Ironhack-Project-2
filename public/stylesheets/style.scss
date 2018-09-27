@@ -620,3 +620,44 @@ table#t01 th {
   border: 2px;
   border-style: solid;
 }
+
+#FL-Lotto-Total-Container {
+  border: 1px;
+  border-style: solid;
+  border-color: #000000;
+  padding: 5px;
+  
+  background-color: lightgreen;
+
+}
+
+.FL-Lotto-box {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  
+  background-color: lightsalmon;
+  width: 50%;
+}
+
+#FL-Lotto-Number-Gen-Container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: lightgrey;
+  justify-content: space-evenly;
+  padding: 5px;
+  width: 66%;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+
+}
+
+.FL-Lotto-Number-Card {
+  padding: 5px;
+  background-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+}
