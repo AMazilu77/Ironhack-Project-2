@@ -550,28 +550,33 @@ table#t01 th {
   border: 2px;
   border-style: solid; }
 
+#howToPlay {
+  background-color: #faffaf;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px; }
+
 #FL-Lotto-Total-Container {
   border: 1px;
   border-style: solid;
   border-color: #000000;
   padding: 5px;
-  background-color: lightgreen; }
-
-.FL-Lotto-box {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  background-color: lightsalmon;
-  width: 50%; }
+  height: 900px;
+  background-color: #dfd3ff;
+  border: 1px;
+  border-style: solid;
+  border-color: black; }
 
 #FL-Lotto-Number-Gen-Container {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
-  background-color: lightgrey;
+  background-color: #f8ae7c;
   justify-content: space-evenly;
   padding: 5px;
-  width: 66%;
+  width: 50%;
+  height: 200px;
   border: 1px;
   border-style: solid;
   border-color: black; }
@@ -581,6 +586,26 @@ table#t01 th {
   background-color: white;
   border: 2px;
   border-style: solid;
-  border-color: black; }
+  border-color: black;
+  width: 10%;
+  height: 20%; }
+
+#FL-Lotto-Extra {
+  background-color: #fffbcc;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin-top: 1%;
+  width: 30%; }
+
+#FL-Lotto-Odds {
+  padding: 1%;
+  background-color: #fffbcc;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 30%;
+  margin-top: 1%; }
 
 /*# sourceMappingURL=style.css.map */

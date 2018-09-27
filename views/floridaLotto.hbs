@@ -1,108 +1,82 @@
 <button onclick="location.href='/dashBoard';"> Take me back </button>
+{{!-- Total game area container --}}
 
 <div class="ui segment" id="FL-Lotto-Total-Container">
-    <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button>
-    <div class="ui segment" id="FL-Lotto-numGen">
+    <div class="ui segment" id="howToPlay">
+        <p>
+            <h3>How to play</h3>
+            <ol>
+                <li>- Select six numbers from 1 through 53</li>
+                <li>- For a chance to win cash instantly, select the EZmatch box in a panel for a $1 more per play.</li>
+                <li>- To multiply your winnings on non-jackpot cash prizes, select the XTRA box. XTRA costs $1 more</li>
+            </ol>
+        </p>
+    </div>
 
 
-        <div class="ui segment">
+    <div class="ui segment huge" id="button-container">
+        <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button>
+        <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
 
 
-            <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-1"> 0 </h1>
-                </div>
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-2"> 0 </h1>
-                </div>
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-1"> 0 </h1>
 
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-3"> 0 </h1>
-                </div>
 
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-4"> 0 </h1>
-                </div>
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-2"> 0 </h1>
 
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-5"> 0 </h1>
-                </div>
 
-                <div class='FL-Lotto-box'>
-                    <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-6"> 0 </h1>
-                </div>
-            </div>
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-3"> 0 </h1>
+
+
+
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-4"> 0 </h1>
+
+
+
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-5"> 0 </h1>
+
+
+
+            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-6"> 0 </h1>
+
+
         </div>
-
-
-        <div class="ui segment">
-            <p>
-                <h3>For just $1, you could win Florida's original jackpot game FLORIDA LOTTO®! </h3>
-
-                Select six numbers from 1 through 53
-                For a chance to win cash instantly, select the EZmatch box in a panel for a $1 more per play.
-                FLORIDA LOTTO
-                tickets with EZmatch cannot be canceled.
-                To multiply your winnings on non-jackpot cash prizes, select the XTRA box. XTRA costs $1 more
-                per
-                play.
-                FLORIDA
-                LOTTO with XTRA tickets will display "XTRA YES". Please Note: The XTRA box applies to all
-                panels,
-                Advance
-                Plays
-                and Quick Picks played on the playslip.
-                play or select the number of draws in the Advance Play section of your playslip.
-                Mark the JACKPOT COMBO box for a $2 POWERBALL®, a $2 FLORIDA LOTTO® with XTRA and a $2 MEGA
-                MILLIONS® Quick
-                Pick ticket for the next available draw date.
-                Give your completed playslip and payment to the retailer. You will receive a ticket printed
-                with
-                your
-                numbers,
-                draw date(s) and the total cost of the ticket. For each panel with EZmatch selected, you will
-                receive a
-                separate ticket with your FLORIDA LOTTO and EZmatch numbers. Please check your ticket(s) before
-                you
-                leave
-                the
-                store. You are responsible for the accuracy of your ticket(s).
-                Check the official drawing results to see if you're a winner! Draw results are available on
-                this
-                website,
-                at
-                authorized Florida Lottery retailers and by calling (850) 921-PLAY (7529). You may also watch
-                the
-                drawings
-                online.
-                Drawings are held Wednesday and Saturday nights at 11:15 p.m., Eastern Time. Tickets can be
-                purchased until
-                10:40 p.m., Eastern Time, on the night of the draw. Tickets purchased after 10:40 p.m. will be
-                for
-                the next
-                draw.
-
-                If you claim a prize on a winning Advance Play ticket before all of the draws on the ticket
-                have
-                occurred,
-                you
-                will be issued a continuation ticket for the remaining draws with the same play numbers as the
-                original
-                ticket.
-            </p>
-        </div>
-
 
     </div>
+    <div class="ui segment" id="FL-Lotto-Odds">
+        <h3> Odds</h3>
+        <ol>
+            <li>Match all 6 - <b>1:22,957,480</b> Jackpot</li>
+            <li>Match 5 - <b>1:81,409.50</b> (est Prize: $5000) </li>
+            <li>Match 4 - <b>1:1,415.82</b> (est prize: $70)</li>
+            <li>Match 3 - <b>1:70.79</b> (est prize: $5)</li>
+        </ol>
+    </div>
+
+
+    <div class="ui segment" id="FL-Lotto-Extra">
+        <h3> Genie Advice</h3>
+        Play XTRA. EXTRA is a special feature that allows players to multiply their non-jackpot cash prizes by two,
+        three, four or
+        five
+        times the original prize amount! A player must choose the XTRA option on his/her FLORIDA LOTTO playslip or tell
+        the
+        retailer that he/she wishes to purchase a FLORIDA LOTTO with XTRA ticket. FLORIDA LOTTO with XTRA tickets cost
+        an
+        additional $1 per play.
+
+        FLORIDA LOTTO with XTRA players who match three of six winning numbers will win a minimum of $25, the 3-of-6
+        prize
+        multiplied by five, regardless of the multiplier selected for that drawing.
+    </div>
+
+
+
 </div>
 
+
+
 <script>
-
-
-
-
-
-
     const randomGenFloridaLottery = function () {
         let print1 = document.getElementById('FL-Lotto-1');
         let print2 = document.getElementById('FL-Lotto-2');
