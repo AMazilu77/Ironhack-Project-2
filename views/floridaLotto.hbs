@@ -13,36 +13,47 @@
         </p>
     </div>
 
+    <div class="ui segment" id="FL-Master-Container">
 
-    <div class="ui segment huge" id="button-container">
-        <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button>
-        <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
-
-
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-1"> 0 </h1>
-
-
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-2"> 0 </h1>
+        <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button><button onclick="saveFloridaLottoNumber()">
+            I will play this number, save it</button>
+        <center>
+            <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
 
 
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-3"> 0 </h1>
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-1"> 0 </h1>
 
 
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-2"> 0 </h1>
 
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-4"> 0 </h1>
+
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-3"> 0 </h1>
 
 
 
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-5"> 0 </h1>
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-4"> 0 </h1>
 
 
 
-            <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-6"> 0 </h1>
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-5"> 0 </h1>
 
 
-        </div>
 
+                <h1 class="FL-Lotto-Number-Card" id="FL-Lotto-6"> 0 </h1>
+
+
+
+            </div>
+            <div class="ui segement" id="FL-Lotto-Saved-Numbers">
+                <h3> Saved Numbers</h3>
+                <p id="savedFLNumbers"> </p>
+            </div>
+        </center>
     </div>
+
+
+
+
     <div class="ui segment" id="FL-Lotto-Odds">
         <h3> Odds</h3>
         <ol>
@@ -77,6 +88,11 @@
 
 
 <script>
+
+    const floridaLotterySaved = [];
+    let newSavedList = [];
+
+
     const randomGenFloridaLottery = function () {
         let print1 = document.getElementById('FL-Lotto-1');
         let print2 = document.getElementById('FL-Lotto-2');
@@ -108,9 +124,19 @@
         document.getElementById('FL-Lotto-5').innerHTML = num5;
         document.getElementById('FL-Lotto-6').innerHTML = num6;
 
+
+
     };
+
 
 
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+
+{{!-- const saveFloridaLottoNumber = function () {
+floridaLotterySaved.push(FLNumbers);
+console.log(floridaLotterySaved);
+document.getElementById("savedFLNumbers").innerHTML = " - " + savedFLNumbers + " - "
+}
+--}}
