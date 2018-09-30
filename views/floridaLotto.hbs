@@ -1,3 +1,4 @@
+<script> firstposition;</script>
 <button onclick="location.href='/dashBoard';"> Take me back </button>
 {{!-- Total game area container --}}
 
@@ -15,7 +16,7 @@
 
     <div class="ui segment" id="FL-Master-Container">
 
-        <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button><button onclick="saveFloridaLottoNumber()">
+        <button onclick="randomGenFloridaLottery()"> Give me a number genie!</button><button onclick="saveNumberFL()">
             I will play this number, save it</button>
         <center>
             <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
@@ -46,7 +47,10 @@
             </div>
             <div class="ui segement" id="FL-Lotto-Saved-Numbers">
                 <h3> Saved Numbers</h3>
-                <p id="savedFLNumbers"> </p>
+                <p id="savedFLNumbers"> Saved Numbers</p>
+                <p id="savedFLNumbers2"> </p>
+                <p id="savedFLNumbers3"> </p>
+                <p id="savedFLNumbers4"> </p>
             </div>
         </center>
     </div>
@@ -89,7 +93,7 @@
 
 <script>
 
-    const floridaLotterySaved = [];
+    let floridaLotterySaved = [];
     let newSavedList = [];
 
 
@@ -113,11 +117,21 @@
         print4.innerHTML = num4;
         print5.innerHTML = num5;
         print6.innerHTML = num6;
+
+        set1 = num1;
+        set2 = num2;
+        set3 = num3;
+        set4 = num4;
+        set5 = num5;
+        set6 = num6;
+
+
         console.log(num1, num2, num3, num4, num5, num6);
 
 
 
         document.getElementById('FL-Lotto-1').innerHTML = num1;
+
         document.getElementById('FL-Lotto-2').innerHTML = num2;
         document.getElementById('FL-Lotto-3').innerHTML = num3;
         document.getElementById('FL-Lotto-4').innerHTML = num4;
@@ -126,17 +140,21 @@
 
 
 
-    };
+    }
+    const saveNumberFL = function () {
+        newSavedList.push(set1, set2, set3, set4, set5, set6);
+        console.log(set1, set2, set3, set4, set5, set6);
+        document.getElementById("savedFLNumbers").innerHTML = "[" + newSavedList + "]";
+        if (newSavedList.length > 7) {
 
+
+            document.getElementById("savedFLNumbers3").innerHTML = "[" + newSavedList[6] + "]";;
+        };
+    }
 
 
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
-
-{{!-- const saveFloridaLottoNumber = function () {
-floridaLotterySaved.push(FLNumbers);
-console.log(floridaLotterySaved);
-document.getElementById("savedFLNumbers").innerHTML = " - " + savedFLNumbers + " - "
-}
---}}
+{{!-- "[" + set1 + " - " + set2 + " - " + set3 + " - " + set4 + " - " + set5 + " - " + set6 + "]"; --}}
+{{!-- return floridaLotterySaved.push(set1, set2, set3, set4, set5, set6) --}}
