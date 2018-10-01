@@ -252,66 +252,41 @@ table#t01 th {
 #number22 {
   font-size: 60px;
 }
+// pick 5 random generator page
 
-.innerbox115 {
-  position: relative;
+.pick5 {
+  display: flex;  
   background-color: white;
-  top: 60px;
-  left: 30px;
-  height: 130px;
-  width: 90px;
+ 
+  height: 75%;
+  width: 16%;
   border: 2px;
   border: 1px;
   border-style: solid;
 }
 
-.innerbox225 {
-  position: relative;
-  background-color: white;
-  top: -70px;
-  left: 150px;
-  height: 130px;
-  width: 90px;
-  bottom: 230px;
-  border: 1px;
+.Pick-5-Odds {
+  background-color: rgb(161, 243, 195);
+  border: 2px;
   border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin-top: 1%;
+ 
+  width: 30%;
 }
 
-.innerbox335 {
-  position: relative;
-  background-color: white;
-  top: -200px;
-  left: 265px;
-  height: 130px;
-  width: 90px;
-  bottom: 360px;
-  border: 1px;
+#pick-5-total-container {
+  background-color: rgb(239, 228, 248);
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border: 2px;
   border-style: solid;
+  border-color: black;
 }
 
-.innerbox445 {
-  position: relative;
-  background-color: white;
-  top: -330px;
-  left: 385px;
-  height: 130px;
-  width: 90px;
-  bottom: 300px;
-  border: 1px;
-  border-style: solid;
-}
 
-.innerbox555 {
-  position: relative;
-  bottom: 500px;
-  left: 500px;
-  background-color: white;
-  top: -460px;
-  height: 130px;
-  width: 90px;
-  border: 1px;
-  border-style: solid;
-}
 
 #display {
   width: 350px;

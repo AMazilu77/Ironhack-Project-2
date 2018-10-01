@@ -14,7 +14,9 @@
 
 
 
-    <div id="gen55">
+    <div class="ui segment" id="pick-5-total-container">
+
+
 
 
 
@@ -23,90 +25,167 @@
         <button id="pick-5-master" onclick="randomGenMaster55()"> Give me a number! </button>
         <button> Save number</button>
 
+        <div>
+            <p>
+                <h4>Pick 5</h4> is a twice-daily game that pays a top prize of $50,000. Play it Straight, Box, or
+                Straight/Box or 1-off.
+                drawings occure twice a day with midday and evening drawings.
+            </p>
+
+            <ol>
+                <li>Select one number (from 0 - 9) from each column for a total of five digits</li>
+
+                <li>Select the type you wish to play (Straight, Box, 1-OFF or Straight/Box)</li>
+
+                <li>Select the amount you wish to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1).</li>
+
+            </ol>
+        </div>
+
+        <div class="ui segment" id="pick5-GameBox">
+            <div class="ui segment">
+                <div class="ui segment" id='FL-Lotto-Number-Gen-Container'>
 
 
-        <div class='numBox4'>
-            <div class='innerbox115'>
-                <h1 id="first5"> 0 </h1>
+                    <h1 class="pick5" id="fl-Pick5-1"> 0 </h1>
+
+
+                    <h1 class="pick5" id="fl-Pick5-2"> 0 </h1>
+
+
+                    <h1 class="pick5" id="fl-Pick5-3"> 0 </h1>
+
+
+
+                    <h1 class="pick5" id="fl-Pick5-4"> 0 </h1>
+
+
+
+                    <h1 class="pick5" id="fl-Pick5-5"> 0 </h1>
+
+
+
+                </div>
             </div>
 
-            <div class='innerbox225'>
-                <h1 id="sec5"> 0 </h1>
-            </div>
         </div>
-        <div class='innerbox335'>
-            <h1 id="third5"> 0 </h1>
+
+
+
+
+
+        <div class="ui segment" id="FL-Lotto-Odds">
+            <h3> Odds</h3>
+            <ol>
+
+
+                <li> Strait Match 5: <b>1:100,000</b> (est Prize: $50,000) </li>
+                <li>1-OFF on one digit: <b>1:10,000</b> ($500 prize)</li>
+                <li>1-OFF on five digits: <b>1:3,125</b> (est prize: $150)</li>
+                <li>1-OFF on two digits: <b>1 1:2,500 </b> (est prize: $100)</li>
+                <li>1-OFF on three digits: <b>1 1:1,250 </b> (est prize: $75)</li>
+                <li> 1-OFF on four digit: <b>1:1,250 </b> (est prize: $75)</li>
+
+            </ol>
         </div>
-    </div>
-    <div class='innerbox445'>
-        <h1 id="fourth5"> 0 </h1>
-    </div>
 
-    <div class='innerbox555'>
-        <h1 id="fifth5"> 0 </h1>
-    </div>
-
-    </div>
-
-
+        <div class="ui segment" id="FL-Lotto-Odds">
+            <h3> How to win</h3>
+            <ol>
+                <li>Match all 6 - <b>1:22,957,480</b> Jackpot</li>
+                <li>Match 5 - <b>1:81,409.50</b> (est Prize: $5000) </li>
+                <li>Match 4 - <b>1:1,415.82</b> (est prize: $70)</li>
+                <li>Match 3 - <b>1:70.79</b> (est prize: $5)</li>
+            </ol>
+        </div>
 
 
-    </div>
+        <div class="ui segment" id="FL-Lotto-Extra">
+            <h3> Genie Advice</h3>
+            Play XTRA. EXTRA is a special feature that allows players to multiply their non-jackpot cash prizes by two,
+            three, four or
+            five
+            times the original prize amount! A player must choose the XTRA option on his/her FLORIDA LOTTO playslip or
+            tell
+            the
+            retailer that he/she wishes to purchase a FLORIDA LOTTO with XTRA ticket. FLORIDA LOTTO with XTRA tickets
+            cost
+            an
+            additional $1 per play.
 
-    <img id='pick5gen' src="/images/geniworkinge2.jpg"> Pick 5!</img>
-
-
-
-
-
-
-
-
-
-    <script>
-
-
-
-
-
-
-        const randomGenMaster55 = function () {
-            let print1 = document.getElementById('first5');
-            let print2 = document.getElementById('sec5');
-            let print3 = document.getElementById('third5');
-            let print4 = document.getElementById('fourth5');
-            let print5 = document.getElementById('fifth5');
-
-
-            let num1 = Math.floor(Math.random() * 10);
-            let num2 = Math.floor(Math.random() * 10);
-            let num3 = Math.floor(Math.random() * 10);
-            let num4 = Math.floor(Math.random() * 10);
-            let num5 = Math.floor(Math.random() * 10);
-
-            print1.innerHTML = num1;
-            print2.innerHTML = num2;
-            print3.innerHTML = num3;
-            print4.innerHTML = num4;
-            print5.innerHTML = num5;
-            console.log(num1, num2, num3, num4, num5);
+            FLORIDA LOTTO with XTRA players who match three of six winning numbers will win a minimum of $25, the
+            3-of-6
+            prize
+            multiplied by five, regardless of the multiplier selected for that drawing.
+        </div>
 
 
 
-            document.getElementById('first5').innerHTML = num1;
-            document.getElementById('sec5').innerHTML = num2;
-            document.getElementById('third5').innerHTML = num3;
-            document.getElementById('fourth5').innerHTML = num4;
-            document.getElementById('fifth5').innerHTML = num5;
-
-        };
 
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
+
+
+
+
+
+        <img id='pick5gen' src="/images/geniworkinge2.jpg"> Pick 5!</img>
+
+
+
+
+
+
+
+
+
+        <script>
+
+
+
+
+
+
+            const randomGenMaster55 = function () {
+                let print1 = document.getElementById("fl-Pick5-1");
+                let print2 = document.getElementById("fl-Pick5-2");
+                let print3 = document.getElementById("fl-Pick5-3");
+                let print4 = document.getElementById("fl-Pick5-4");
+                let print5 = document.getElementById("fl-Pick5-5");
+
+
+                let num1 = Math.floor(Math.random() * 10);
+                let num2 = Math.floor(Math.random() * 10);
+                let num3 = Math.floor(Math.random() * 10);
+                let num4 = Math.floor(Math.random() * 10);
+                let num5 = Math.floor(Math.random() * 10);
+
+                print1.innerHTML = num1;
+                print2.innerHTML = num2;
+                print3.innerHTML = num3;
+                print4.innerHTML = num4;
+                print5.innerHTML = num5;
+                console.log(num1, num2, num3, num4, num5);
+
+
+
+                document.getElementById("fl-Pick5-1").innerHTML = num1;
+                document.getElementById("fl-Pick5-2").innerHTML = num2;
+                document.getElementById("fl-Pick5-3").innerHTML = num3;
+                document.getElementById("fl-Pick5-4").innerHTML = num4;
+                document.getElementById("fl-Pick5-5").innerHTML = num5;
+
+            };
+
+
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
 
 
 </body>
+
+
+
 
 </html>
