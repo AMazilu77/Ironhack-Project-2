@@ -217,36 +217,6 @@ table#t01 th {
 #number22 {
   font-size: 60px; }
 
-h1 {
-  font-size: 40px; }
-
-.pick5 {
-  display: flex;
-  background-color: white;
-  height: 75%;
-  width: 16%;
-  border: 2px;
-  border: 1px;
-  border-style: solid; }
-
-#Pick-5-Odds {
-  background-color: #9fd9ff;
-  width: 100%;
-  height: 100%;
-  padding: 1%;
-  border: 2px;
-  margin: 1%;
-  border-style: solid;
-  border-color: black; }
-
-.Pick-5-Odds {
-  background-color: #a1f3c3;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
-  padding: 1%;
-  width: 20%; }
-
 #pick-5-total-container {
   background-color: #deccff;
   width: 100%;
@@ -254,6 +224,58 @@ h1 {
   margin: 1%;
   padding: 1%;
   border: 2px;
+  border-style: solid;
+  border-color: black; }
+
+#cardBox {
+  background-color: green; }
+
+#pick5genie {
+  padding: 1%;
+  height: 80%;
+  width: auto; }
+
+#FL-Lotto-Number-Gen-Container {
+  background-color: black; }
+
+#pick5-GameBox {
+  background-color: #ffc2cc;
+  width: 80%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid;
+  border-color: black; }
+
+#pick-5-how-to-play {
+  background-color: #9fffdf;
+  width: 80%;
+  height: 100%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid;
+  border-color: black; }
+
+h1 {
+  font-size: 40px; }
+
+.pick5Cards {
+  display: flex;
+  background-color: white;
+  height: 75%;
+  width: 100%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid; }
+
+#Pick-5-Odds {
+  background-color: #9fc9ff;
+  width: 30%;
+  height: 100%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
   border-style: solid;
   border-color: black; }
 
