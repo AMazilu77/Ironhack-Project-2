@@ -53,6 +53,40 @@
                     <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
                 </h2>
 
+                <div class="ui segment" id="Pick-2-Card-Container">
+                    <h1 class="Pick-2-Card" id="Pick-2[1]"> 0 </h1>
+                    <h1 class="Pick-2-Card" id="Pick-2[2]"> 0 </h1>
+
+                </div>
+            </div>
+            <div class="ui segment" id="Pick2-Odds-Advice-Container">
+                <div class="ui segment" id="Pick2-Odds">
+                    <h2>Odds</h2>
+                    <h3>
+                        <b>Pick 2</b>
+                    </h3>
+                    <p> You have a 1/100 chance of winning 25$ with a strait matching both numbers, and a 1/25 odds
+                        of
+                        hitting
+                        a one-off
+                        number on either and/or both numbers for a $3.00 payout.
+                    </p>
+
+                </div>
+
+                <img src="./images/geniworkinge2.jpg">
+
+                <div class="ui segment" id="Pick2-Advice">
+                    <h2>Genie Advice</h2>
+                    <h3>
+                        <b>Play 1-Off</b>
+                    </h3>
+                    <p> You can miss by one and still win a cash prize. That's 8 more chances to win.
+                    </p>
+
+                </div>
+            </div>
+
 
 
         </center>
@@ -63,73 +97,49 @@
 
 
 
-        <div class="ui segment" id="Pick2-Odds-Advice-Container">
-            {{!-- <div class="ui segment" id="Pick2-Odds">
-                <h2>Odds</h2>
-                <h3>
-                    <b>Pick 2</b>
-                </h3>
-                <p> You have a 1/100 chance of winning 25$ with a strait matching both numbers, and a 1/25 odds
-                    of
-                    hitting
-                    a one-off
-                    number on either and/or both numbers for a $3.00 payout.
-                </p>
 
-            </div> --}}
 
-            {{!-- <div class="ui segment" id="Pick2-Advice">
-                <h2>Genie Advice</h2>
-                <h3>
-                    <b>Play 1-Off</b>
-                </h3>
-                <p> You can miss by one and still win a cash prize. That's 8 more chances to win.
-                </p>
-
-            </div> --}}
-        </div>
-    </div>
 
 
     </div>
+</body>
+
+<script>
+    numbersPlayed = [];
+    newlistpick2 = [];
+
+    const randomGenMaster22 = function () {
+        let print1 = document.getElementById('firstnumber2');
+        let print2 = document.getElementById('number22');
 
 
-    <script>
-        numbersPlayed = [];
-        newlistpick2 = [];
-
-        const randomGenMaster22 = function () {
-            let print1 = document.getElementById('firstnumber2');
-            let print2 = document.getElementById('number22');
+        let num1 = Math.floor(Math.random() * 10);
+        let num2 = Math.floor(Math.random() * 10);
 
 
-            let num1 = Math.floor(Math.random() * 10);
-            let num2 = Math.floor(Math.random() * 10);
-
-
-            print1.innerHTML = num1;
-            print2.innerHTML = num2;
-            y2 = num1
-            x2 = num2
-            console.log(num1, num2);
+        print1.innerHTML = num1;
+        print2.innerHTML = num2;
+        y2 = num1
+        x2 = num2
+        console.log(num1, num2);
 
 
 
-            document.getElementById('firstnumber2').innerHTML = num1;
-            document.getElementById('number22').innerHTML = num2;
-        };
+        document.getElementById('firstnumber2').innerHTML = num1;
+        document.getElementById('number22').innerHTML = num2;
+    };
 
-        const saveNumber22 = function () {
-            numbersPlayed.push(y2, x2);
-            console.log(numbersPlayed);
-            document.getElementById("Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
-            if (numbersPlayed.length > 2) {
-                return "-", numbersPlayed.push(newlistpick2);
+    const saveNumber22 = function () {
+        numbersPlayed.push(y2, x2);
+        console.log(numbersPlayed);
+        document.getElementById("Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
+        if (numbersPlayed.length > 2) {
+            return "-", numbersPlayed.push(newlistpick2);
 
-            }
         }
+    }
 
 
 
 
-    </script>
+</script>

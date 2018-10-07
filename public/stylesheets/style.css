@@ -309,6 +309,21 @@ h1 {
   padding: 1%;
   margin: 1%; }
 
+.Pick-2-Card {
+  padding: 1%;
+  margin: 1%;
+  background-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  width: 10%;
+  height: 40%;
+  font-size: 40px; }
+
+#Pick-2-Card-Container {
+  display: flex;
+  justify-content: center; }
+
 #Pick2Rules {
   background-color: #b7ffef;
   border: 2px;
@@ -326,16 +341,23 @@ h1 {
   margin: 1%; }
 
 #Pick2-Odds {
-  background-color: lightgrey;
+  background-color: #fff892;
   border-width: 2px;
   border-style: solid;
   width: 30%;
-  padding: 1%; }
+  padding: 1%;
+  margin: 1%; }
 
 #Pick2-Odds-Advice-Container {
+  width: 80%;
   display: flex;
   flex-wrap: nowrap;
-  float: right; }
+  background-color: white;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin: 1%; }
 
 .pick3 {
   position: relative;
