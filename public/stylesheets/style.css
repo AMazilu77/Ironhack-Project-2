@@ -181,42 +181,6 @@ table#t01 th {
   border: 1px;
   border-style: solid; }
 
-#big22area {
-  position: relative;
-  bottom: 500px;
-  width: 500px;
-  height: 500px;
-  background-color: lightblue;
-  border: 2px;
-  border-style: solid;
-  padding: 15px; }
-
-#square12 {
-  position: relative;
-  top: 100px;
-  left: 70px;
-  width: 150px;
-  height: 250px;
-  background-color: orange;
-  border: 2px;
-  border-style: solid; }
-
-#square22 {
-  position: relative;
-  left: 250px;
-  bottom: 150px;
-  width: 150px;
-  height: 250px;
-  background-color: yellow;
-  border: 2px;
-  border-style: solid; }
-
-#firstnumber2 {
-  font-size: 60px; }
-
-#number22 {
-  font-size: 60px; }
-
 #pick-5-total-container {
   background-color: #deccff;
   width: 100%;
@@ -227,19 +191,18 @@ table#t01 th {
   border-style: solid;
   border-color: black; }
 
-#cardBox {
-  background-color: green; }
-
 #pick5genie {
-  padding: 1%;
   height: 80%;
-  width: auto; }
+  width: auto;
+  border: 2px;
+  border-style: solid;
+  border-color: black; }
 
 #FL-Lotto-Number-Gen-Container {
   background-color: black; }
 
 #pick5-GameBox {
-  background-color: #ffc2cc;
+  background-color: #fdb0bd;
   width: 80%;
   padding: 1%;
   border: 2px;
@@ -329,37 +292,50 @@ h1 {
 #megaBall {
   background-color: red; }
 
-#pick2genie {
-  display: flex;
-  position: relative;
-  left: 700px;
-  top: 50px;
-  bottom: 0px; }
-
-#gen22 {
-  position: relative;
+#Pick-2-Number-Gen-Total-Container {
+  background-color: #b7dcff;
   border: 2px;
   border-style: solid;
-  padding: 10px; }
+  border-color: black;
+  padding: 1%;
+  margin: 1%; }
 
-#geniepick2advice {
-  position: relative;
-  left: 600px;
-  top: 20px;
+#Pick-2-Game-Area {
+  width: 70%;
+  height: 50%;
+  background-color: #ffd1e6;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick2Rules {
+  background-color: #b7ffef;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick2-Advice {
   background-color: lightgreen;
-  width: 650px;
+  width: 30%;
   border-width: 2px;
   border-style: solid;
-  padding: 12px; }
+  padding: 1%;
+  margin: 1%; }
 
-#oddsPick2 {
+#Pick2-Odds {
   background-color: lightgrey;
   border-width: 2px;
   border-style: solid;
-  width: 650px;
-  position: relative;
-  left: 600px;
-  padding: 12px; }
+  width: 30%;
+  padding: 1%; }
+
+#Pick2-Odds-Advice-Container {
+  display: flex;
+  flex-wrap: nowrap;
+  float: right; }
 
 .pick3 {
   position: relative;
@@ -528,7 +504,7 @@ h1 {
   width: 30%;
   padding: 15px; }
 
-.gen22 {
+#gen22 {
   border: 2px;
   border-style: solid;
   padding: 10px;

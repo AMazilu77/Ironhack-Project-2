@@ -14,80 +14,81 @@
 
 
 
-    <div id="gen22">
+    <div class="ui segment" id="Pick-2-Number-Gen-Total-Container">
 
 
 
         <script src='/javascripts/script.js'></script>
-        <div>
+        <div class="ui segment">
             <h2>Pick-2 Number Generator</h2>
 
         </div>
         <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
-        <div class="text">
+        <div class="ui segment" id="Pick2Rules">
             <h3>Rules </h3>
             <p>1. Select one number (from 0 through 9) from each column for a total of two digits
             </p>
             <p>2. Select the play type: Straight, Box, Straight/Box, 1-OFF, Front Number, or Back Number. </p>
             <p> 3. Select the amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1)</p>
             <p>
-                <b>During the PICK 2 drawing, 2 numbers will be drawn at random. If your 2-digit number is a Straight match
-                    to the numbers, you win $25. Or, if any of your 1-OFF numbers match the PICK 2 numbers drawn, you win
+                <b>During the PICK 2 drawing, 2 numbers will be drawn at random. If your 2-digit number is a Straight
+                    match
+                    to the numbers, you win $25. Or, if any of your 1-OFF numbers match the PICK 2 numbers drawn, you
+                    win
                     $3.
                 </b>
             </p>
 
         </div>
-        <div id="oddsPick2">
-            <h2>Odds</h2>
-            <h3>
-                <b>Pick 2</b>
-            </h3>
-            <p> You have a 1/100 chance of winning 25$ with a strait matching both numbers, and a 1/25 odds of hitting a one-off
-                number on either and/or both numbers for a $3.00 payout.
-            </p>
 
+        <center>
+
+            <div class="ui segment" id='Pick-2-Game-Area'>
+
+                <button id="" class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it
+                </button>
+                <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me
+                    another </button>
+                <h2>Click save numbers to save a list
+                    <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
+                </h2>
+
+
+
+        </center>
+
+
+
+
+
+
+
+        <div class="ui segment" id="Pick2-Odds-Advice-Container">
+            {{!-- <div class="ui segment" id="Pick2-Odds">
+                <h2>Odds</h2>
+                <h3>
+                    <b>Pick 2</b>
+                </h3>
+                <p> You have a 1/100 chance of winning 25$ with a strait matching both numbers, and a 1/25 odds
+                    of
+                    hitting
+                    a one-off
+                    number on either and/or both numbers for a $3.00 payout.
+                </p>
+
+            </div> --}}
+
+            {{!-- <div class="ui segment" id="Pick2-Advice">
+                <h2>Genie Advice</h2>
+                <h3>
+                    <b>Play 1-Off</b>
+                </h3>
+                <p> You can miss by one and still win a cash prize. That's 8 more chances to win.
+                </p>
+
+            </div> --}}
         </div>
-
-        <div id="geniepick2advice">
-            <h2>Genie Advice</h2>
-            <h3>
-                <b>Play 1-Off</b>
-            </h3>
-            <p> You can miss by one and still win a cash prize. That's 8 more chances to win.
-            </p>
-
-        </div>
-        <img id="pick2genie" src='/images/geniworkinge2.jpg'>
-
-        <div id='big22area'>
-
-            <button id="" class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it </button>
-            <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me another </button>
-            <h2>Click save numbers to save a list
-                <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
-            </h2>
-            {{!-- card area containing numbers --}}
-            <div id='square12'>
-
-                <div id='firstnumber2'>
-                    0
-                </div>
-            </div>
-
-            <div id='square22'>
-
-                <div id='number22'>0</div>
-
-            </div>
-        </div>
-
-        <div id="Saved-Numbers-Area">
-            <center> Saved Numbers </center>
-            <div id="Played-Numbers-Box">
-                <h2> Saved Numbers </h2>
-            </div>
-        </div>
+    </div>
 
 
     </div>

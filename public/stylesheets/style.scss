@@ -1,3 +1,5 @@
+// Opening screen and login
+
 body {
   padding: 50px;
   background-color: #FBFAF8;
@@ -32,6 +34,8 @@ a {
   height: auto;
 }
 
+// Numbers played history area
+
 table,
 th,
 td {
@@ -58,6 +62,8 @@ table#t01 th {
   color: white;
 }
 
+
+// Pick 4 Number Gen
 .boxes {
   border: 2px;
   border-style: solid;
@@ -211,47 +217,10 @@ table#t01 th {
   border-style: solid;
 }
 
-#big22area {
-  // display: flex;
-  position: relative;
-  bottom: 500px;
-  width: 500px;
-  height: 500px;
-  background-color: lightblue;
-  border: 2px;
-  border-style: solid;
-  padding: 15px;
-}
 
-#square12 {
-  position: relative;
-  top: 100px;
-  left: 70px;
-  width: 150px;
-  height: 250px;
-  background-color: orange;
-  border: 2px;
-  border-style: solid;
-}
 
-#square22 {
-  position: relative;
-  left: 250px;
-  bottom: 150px;
-  width: 150px;
-  height: 250px;
-  background-color: yellow;
-  border: 2px;
-  border-style: solid;
-}
 
-#firstnumber2 {
-  font-size: 60px;
-}
 
-#number22 {
-  font-size: 60px;
-}
 
 
 // pick 5 random generator page
@@ -266,14 +235,14 @@ table#t01 th {
   border-color: black;
 }
 
-#cardBox{
-  background-color: green;
-}
 
 #pick5genie{
-  padding: 1%;
+  
   height: 80%;
   width: auto;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
  
 }
 
@@ -284,7 +253,7 @@ table#t01 th {
 }
 
 #pick5-GameBox{
-  background-color: rgb(255, 194, 204);
+  background-color: rgb(253, 176, 189);
 
   width: 80%;
   
@@ -394,42 +363,73 @@ h1 {
   background-color: red;
 }
 
-#pick2genie {
-  display: flex;
-  position: relative;
-  left: 700px;
-  top: 50px;
-  bottom: 0px;
-}
 
-#gen22 {
-  position: relative;
+// Pick 2 number Gen
+
+#Pick-2-Number-Gen-Total-Container{
+  background-color: rgb(183, 220, 255);
   border: 2px;
   border-style: solid;
-  padding: 10px;
+  border-color: black;
+  padding: 1%;
+  margin: 1%;
 }
 
-#geniepick2advice {
-  position: relative;
-  left: 600px;
-  top: 20px;
+// Number Generator container holding number cards
+#Pick-2-Game-Area {
+
+
+  width: 70%;
+  height: 50%;
+  background-color: rgb(255, 209, 230);
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+}
+
+
+#Pick2Rules{
+  background-color: rgb(183, 255, 239);
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin: 1%;
+}
+
+
+
+
+#Pick2-Advice {
+
   background-color: lightgreen;
-  width: 650px;
+  width: 30%;
   border-width: 2px;
   border-style: solid;
-  padding: 12px;
+  padding: 1%;
+  margin: 1%;
+  
 }
 
-#oddsPick2 {
+#Pick2-Odds {
+ 
   background-color: lightgrey;
   border-width: 2px;
   border-style: solid;
-  width: 650px;
-  position: relative;
-  left: 600px;
-  padding: 12px;
-  ;
+  width: 30%;
+  padding: 1%;
+  
 }
+
+#Pick2-Odds-Advice-Container{
+  display: flex;
+  flex-wrap: nowrap;
+  float: right;
+}
+
+
+// Pick 3 Number Generator 
 
 .pick3 {
   position: relative;
@@ -615,7 +615,7 @@ h1 {
   padding: 15px;
 }
 
-.gen22 {
+#gen22 {
   border: 2px;
   border-style: solid;
   padding: 10px;
