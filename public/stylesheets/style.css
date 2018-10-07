@@ -359,6 +359,17 @@ h1 {
   padding: 1%;
   margin: 1%; }
 
+#Pick-2Played-Numbers-Box {
+  width: 80%;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #c1ffc9;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  padding: 1%;
+  margin: 1%; }
+
 .pick3 {
   position: relative;
   top: 80px;

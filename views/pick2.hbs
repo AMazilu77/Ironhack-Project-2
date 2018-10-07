@@ -85,8 +85,9 @@
                     </p>
 
                 </div>
-            </div>
 
+            </div>
+            <div class="ui segment" id="Pick-2Played-Numbers-Box">Saved Numbers </div>
 
 
         </center>
@@ -109,8 +110,8 @@
     newlistpick2 = [];
 
     const randomGenMaster22 = function () {
-        let print1 = document.getElementById('firstnumber2');
-        let print2 = document.getElementById('number22');
+        let print1 = document.getElementById('Pick-2[1]');
+        let print2 = document.getElementById('Pick-2[2]');
 
 
         let num1 = Math.floor(Math.random() * 10);
@@ -125,14 +126,14 @@
 
 
 
-        document.getElementById('firstnumber2').innerHTML = num1;
-        document.getElementById('number22').innerHTML = num2;
+        document.getElementById('Pick-2[1]').innerHTML = num1;
+        document.getElementById('Pick-2[2]').innerHTML = num2;
     };
 
     const saveNumber22 = function () {
         numbersPlayed.push(y2, x2);
         console.log(numbersPlayed);
-        document.getElementById("Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
+        document.getElementById("Pick-2Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
         if (numbersPlayed.length > 2) {
             return "-", numbersPlayed.push(newlistpick2);
 
