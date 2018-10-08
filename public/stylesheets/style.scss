@@ -465,6 +465,15 @@ h1 {
 
 // Pick 3 Number Generator 
 
+#pick-3-total-container {
+  border: 2px;
+  border-style: solid;
+  border-color: black; 
+  background-color: rgb(202, 210, 255); 
+  padding: 1%;
+  margin: 1%
+}
+
 .pick3 {
   position: relative;
   top: 80px;
