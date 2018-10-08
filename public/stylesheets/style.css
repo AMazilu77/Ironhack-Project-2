@@ -388,6 +388,14 @@ h1 {
   width: 120px;
   height: 160px; }
 
+#pick-3-rules-container {
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+  background-color: #caebff; }
+
 .innerPick3 {
   display: flex;
   align-self: center;
