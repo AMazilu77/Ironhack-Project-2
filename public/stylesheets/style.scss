@@ -474,6 +474,15 @@ h1 {
   margin: 1%
 }
 
+#pick-3-gen-box{
+  border: 2px;
+  border-style: solid;
+  border-color: black; 
+  background-color: rgb(255, 252, 228); 
+  padding: 1%;
+  margin: 1%
+}
+
 .pick3 {
   position: relative;
   top: 80px;
@@ -548,6 +557,9 @@ h1 {
   position: relative;
   bottom: 170px;
 }
+
+
+// Pick 4 number generator
 
 .pick4 {
   position: relative;

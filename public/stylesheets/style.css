@@ -378,6 +378,14 @@ h1 {
   padding: 1%;
   margin: 1%; }
 
+#pick-3-gen-box {
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: #fffce4;
+  padding: 1%;
+  margin: 1%; }
+
 .pick3 {
   position: relative;
   top: 80px;
