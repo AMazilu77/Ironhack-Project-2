@@ -105,8 +105,11 @@
     </div>
 </body>
 
+
+{{!-- Numer generator master code for pick 2 and save number function --}}
+
 <script>
-    numbersPlayed = [];
+    Pick2NumbersPlayed = [];
     newlistpick2 = [];
 
     const randomGenMaster22 = function () {
@@ -130,12 +133,15 @@
         document.getElementById('Pick-2[2]').innerHTML = num2;
     };
 
+
+
     const saveNumber22 = function () {
-        numbersPlayed.push(y2, x2);
-        console.log(numbersPlayed);
-        document.getElementById("Pick-2Played-Numbers-Box").innerHTML = "  -  " + numbersPlayed + " - "
+        Pick2NumbersPlayed.push(y2, x2);
+        console.log(Pick2NumbersPlayed);
+        document.getElementById("Pick-2Played-Numbers-Box").innerHTML = "  -  " + Pick2NumbersPlayed + " - "
         if (numbersPlayed.length > 2) {
-            return "-", numbersPlayed.push(newlistpick2);
+            return "-", Pick2NumbersPlayed.push(newlistpick2);
+            newlistpick2.push(userschema[Pick2NumbersPlayed[pick2]])
 
         }
     }

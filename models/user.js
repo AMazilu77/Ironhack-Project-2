@@ -7,7 +7,19 @@ const userSchema = new Schema({
     facebookID: String,
     googleID: String,
     luckyNumbers: [],
-    numbersPlayed: [],
+    // schema for each game user saves numbers for 
+    numbersPlayed: {
+        // counter to tell how many sets of numbers you have saved
+        nextPick2: Number,
+        //    array of saved tickets 
+        pick2: [{
+            Ticket: Number,
+            SavedAt: Date,
+            pick2Numbers: [],
+        },],
+
+
+    },
     experiencePoints: {
         type: Number,
         default: 100
@@ -20,47 +32,12 @@ const userSchema = new Schema({
 
 
 }, {
-    timestamps: {
-        createdAt: "created_at",
-        updatedAt: "updated_at"
-    }
-});
+        timestamps: {
+            createdAt: "created_at",
+            updatedAt: "updated_at"
+        }
+    });
 
 const User = mongoose.model("User", userSchema);
-
-module.exports = User;
-
-
-
-
-// const mongoose = require("mongoose");
-// const Schema = mongoose.Schema;
-
-// const userSchema = new Schema({
-//     username: String,
-//     password: String,
-//     facebookID: String,
-//     googleID: String,
-//     wishes: Number,
-//     luckyNumbers: Number,
-//     numbersPlayed: {
-//         type: [Number]
-//     },
-
-// }, {
-//     timestamps: {
-//         createdAt: "created_at",
-//         updatedAt: "updated_at"
-//     },
-
-
-
-
-
-
-
-// });
-
-// const User = mongoose.model("User", userSchema);
 
 module.exports = User;
