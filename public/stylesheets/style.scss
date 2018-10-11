@@ -2,7 +2,7 @@
 
 body {
   padding: 50px;
-  background-color: #FBFAF8;
+  background-color: #fbfaf8;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; // background: linear-gradient(to bottom, white, black);
 }
 
@@ -61,7 +61,6 @@ table#t01 th {
   background-color: black;
   color: white;
 }
-
 
 // Pick 4 Number Gen
 .boxes {
@@ -217,12 +216,6 @@ table#t01 th {
   border-style: solid;
 }
 
-
-
-
-
-
-
 // pick 5 random generator page
 #pick-5-total-container {
   background-color: rgb(222, 204, 255);
@@ -235,28 +228,23 @@ table#t01 th {
   border-color: black;
 }
 
-
-#pick5genie{
-  
+#pick5genie {
   height: 80%;
   width: auto;
   border: 2px;
   border-style: solid;
   border-color: black;
- 
 }
 
-#FL-Lotto-Number-Gen-Container{
+#FL-Lotto-Number-Gen-Container {
   background-color: black;
-  
-
 }
 
-#pick5-GameBox{
+#pick5-GameBox {
   background-color: rgb(253, 176, 189);
 
   width: 80%;
-  
+
   padding: 1%;
   border: 2px;
   margin: 1%;
@@ -264,7 +252,7 @@ table#t01 th {
   border-color: black;
 }
 
-#pick-5-how-to-play{
+#pick-5-how-to-play {
   background-color: rgb(159, 255, 223);
   width: 80%;
   height: 100%;
@@ -279,10 +267,10 @@ h1 {
   font-size: 40px;
 }
 
-.pick5Cards{
-  display: flex;  
+.pick5Cards {
+  display: flex;
   background-color: rgb(255, 255, 255);
- 
+
   height: 75%;
   width: 100%;
   border: 2px;
@@ -290,7 +278,7 @@ h1 {
   border-style: solid;
 }
 
-#Pick-5-Odds{
+#Pick-5-Odds {
   background-color: rgb(159, 201, 255);
   width: 30%;
   height: 100%;
@@ -301,9 +289,6 @@ h1 {
   border-color: black;
 }
 
-
-
-
 #Pick-5-Advice {
   background-color: rgb(153, 163, 255);
   padding: 1%;
@@ -312,15 +297,12 @@ h1 {
   border-color: black;
 }
 
-
-
 #display {
   width: 350px;
   height: 350px;
   border-width: 2px;
   border-style: solid;
 }
-
 
 // mega millions area
 .megaMil {
@@ -363,10 +345,9 @@ h1 {
   background-color: red;
 }
 
-
 // Pick 2 number Gen
 
-#Pick-2-Number-Gen-Total-Container{
+#Pick-2-Number-Gen-Total-Container {
   background-color: rgb(183, 220, 255);
   border: 2px;
   border-style: solid;
@@ -377,7 +358,6 @@ h1 {
 
 // Number Generator container holding number cards
 #Pick-2-Game-Area {
-
   width: 70%;
   height: 50%;
   background-color: rgb(255, 209, 230);
@@ -386,7 +366,7 @@ h1 {
   padding: 1%;
   margin: 1%;
 }
-.Pick-2-Card{
+.Pick-2-Card {
   padding: 1%;
   margin: 1%;
   background-color: white;
@@ -398,13 +378,12 @@ h1 {
   font-size: 40px;
 }
 
-#Pick-2-Card-Container{
+#Pick-2-Card-Container {
   display: flex;
   justify-content: center;
-  
 }
 
-#Pick2Rules{
+#Pick2Rules {
   background-color: rgb(183, 255, 239);
   border: 2px;
   border-style: solid;
@@ -413,32 +392,25 @@ h1 {
   margin: 1%;
 }
 
-
-
-
 #Pick2-Advice {
-
-  background-color: lightgreen;
+  background-color: rgb(175, 255, 175);
   width: 30%;
   border-width: 2px;
   border-style: solid;
   padding: 1%;
   margin: 1%;
-  
 }
 
 #Pick2-Odds {
- 
   background-color: rgb(255, 248, 146);
   border-width: 2px;
   border-style: solid;
   width: 30%;
   padding: 1%;
   margin: 1%;
-  
 }
 
-#Pick2-Odds-Advice-Container{
+#Pick2-Odds-Advice-Container {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
@@ -450,7 +422,7 @@ h1 {
   margin: 1%;
 }
 
-#Pick-2Played-Numbers-Box{
+#Pick-2Played-Numbers-Box {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
@@ -462,25 +434,24 @@ h1 {
   margin: 1%;
 }
 
-
-// Pick 3 Number Generator 
+// Pick 3 Number Generator
 
 #pick-3-total-container {
   border: 2px;
   border-style: solid;
-  border-color: black; 
-  background-color: rgb(202, 210, 255); 
+  border-color: black;
+  background-color: rgb(202, 210, 255);
   padding: 1%;
-  margin: 1%
+  margin: 1%;
 }
 
-#pick-3-gen-box{
+#pick-3-gen-box {
   border: 2px;
   border-style: solid;
-  border-color: black; 
-  background-color: rgb(255, 252, 228); 
+  border-color: black;
+  background-color: rgb(255, 252, 228);
   padding: 1%;
-  margin: 1%
+  margin: 1%;
 }
 
 .pick3 {
@@ -502,13 +473,13 @@ h1 {
   height: 160px;
 }
 
-#pick-3-rules-container{
+#pick-3-rules-container {
   border: 2px;
   border-color: black;
   border-style: solid;
   padding: 1%;
   margin: 1%;
-  background-color: rgb(202, 235, 255)
+  background-color: rgb(202, 235, 255);
 }
 
 .innerPick3 {
@@ -557,7 +528,6 @@ h1 {
   position: relative;
   bottom: 170px;
 }
-
 
 // Pick 4 number generator
 
@@ -651,7 +621,7 @@ h1 {
   border: 2px;
   border-style: solid;
   padding: 15px;
-  width: 30%
+  width: 30%;
 }
 
 #oddsPick3 {
@@ -718,19 +688,16 @@ h1 {
   border: 2px;
   border-style: solid;
 }
-  
 
-//FLORIDA LOTTO AREA 
-  
-  #howToPlay {
-    background-color: rgb(250, 255, 175);
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-    padding: 5px;
-  }
+//FLORIDA LOTTO AREA
 
-
+#howToPlay {
+  background-color: rgb(250, 255, 175);
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  padding: 5px;
+}
 
 #FL-Lotto-Total-Container {
   border: 1px;
@@ -738,17 +705,16 @@ h1 {
   border-color: #000000;
   padding: 5px;
   height: 1300px;
-  
+
   background-color: rgb(223, 211, 255);
   border: 1px;
   border-style: solid;
   border-color: black;
-  
 }
 
-#FL-Master-Container{
+#FL-Master-Container {
   margin-top: 2%;
-  
+
   background-color: rgb(255, 239, 239);
   width: 100%;
   height: 40%;
@@ -769,7 +735,6 @@ h1 {
   border: 1px;
   border-style: solid;
   border-color: black;
-
 }
 
 .FL-Lotto-Number-Card {
@@ -782,21 +747,21 @@ h1 {
   height: 20%;
 }
 
-#FL-Lotto-Saved-Numbers{
+#FL-Lotto-Saved-Numbers {
   background-color: white;
   border: 2px;
   border-style: solid;
   border-color: black;
 }
 
-#FL-Lotto-Extra{
+#FL-Lotto-Extra {
   background-color: rgb(161, 243, 195);
   border: 2px;
   border-style: solid;
   border-color: black;
   padding: 1%;
   margin-top: 1%;
- 
+
   width: 30%;
 }
 
