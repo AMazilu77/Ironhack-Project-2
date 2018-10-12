@@ -433,6 +433,27 @@ h1 {
   padding: 1%;
   margin: 1%; }
 
+#Pick-3-Saved-Numbers-Container {
+  background-color: #ffd5ae;
+  border: 2px;
+  border-style: solid;
+  width: 90%;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-3-Saved-Numbers {
+  background-color: #54f7f7;
+  border: 2px;
+  border-style: solid;
+  width: 90%;
+  height: 50%;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-3-Genie {
+  border: 2px;
+  border-style: solid; }
+
 .pick4 {
   position: relative;
   top: 10px;

@@ -1,6 +1,7 @@
 <button onclick="location.href='/dashBoard';"> Take me back </button>
 <br>
-<br>
+
+
 <div class="ui segment" id="pick-3-total-container">
     <div class="ui segment" id="pick-3-rules-container">
         <h3>Rules </h3>
@@ -49,7 +50,9 @@
         <p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
     </div>
 
-
+    <center>
+        <img id="Pick-3-Genie" src='/images/geniworkinge2.jpg'>
+    </center>
 
 
     <div class="ui segment" id="pick-3-gen-box">
@@ -69,8 +72,13 @@
 
         </div>
     </div>
-    {{!-- <img id="pick2genie3" src='/images/geniworkinge2.jpg'> --}}
 
+
+    <div class="ui segment" id="Pick-3-Saved-Numbers-Container">
+        <h2>Saved Numbers</h2>
+        <div class="ui segment" id="Pick-3-Saved-Numbers"> </div>
+
+    </div>
 
     <div class="ui segment" id="Pick-3-Odds">
         <h2>Odds and prizes</h2>
@@ -142,7 +150,7 @@
     const saveNumber33 = function () {
         numbersPlayed3.push(p3, p3two, p3three);
         console.log(numbersPlayed3);
-        document.getElementById("numberAreaList").innerHTML = "[" + numbersPlayed3 + "]";
+        document.getElementById("Pick-3-Saved-Numbers").innerHTML = "[" + numbersPlayed3 + "]";
         if (numbersPlayed3.length > 2) {
 
             return numbersPlayed3.push(newList)
