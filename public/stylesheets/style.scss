@@ -454,23 +454,29 @@ h1 {
   margin: 1%;
 }
 
-.pick3 {
-  position: relative;
-  top: 80px;
-  display: inline-flex;
+#Pick-3-Card-Container {
+  display: flex;
   flex-direction: row;
-  align-self: center;
-  order: 1;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  background-color: rgb(191, 134, 255);
+  padding: 1%;
+  margin: 1%;
   border: 2px;
-  border-style: solid;
   border-color: black;
-  background-color: blue;
-  width: 120px;
-  height: 160px;
+  border-style: solid;
+}
+
+.FL-Pick-3-Number-Card {
+  font-size: 70px;
+  width: 5%;
+  height: auto;
+  display: flex;
+  padding: 1%;
+  margin: 1%;
+  flex-direction: row;
+  background-color: white;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
 }
 
 #pick-3-rules-container {
@@ -482,51 +488,22 @@ h1 {
   background-color: rgb(202, 235, 255);
 }
 
-.innerPick3 {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  background-color: rgb(203, 223, 203);
+#Pick-3-Odds {
+  background-color: rgb(221, 255, 236);
   border: 2px;
   border-style: solid;
-  border-color: black;
-  width: 85%;
-  height: 85%;
-  font-size: 30px;
-  margin: auto;
-  position: relative;
-  font-size: 70px;
-  font-style: bold;
-}
-
-.pick3box {
-  background-color: lightcyan;
-  height: 300px;
   width: 55%;
+  padding: 1%;
+  margin: 1%;
+}
+
+#Pick-3-Genie-Advice {
+  background-color: rgb(92, 241, 112);
   border: 2px;
   border-style: solid;
-  position: relative;
-  top: 40px;
-  right: 0px;
-  display: flex;
-  padding: 10px;
-}
-
-#pick2genie3 {
-  position: relative;
-  left: 745px;
-  bottom: 300px;
   width: 30%;
-  height: auto;
-}
-
-.text3 {
-  position: relative;
-  bottom: 170px;
+  padding: 1%;
+  margin: 1%;
 }
 
 // Pick 4 number generator
@@ -622,31 +599,6 @@ h1 {
   border-style: solid;
   padding: 15px;
   width: 30%;
-}
-
-#oddsPick3 {
-  // display: flex;
-  position: relative;
-  background-color: rgb(221, 255, 236);
-  border: 2px;
-  border-style: solid;
-  width: 55%;
-  left: px;
-  bottom: 00px;
-  padding: 10px;
-  right: 5px;
-}
-
-#geniepick3advice {
-  // display: flex;
-  position: relative;
-  left: 750px;
-  bottom: 231px;
-  background-color: rgb(92, 241, 112);
-  border: 2px;
-  border-style: solid;
-  width: 30%;
-  padding: 15px;
 }
 
 #gen22 {
