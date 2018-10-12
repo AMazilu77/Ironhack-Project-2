@@ -426,7 +426,7 @@ h1 {
   margin: 1%; }
 
 #Pick-3-Genie-Advice {
-  background-color: #5cf170;
+  background-color: #adffc1;
   border: 2px;
   border-style: solid;
   width: 30%;
@@ -437,7 +437,7 @@ h1 {
   background-color: #ffd5ae;
   border: 2px;
   border-style: solid;
-  width: 90%;
+  width: 96%;
   padding: 1%;
   margin: 1%; }
 
@@ -453,6 +453,15 @@ h1 {
 #Pick-3-Genie {
   border: 2px;
   border-style: solid; }
+
+#Pick-3-Advice-Odds-Container {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffccf4;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
 
 .pick4 {
   position: relative;

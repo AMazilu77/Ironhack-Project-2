@@ -498,7 +498,7 @@ h1 {
 }
 
 #Pick-3-Genie-Advice {
-  background-color: rgb(92, 241, 112);
+  background-color: rgb(173, 255, 193);
   border: 2px;
   border-style: solid;
   width: 30%;
@@ -510,7 +510,7 @@ h1 {
   background-color: rgb(255, 213, 174);
   border: 2px;
   border-style: solid;
-  width: 90%;
+  width: 96%;
   padding: 1%;
   margin: 1%;
 }
@@ -528,6 +528,16 @@ h1 {
 #Pick-3-Genie {
   border: 2px;
   border-style: solid;
+}
+
+#Pick-3-Advice-Odds-Container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 204, 244);
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
 }
 // Pick 4 number generator
 
