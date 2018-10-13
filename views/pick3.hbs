@@ -4,6 +4,8 @@
 
 <div class="ui segment" id="pick-3-total-container">
     <div class="ui segment" id="pick-3-rules-container">
+
+        {{!-- quick breakdown of rules, considering putting it on another page entirely --}}
         <h3>Rules </h3>
         <p>1. Select one number (from 0 through 9) from each column for a total of three digits. For a
             Front Pair play,
@@ -49,7 +51,7 @@
 
         <p> Strait: Match in exact order (Example: Play numbers '123'; winning combination '123'</p>
     </div>
-
+    {{!-- Container for the number generator --}}
 
 
     <div class="ui segment" id="pick-3-gen-box">
@@ -69,16 +71,24 @@
 
         </div>
     </div>
+    {{!-- Where all saved session numbers are stored, user gets to press button if numbers were played --}}
 
     <div class="ui segment" id="Pick-3-Saved-Numbers-Container">
         <h2>Saved Numbers</h2>
         <div class="ui segment" id="Pick-3-Saved-Numbers">
             <center>
                 <img id="Pick-3-Genie" src='/images/geniworkinge2.jpg'>
+
             </center>
         </div>
+        <form action="" method="POST">
+            <button onclick="numberPusher()"> I have played these numbers</button> </form> <button> I don't like these
+            numbers</button>
+
     </div>
 
+
+    {{!-- odds and advice container --}}
     <div class="ui segment" id="Pick-3-Advice-Odds-Container">
         <div class="ui segment" id="Pick-3-Genie-Advice">
             <h2>Genie Advice</h2>
@@ -92,6 +102,8 @@
                 lower than each of the player's three (3) digits in exact order. 26 ways to win.
             </p>
         </div>
+
+        {{!-- odds --}}
         <div class="ui segment" id="Pick-3-Odds">
             <h2>Odds and prizes</h2>
             <h3>
@@ -156,11 +168,13 @@
         numbersPlayed3.push(p3, p3two, p3three);
         console.log(numbersPlayed3);
         document.getElementById("Pick-3-Saved-Numbers").innerHTML = "[" + numbersPlayed3 + "]";
-        if (numbersPlayed3.length > 2) {
 
-            return numbersPlayed3.push(newList)
-            document.getElementById("listSaved").innerHTML = "[" + newList + " - " + "]";
-        }
+    }
+
+
+
+    let TheNumberPusher = function numberPusher() {
+
     }
 
 

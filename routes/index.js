@@ -1,15 +1,14 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const UserModel = require('../models/user');
-const Winning = require('../models/winModel.js');
-const luck = require('../models/luckyNumber');
-const assert = require('assert');
+const UserModel = require("../models/user");
+const Winning = require("../models/winModel.js");
+const luck = require("../models/luckyNumber");
+const assert = require("assert");
 // const axios = require('axios');
 
-
 /* GET home page */
-router.get('/', (req, res, next) => {
-  res.render('index');
+router.get("/", (req, res, next) => {
+  res.render("index");
 });
 
 router.get("/dashBoard", (req, res, next) => {
@@ -17,7 +16,6 @@ router.get("/dashBoard", (req, res, next) => {
 });
 
 router.get("/userInfo", (req, res, next) => {
-
   res.render("userInfo");
 });
 
@@ -25,20 +23,20 @@ router.post("userInfo", (req, res, next) => {
   // console.log(req.body)
 });
 
-
 router.get("/userInfoLuck", (req, res, next) => {
-  luck.find()
+  luck
+    .find()
     .then(luck => {
-      console.log("pure unadulterated luck!!")
+      console.log("pure unadulterated luck!!");
 
       res.render("./userInfoLuck", {
         luck
-      })
+      });
     })
 
     .catch(error => {
-      console.log(error)
-    })
+      console.log(error);
+    });
 });
 
 // router.get("userInfoLuck", (req, res, next) => {
@@ -46,8 +44,6 @@ router.get("/userInfoLuck", (req, res, next) => {
 //     };
 
 router.post("userInfoLuck", (req, res, next) => {
-
-
   // console.log(req.body)
 });
 
@@ -56,10 +52,7 @@ router.get("/numberGen", (req, res, next) => {
 });
 
 router.get("/WinningNumbers", (req, res, next) => {
-
-  res.render("WinningNumbers")
-
-
+  res.render("WinningNumbers");
 });
 
 // router.post("/insert", function (req, res, next) {
@@ -83,26 +76,21 @@ router.get("/WinningNumbers", (req, res, next) => {
 router.get("/megaWin", (req, res, next) => {
   Winning.find()
     .then(winning => {
-      console.log("Mega win time!!!")
+      console.log("Mega win time!!!");
 
       res.render("megaWin", {
         winning
-      })
+      });
     })
 
     .catch(error => {
-      console.log(error)
-    })
-})
-
-router.get("/yourNumbers", (req, res, next) => {
-
-  res.render("yourNumbers");
+      console.log(error);
+    });
 });
 
-
-
-
+router.get("/yourNumbers", (req, res, next) => {
+  res.render("yourNumbers");
+});
 
 router.get("/numberGenGamePick", (req, res, next) => {
   res.render("numberGenGamePick");
@@ -111,22 +99,20 @@ router.get("/pick2", (req, res, next) => {
   res.render("pick2");
 });
 
-// router.post("/pick2", (req, res, next) => {
-//   User.numbersPlayed.find()
-//   .then(numbersPlayed => {
-//     console.log(" Number Posted!")
+router.post("/pick2", (req, res, next) => {
+  User.Pick2NumbersPlayed.find()
+    .then(Pick2NumbersPlayed => {
+      console.log(" Number Posted!");
 
-//     res.render("pick2", {
-//       winning
-//     })
-//   })
+      res.render("pick2", {
+        winning
+      });
+    })
 
-//   .catch(error => {
-//     console.log(error)
-//   })
-// })
-
-// })
+    .catch(error => {
+      console.log(error);
+    });
+});
 
 router.get("/pick3", (req, res, next) => {
   res.render("pick3");
@@ -168,8 +154,6 @@ router.get("/PBWinners", (req, res, next) => {
   res.render("powerBall");
 });
 
-
-
 // router.get('/LuckyNumbersPage/:id', (req, res, next) => {
 //   let NumId = req.params.id;
 //   if (!/^[0-9]{24}$/.test(NumId)) {
@@ -190,56 +174,47 @@ router.get("/PBWinners", (req, res, next) => {
 //     .catch(next)
 // });
 
-
-
 router.get("/LuckyNumbersPage", (req, res, next) => {
-  luck.find()
+  luck
+    .find()
     .then(luck => {
-      console.log("two luck routes? Yes!")
+      console.log("two luck routes? Yes!");
 
       res.render("./LuckyNumbersPage", {
         luck
-      })
+      });
     })
 
     .catch(error => {
-      console.log(error)
-    })
-})
-
-
-
-router.get('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
-  res.render('luckyNumbersAdd')
-});
-
-
-router.post('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
-  const {
-    luckyNumber,
-    comments,
-  } = req.body;
-  const newNumber = new luck({
-    luckyNumber,
-    comments
-  });
-  newNumber.save()
-    .then((luckyNumber) => {
-      res.redirect('/userInfo');
-    })
-    .catch((error) => {
       console.log(error);
     });
 });
 
+router.get("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
+  res.render("luckyNumbersAdd");
+});
+
+router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
+  const { luckyNumber, comments } = req.body;
+  const newNumber = new luck({
+    luckyNumber,
+    comments
+  });
+  newNumber
+    .save()
+    .then(luckyNumber => {
+      res.redirect("/userInfo");
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
 
 // router.get('/LuckyNumbersPage/:NumId', luck.findOne);
-
 
 // router.put('/LuckyNumberPage/:NumId', luck.update);
 
 // router.delete('/LuckyNumbersPage:NumId', luck.delete);
-
 
 // router.get('/LuckyNumbersPage/edit', (req, res, next) => {
 //   luck.findOne({
@@ -255,8 +230,6 @@ router.post('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
 //     });
 // });
 
-
-
 // const numberAPI = axios.create({
 //   baseURL: 'https://data.ny.gov/resource/h6w8-42p9.json'
 // })
@@ -270,7 +243,5 @@ router.post('/LuckyNumbersPage/luckyNumbersAdd', (req, res, next) => {
 //       console.error(err)
 //     })
 // }
-
-
 
 module.exports = router;

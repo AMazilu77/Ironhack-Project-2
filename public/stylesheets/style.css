@@ -47,6 +47,12 @@ table#t01 th {
   background-color: black;
   color: white; }
 
+#Pick-4-Total-Container {
+  border: 2px;
+  border-style: solid;
+  background-color: #fae3ff;
+  padding: 1%; }
+
 .boxes {
   border: 2px;
   border-style: solid;
@@ -54,6 +60,13 @@ table#t01 th {
   width: 600px;
   background-color: pink;
   padding: 0 100px 0 0; }
+
+#Pick-4-Rules {
+  border: 2px;
+  border-style: solid;
+  background-color: #a7e3ff;
+  padding: 1%;
+  margin: 1%; }
 
 #thefirst {
   display: flex;
@@ -167,12 +180,6 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   padding: 10px; }
-
-#pick4border {
-  border: 2px;
-  border-style: solid;
-  background-color: #fae3ff;
-  padding: 5px; }
 
 #pick4gen {
   position: relative;

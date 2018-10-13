@@ -63,6 +63,14 @@ table#t01 th {
 }
 
 // Pick 4 Number Gen
+
+#Pick-4-Total-Container {
+  border: 2px;
+  border-style: solid;
+  background-color: rgb(250, 227, 255);
+  padding: 1%;
+}
+
 .boxes {
   border: 2px;
   border-style: solid;
@@ -70,6 +78,14 @@ table#t01 th {
   width: 600px;
   background-color: pink;
   padding: 0 100px 0 0;
+}
+
+#Pick-4-Rules {
+  border: 2px;
+  border-style: solid;
+  background-color: rgb(167, 227, 255);
+  padding: 1%;
+  margin: 1%;
 }
 
 #thefirst {
@@ -199,13 +215,6 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   padding: 10px;
-}
-
-#pick4border {
-  border: 2px;
-  border-style: solid;
-  background-color: rgb(250, 227, 255);
-  padding: 5px;
 }
 
 #pick4gen {
