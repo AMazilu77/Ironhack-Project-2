@@ -47,258 +47,6 @@ table#t01 th {
   background-color: black;
   color: white; }
 
-#Pick-4-Total-Container {
-  border: 2px;
-  border-style: solid;
-  background-color: #fae3ff;
-  padding: 1%; }
-
-.boxes {
-  border: 2px;
-  border-style: solid;
-  height: 600px;
-  width: 600px;
-  background-color: pink;
-  padding: 0 100px 0 0; }
-
-#Pick-4-Rules {
-  border: 2px;
-  border-style: solid;
-  background-color: #a7e3ff;
-  padding: 1%;
-  margin: 1%; }
-
-#thefirst {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  position: relative;
-  height: 160px;
-  width: 80px;
-  background-color: white; }
-
-#thesecond {
-  position: relative;
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-direction: row;
-  left: 100px;
-  height: 160px;
-  width: 80px;
-  background-color: white; }
-
-#thethird {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-direction: row;
-  left: 100px;
-  height: 160px;
-  width: 80px;
-  background-color: white; }
-
-#thefourth {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  left: 100px;
-  height: 160px;
-  width: 80px;
-  background-color: white; }
-
-.row {
-  position: relative;
-  left: 50px;
-  top: 25px; }
-
-#first {
-  font-size: 60px; }
-
-#sec {
-  font-size: 60px; }
-
-#third {
-  font-size: 60px; }
-
-#fourth {
-  font-size: 60px; }
-
-#four {
-  background-color: green; }
-
-.numBox4 {
-  background-color: pink;
-  border: 2px;
-  height: 30%;
-  width: 100%; }
-
-.innerbox11 {
-  position: relative;
-  background-color: white;
-  top: 20px;
-  left: 30px;
-  height: 130px;
-  width: 90px;
-  border: 2px; }
-
-.innerbox22 {
-  position: relative;
-  background-color: white;
-  left: 150px;
-  height: 130px;
-  width: 90px;
-  bottom: 170px; }
-
-.innerbox33 {
-  position: relative;
-  background-color: white;
-  left: 265px;
-  height: 130px;
-  width: 90px;
-  bottom: 360px; }
-
-.innerbox44 {
-  position: relative;
-  background-color: white;
-  left: 385px;
-  height: 130px;
-  width: 90px;
-  bottom: 300px;
-  padding: 5px; }
-
-#gen44 {
-  height: 35%;
-  width: 40%;
-  position: relative;
-  top: -150px;
-  background-color: lightgrey;
-  border: 2px;
-  border-style: solid;
-  padding: 10px; }
-
-#pick4gen {
-  position: relative;
-  left: 350px;
-  bottom: 800px;
-  border: 1px;
-  border-style: solid; }
-
-#pick-5-total-container {
-  background-color: #deccff;
-  width: 100%;
-  height: 100%;
-  margin: 1%;
-  padding: 1%;
-  border: 2px;
-  border-style: solid;
-  border-color: black; }
-
-#pick5genie {
-  height: 80%;
-  width: auto;
-  border: 2px;
-  border-style: solid;
-  border-color: black; }
-
-#FL-Lotto-Number-Gen-Container {
-  background-color: black; }
-
-#pick5-GameBox {
-  background-color: #fdb0bd;
-  width: 80%;
-  padding: 1%;
-  border: 2px;
-  margin: 1%;
-  border-style: solid;
-  border-color: black; }
-
-#pick-5-how-to-play {
-  background-color: #9fffdf;
-  width: 80%;
-  height: 100%;
-  padding: 1%;
-  border: 2px;
-  margin: 1%;
-  border-style: solid;
-  border-color: black; }
-
-h1 {
-  font-size: 40px; }
-
-.pick5Cards {
-  display: flex;
-  background-color: white;
-  height: 75%;
-  width: 100%;
-  border: 2px;
-  margin: 1%;
-  border-style: solid; }
-
-#Pick-5-Odds {
-  background-color: #9fc9ff;
-  width: 30%;
-  height: 100%;
-  padding: 1%;
-  border: 2px;
-  margin: 1%;
-  border-style: solid;
-  border-color: black; }
-
-#Pick-5-Advice {
-  background-color: #99a3ff;
-  padding: 1%;
-  border: 2px;
-  border-style: solid;
-  border-color: black; }
-
-#display {
-  width: 350px;
-  height: 350px;
-  border-width: 2px;
-  border-style: solid; }
-
-.megaMil {
-  position: relative;
-  top: 80px;
-  display: inline-flex;
-  flex-direction: row;
-  align-self: center;
-  order: 1;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
-  background-color: blue;
-  width: 75px;
-  height: 120px; }
-
-.innerMegaMil {
-  display: flex;
-  align-self: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
-  background-color: white;
-  border: 2px;
-  border-style: solid;
-  border-color: black;
-  width: 85%;
-  height: 85%;
-  font-size: 30px; }
-
-#megaBall {
-  background-color: red; }
-
 #Pick-2-Number-Gen-Total-Container {
   background-color: #b7dcff;
   border: 2px;
@@ -470,9 +218,126 @@ h1 {
   padding: 1%;
   margin: 1%; }
 
-.pick4 {
+#Pick-4-Total-Container {
+  border: 2px;
+  border-style: solid;
+  background-color: #fae3ff;
+  padding: 1%; }
+
+#Pick-4-Rules {
+  border: 2px;
+  border-style: solid;
+  background-color: #a7e3ff;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Number-Gen {
+  border: 2px;
+  border-style: solid;
+  background-color: #bdb1ff;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Inner-Number-Gen {
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  border-style: solid;
+  background-color: #b1ffc9;
+  padding: 1%;
+  margin: 1%; }
+
+#FL-Pick-4-Number-Card {
+  border: 2px;
+  border-style: solid;
+  background-color: white;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Number-Gen {
+  background-color: lightgrey;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
+
+#pick-5-total-container {
+  background-color: #deccff;
+  width: 100%;
+  height: 100%;
+  margin: 1%;
+  padding: 1%;
+  border: 2px;
+  border-style: solid;
+  border-color: black; }
+
+#pick5genie {
+  height: 80%;
+  width: auto;
+  border: 2px;
+  border-style: solid;
+  border-color: black; }
+
+#FL-Lotto-Number-Gen-Container {
+  background-color: black; }
+
+#pick5-GameBox {
+  background-color: #fdb0bd;
+  width: 80%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid;
+  border-color: black; }
+
+#pick-5-how-to-play {
+  background-color: #9fffdf;
+  width: 80%;
+  height: 100%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid;
+  border-color: black; }
+
+h1 {
+  font-size: 40px; }
+
+.pick5Cards {
+  display: flex;
+  background-color: white;
+  height: 75%;
+  width: 100%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid; }
+
+#Pick-5-Odds {
+  background-color: #9fc9ff;
+  width: 30%;
+  height: 100%;
+  padding: 1%;
+  border: 2px;
+  margin: 1%;
+  border-style: solid;
+  border-color: black; }
+
+#Pick-5-Advice {
+  background-color: #99a3ff;
+  padding: 1%;
+  border: 2px;
+  border-style: solid;
+  border-color: black; }
+
+#display {
+  width: 350px;
+  height: 350px;
+  border-width: 2px;
+  border-style: solid; }
+
+.megaMil {
   position: relative;
-  top: 10px;
+  top: 80px;
   display: inline-flex;
   flex-direction: row;
   align-self: center;
@@ -484,12 +349,11 @@ h1 {
   border: 2px;
   border-style: solid;
   border-color: black;
-  background-color: #5f5fff;
-  width: 120px;
-  height: 160px;
-  margin: auto; }
+  background-color: blue;
+  width: 75px;
+  height: 120px; }
 
-.innerPick4 {
+.innerMegaMil {
   display: flex;
   align-self: center;
   flex-direction: row;
@@ -497,99 +361,16 @@ h1 {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-around;
-  background-color: #cbdfcb;
+  background-color: white;
   border: 2px;
   border-style: solid;
   border-color: black;
   width: 85%;
   height: 85%;
-  font-size: 30px;
-  margin: 10px;
-  position: relative;
-  font-size: 70px;
-  font-style: bold; }
+  font-size: 30px; }
 
-.pick4box {
-  border: 2px;
-  border-style: solid;
-  background-color: lightgreen;
-  height: 250px;
-  width: 100%;
-  position: relative;
-  bottom: 0px;
-  left: 0 px; }
-
-#googlebtn {
-  height: 53px;
-  width: auto; }
-
-#login {
-  position: relative;
-  top: 220px;
-  left: 550px; }
-
-#geniepick4advice {
-  position: relative;
-  display: flex;
-  bottom: 750px;
-  left: 600px;
-  background-color: lightgoldenrodyellow;
-  border: 2px;
-  border-style: solid;
-  width: 50%;
-  height: auto;
-  padding: 10px; }
-
-#pick4gen {
-  position: relative;
-  left: 570px;
-  top: 175px; }
-
-#oddsPick4 {
-  position: relative;
-  left: 800px;
-  bottom: 120px;
-  background-color: #eeffcd;
-  border: 2px;
-  border-style: solid;
-  padding: 15px;
-  width: 30%; }
-
-#gen22 {
-  border: 2px;
-  border-style: solid;
-  padding: 10px;
-  background-color: #d1c1ff;
-  padding: 10px; }
-
-#Saved-Numbers-Area {
-  border: 2px;
-  border-style: solid;
-  width: 95%;
-  height: 450px;
-  position: relative;
-  bottom: 450px;
-  background-color: lightgoldenrodyellow;
-  padding: 10px; }
-
-#Played-Numbers-Box {
-  border: 2px;
-  border-style: solid;
-  width: 95%;
-  height: 450x;
-  position: relative;
-  bottom: parent;
-  background-color: lightgreen;
-  padding: 10px; }
-
-#pick3SavedNumberBox {
-  position: relative;
-  display: flex;
-  width: 66%;
-  height: 250px;
-  background-color: lightcyan;
-  border: 2px;
-  border-style: solid; }
+#megaBall {
+  background-color: red; }
 
 #howToPlay {
   background-color: #faffaf;
