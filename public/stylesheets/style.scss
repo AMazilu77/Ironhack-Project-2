@@ -62,7 +62,8 @@ table#t01 th {
   color: white;
 }
 
-// NUMBER GENERATOR SECTION
+// NUMBER GENERATOR
+
 // Pick 2 Number Generator container holding number cards
 
 #Pick-2-Number-Gen-Total-Container {
@@ -300,7 +301,33 @@ table#t01 th {
 }
 
 #Pick-4-Number-Gen {
-  background-color: lightgrey;
+  background-color: rgb(255, 161, 255);
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+}
+
+#Pick-4-Genie-Advice {
+  background-color: rgb(221, 255, 143);
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+}
+
+#Pick-4-Odds {
+  background-color: rgb(143, 210, 255);
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+}
+
+#Pick-4-Advice-Odds-Container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(143, 255, 218);
   border: 2px;
   border-style: solid;
   padding: 1%;

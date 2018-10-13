@@ -255,7 +255,30 @@ table#t01 th {
   margin: 1%; }
 
 #Pick-4-Number-Gen {
-  background-color: lightgrey;
+  background-color: #ffa1ff;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Genie-Advice {
+  background-color: #ddff8f;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Odds {
+  background-color: #8fd2ff;
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%; }
+
+#Pick-4-Advice-Odds-Container {
+  display: flex;
+  flex-direction: row;
+  background-color: #8fffda;
   border: 2px;
   border-style: solid;
   padding: 1%;
