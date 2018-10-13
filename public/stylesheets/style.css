@@ -241,6 +241,7 @@ table#t01 th {
 #Pick-4-Inner-Number-Gen {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   border: 2px;
   border-style: solid;
   background-color: #b1ffc9;
@@ -248,16 +249,12 @@ table#t01 th {
   margin: 1%; }
 
 #FL-Pick-4-Number-Card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   border: 2px;
   border-style: solid;
   background-color: white;
-  padding: 1%;
-  margin: 1%; }
-
-#Pick-4-Number-Gen {
-  background-color: #ffa1ff;
-  border: 2px;
-  border-style: solid;
   padding: 1%;
   margin: 1%; }
 
@@ -278,7 +275,7 @@ table#t01 th {
 #Pick-4-Advice-Odds-Container {
   display: flex;
   flex-direction: row;
-  background-color: #8fffda;
+  background-color: #74ff97;
   border: 2px;
   border-style: solid;
   padding: 1%;
