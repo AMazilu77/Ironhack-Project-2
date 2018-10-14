@@ -249,9 +249,6 @@ table#t01 th {
   margin: 1%; }
 
 #FL-Pick-4-Number-Card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   border: 2px;
   border-style: solid;
   background-color: white;
