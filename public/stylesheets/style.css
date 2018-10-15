@@ -255,6 +255,13 @@ table#t01 th {
   padding: 1%;
   margin: 1%; }
 
+#Pick-4-Save-Numbers {
+  border: 2px;
+  border-style: solid;
+  background-color: #c2ffff;
+  padding: 1%;
+  margin: 1%; }
+
 #Pick-4-Genie-Advice {
   background-color: #ddff8f;
   border: 2px;
@@ -277,6 +284,10 @@ table#t01 th {
   border-style: solid;
   padding: 1%;
   margin: 1%; }
+
+#Pick-4-Genie {
+  border: 2px;
+  border-style: solid; }
 
 #pick-5-total-container {
   background-color: #deccff;
