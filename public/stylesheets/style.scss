@@ -366,9 +366,6 @@ table#t01 th {
 
 #pick5-GameBox {
   background-color: rgb(253, 176, 189);
-
-  width: 80%;
-
   padding: 1%;
   border: 2px;
   margin: 1%;
@@ -401,16 +398,26 @@ h1 {
   margin: 1%;
   border-style: solid;
 }
+#Pick-5-advice-odds-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(91, 247, 247);
+}
 
 #Pick-5-Odds {
   background-color: rgb(159, 201, 255);
-  width: 30%;
-  height: 100%;
   padding: 1%;
   border: 2px;
   margin: 1%;
   border-style: solid;
   border-color: black;
+  width: 40%;
+  height: 40%;
 }
 
 #Pick-5-Advice {
@@ -419,6 +426,8 @@ h1 {
   border: 2px;
   border-style: solid;
   border-color: black;
+  width: 40%;
+  height: 50%;
 }
 
 #display {
@@ -426,6 +435,20 @@ h1 {
   height: 350px;
   border-width: 2px;
   border-style: solid;
+}
+
+#pick-5-genie {
+  border-width: 2px;
+  border-style: solid;
+}
+
+#pick-5-Saved-Numbers {
+  margin: 1%;
+  padding: 1%;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(188, 248, 206);
 }
 
 // mega millions area

@@ -311,7 +311,6 @@ table#t01 th {
 
 #pick5-GameBox {
   background-color: #fdb0bd;
-  width: 80%;
   padding: 1%;
   border: 2px;
   margin: 1%;
@@ -340,28 +339,52 @@ h1 {
   margin: 1%;
   border-style: solid; }
 
+#Pick-5-advice-odds-container {
+  display: flex;
+  flex-direction: row;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  margin: 1%;
+  padding: 1%;
+  background-color: #5bf7f7; }
+
 #Pick-5-Odds {
   background-color: #9fc9ff;
-  width: 30%;
-  height: 100%;
   padding: 1%;
   border: 2px;
   margin: 1%;
   border-style: solid;
-  border-color: black; }
+  border-color: black;
+  width: 40%;
+  height: 40%; }
 
 #Pick-5-Advice {
   background-color: #99a3ff;
   padding: 1%;
   border: 2px;
   border-style: solid;
-  border-color: black; }
+  border-color: black;
+  width: 40%;
+  height: 50%; }
 
 #display {
   width: 350px;
   height: 350px;
   border-width: 2px;
   border-style: solid; }
+
+#pick-5-genie {
+  border-width: 2px;
+  border-style: solid; }
+
+#pick-5-Saved-Numbers {
+  margin: 1%;
+  padding: 1%;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  background-color: #bcf8ce; }
 
 .megaMil {
   position: relative;
