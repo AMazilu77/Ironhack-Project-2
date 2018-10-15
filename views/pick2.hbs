@@ -9,6 +9,9 @@
     <title>Pick 2</title>
 </head>
 <button onclick="location.href='/dashBoard';"> Back </button>
+<center>
+    <h2>Fl Pick 2</h2>
+</center>
 
 <body>
 
@@ -24,6 +27,7 @@
 
         </div>
         <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
+        {{!-- game rules --}}
         <div class="ui segment" id="Pick2Rules">
             <h3>Rules </h3>
             <p>1. Select one number (from 0 through 9) from each column for a total of two digits
@@ -52,7 +56,7 @@
                 <h2>Click save numbers to save a list
                     <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
                 </h2>
-
+                {{!-- generated numbers --}}
                 <div class="ui segment" id="Pick-2-Card-Container">
                     <h1 class="Pick-2-Card" id="Pick-2[1]"> 0 </h1>
                     <h1 class="Pick-2-Card" id="Pick-2[2]"> 0 </h1>
