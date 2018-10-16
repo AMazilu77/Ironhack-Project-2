@@ -20,14 +20,16 @@ router.get("/userInfo", (req, res, next) => {
 });
 
 router.post("userInfo", (req, res, next) => {
-  // console.log(req.body)
+  console.log(req.body);
 });
 
 router.get("/userInfoLuck", (req, res, next) => {
   luck
     .find()
     .then(luck => {
-      console.log("pure unadulterated luck!!");
+      console.log(
+        "pure unadulterated luck!! The User Info Luck Page is loading"
+      );
 
       res.render("./userInfoLuck", {
         luck
@@ -39,12 +41,8 @@ router.get("/userInfoLuck", (req, res, next) => {
     });
 });
 
-// router.get("userInfoLuck", (req, res, next) => {
-//       res.render("userInfoLuck");
-//     };
-
 router.post("userInfoLuck", (req, res, next) => {
-  // console.log(req.body)
+  console.log(req.body);
 });
 
 router.get("/numberGen", (req, res, next) => {
