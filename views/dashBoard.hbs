@@ -1,23 +1,34 @@
 <head>
     <title>{{title}}</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
 </head>
 
 <body>
     <center>
         <h1>Why have you summoned me, Mortal? </h1>
 
-        <img id="genie-render" src="./images/geniworkinge2.jpg"> </img>
+        <img id="genie-dashboard-render" src="./images/geniworkinge2.jpg"> </img>
         <br>
         <br>
         <br>
-        <button class="btn" id="winner" onclick="location.href='/numberGen';"> Give me the winning numbers </button>
-        <button class="btn" id="mynumbers" onclick="location.href='/yourNumbers'" ;> Let me see the numbers I have played</button>
-        <button class="btn" id="winningNumbers" onclick="location.href='/winningNumbers'" ;> Let me see that numbers that have won </button>
-        <button class="btn" id="takeapic" onclick="location.href='/takepic';"> Take a picture of my ticket </button>
-        <button class="btn" id='profile' onclick="location.href='/userInfo';"> Let me see my profile </button>
+        <button class="btn" onclick="location.href='/numberGen';"> Give me the winning numbers </button>
+        <button class="btn" onclick="location.href='/yourNumbers'" ;> Let me see the numbers I have
+            played</button>
+        <button class="btn" onclick="location.href='/winningNumbers'" ;> Let me see that numbers
+            that have won </button>
+        <button class="btn" onclick="location.href='/takepic';"> Take a picture of my ticket </button>
+        <button class="btn" onclick="location.href='/userInfo';"> Let me see my profile </button>
         <button class="btn" onclick="location.href='/logout';"> Logout</button>
+
+
         <script src='/javascripts/script.js'></script>
+
 
     </center>
 </body>

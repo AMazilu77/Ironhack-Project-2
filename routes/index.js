@@ -4,7 +4,7 @@ const UserModel = require("../models/user");
 const Winning = require("../models/winModel.js");
 const luck = require("../models/luckyNumber");
 const assert = require("assert");
-// const axios = require('axios');
+const axios = require("axios");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -191,6 +191,7 @@ router.get("/LuckyNumbersPage", (req, res, next) => {
 router.get("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
   res.render("luckyNumbersAdd");
 });
+// post to add lucky numbers
 
 router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
   const { luckyNumber, comments } = req.body;
@@ -208,38 +209,41 @@ router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
     });
 });
 
-// router.get('/LuckyNumbersPage/:NumId', luck.findOne);
+router.get("/LuckyNumbersPage/:NumId", luck.findOne);
 
-// router.put('/LuckyNumberPage/:NumId', luck.update);
+router.put("/LuckyNumberPage/:NumId", luck.update);
 
-// router.delete('/LuckyNumbersPage:NumId', luck.delete);
+// Route.delete() requires a callback function but got a [object Undefined]
+// router.delete("/LuckyNumbersPage:NumId", luck.delete);
 
-// router.get('/LuckyNumbersPage/edit', (req, res, next) => {
-//   luck.findOne({
-//       _id: req.query.Numid
-//     })
-//     .then((book) => {
-//       res.render("/LuckyNumbersPage", {
-//         luck
-//       });
-//     })
-//     .catch((error) => {
-//       console.log(error);
-//     });
-// });
+router.get("/LuckyNumbersPage/edit", (req, res, next) => {
+  luck
+    .findOne({
+      _id: req.query.Num__id
+    })
+    .then(luckyNumber => {
+      res.render("/LuckyNumbersPage", {
+        luck
+      });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+});
 
-// const numberAPI = axios.create({
-//   baseURL: 'https://data.ny.gov/resource/h6w8-42p9.json'
-// })
+const numberAPI = axios.create({
+  baseURL: "https://data.ny.gov/resource/h6w8-42p9.json"
+});
 
-// function getNumbers(id) {
-//   numberAPI.get(id)
-//     .then(response => {
-//       console.log(response.data)
-//     })
-//     .catch(err => {
-//       console.error(err)
-//     })
-// }
+function getNumbers(id) {
+  numberAPI
+    .get(id)
+    .then(response => {
+      console.log(response.data);
+    })
+    .catch(err => {
+      console.error(err);
+    });
+}
 
 module.exports = router;

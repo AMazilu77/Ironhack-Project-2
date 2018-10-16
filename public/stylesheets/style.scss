@@ -7,10 +7,13 @@ body {
 }
 
 .btn {
-  size: 25px;
-  height: 35px;
   width: auto;
-  font-size: 20px;
+  font-size: 35px;
+  margin: 1%;
+  padding: 1%;
+  background-color: rgb(167, 188, 255);
+  border: 1px;
+  border-style: solid;
 }
 
 a {
