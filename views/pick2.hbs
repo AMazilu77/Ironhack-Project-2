@@ -26,37 +26,25 @@
             <h2>Pick-2 Number Generator</h2>
 
         </div>
-        <button class='btn2' onclick="randomGenMaster22()"> Give me a number! </button>
+
         {{!-- game rules --}}
         <div class="ui segment" id="Pick2Rules">
             <h3>Rules </h3>
-            <p>1. Select one number (from 0 through 9) from each column for a total of two digits
-            </p>
-            <p>2. Select play type: Straight, Box, Straight/Box, 1-OFF, Front Number, or Back Number. </p>
-            <p> 3. Select amount you want to play: 50 cents or $1 (all Straight/Box and 1-OFF plays cost $1)</p>
-            <p>
-                <b>During the PICK 2 drawing, 2 numbers will be drawn at random. If your 2-digit number is a Straight
-                    match
-                    to the numbers, you win $25. Or, if any of your 1-OFF numbers match the PICK 2 numbers drawn, you
-                    win
-                    $3.
-                </b>
-            </p>
-
+            <p>1. Select one number (from 0 through 9) from each column for a total of two digits</p>
+            <br>
+            <button class="btn2" onclick=""> I wish to know more</button>
         </div>
 
         <center>
 
             <div class="ui segment" id='Pick-2-Game-Area'>
-
+                <button class='btn2' onclick="randomGenMaster22()"> Give me a number! </button>
                 <button class='btn2' onclick="saveNumber22()"> I will play this Number, save it
                 </button>
                 <button class='btn2' class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this
                     number, give me
                     another </button>
-                <h2>Click save numbers to save a list
-                    <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
-                </h2>
+
                 {{!-- generated numbers --}}
                 <div class="ui segment" id="Pick-2-Card-Container">
                     <h1 class="Pick-2-Card" id="Pick-2[1]"> 0 </h1>
@@ -64,7 +52,23 @@
 
                 </div>
             </div>
-            <button class='btn2' onclick="Pick2NumbersPlayed" method="POST">Post it</button>
+
+            <div class="ui segment" id='pick2SavedNumbers'>
+
+                <h2> Saved Numbers</h2>
+                <center>
+                    <h2>Click save numbers to save a list
+
+                        <div class="ui segment" id="Pick-2Played-Numbers-Box">
+                            <center> <img id="Pick-3-Genie" src='/images/geniworkinge2.jpg'></center>
+                        </div>
+                    </h2>
+                </center>
+            </div>
+            <button class='btn2' onclick="location.href='/yourNumbers'" method="/POST">Post it</button>
+
+
+
             <div class="ui segment" id="Pick2-Odds-Advice-Container">
                 <div class="ui segment" id="Pick2-Odds">
                     <h2>Odds</h2>
@@ -93,7 +97,7 @@
                 </div>
 
             </div>
-            <div class="ui segment" id="Pick-2Played-Numbers-Box">Saved Numbers </div>
+
 
 
         </center>

@@ -109,9 +109,16 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   border-color: black;
-  width: 10%;
+  width: 15%;
   height: 40%;
   font-size: 40px; }
+
+#numbersPlayedAreaPick2 {
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+  background-color: #889aff; }
 
 #Pick-2-Card-Container {
   display: flex;
@@ -145,7 +152,7 @@ table#t01 th {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
-  background-color: white;
+  background-color: #8ccbff;
   border: 2px;
   border-style: solid;
   border-color: black;
@@ -162,6 +169,13 @@ table#t01 th {
   border-color: black;
   padding: 1%;
   margin: 1%; }
+
+#pick2SavedNumbers {
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+  background-color: #dbbcff; }
 
 #pick-3-total-container {
   border: 2px;

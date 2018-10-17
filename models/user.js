@@ -8,10 +8,12 @@ const userSchema = new Schema(
     facebookID: String,
     googleID: String,
     luckyNumbers: [],
-    // schema for each game user saves numbers for
+
+    // schemas for each game user saves numbers for
+
     numbersPlayed: {
       // counter to tell how many sets of numbers you have saved
-      nextPick2: Number,
+      counterPick2: Number,
       //    array of saved tickets
       pick2: [
         {

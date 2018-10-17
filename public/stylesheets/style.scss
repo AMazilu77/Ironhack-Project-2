@@ -127,9 +127,17 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   border-color: black;
-  width: 10%;
+  width: 15%;
   height: 40%;
   font-size: 40px;
+}
+
+#numbersPlayedAreaPick2 {
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(136, 154, 255);
 }
 
 #Pick-2-Card-Container {
@@ -168,7 +176,7 @@ table#t01 th {
   width: 80%;
   display: flex;
   flex-wrap: nowrap;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(140, 203, 255);
   border: 2px;
   border-style: solid;
   border-color: black;
@@ -188,6 +196,13 @@ table#t01 th {
   margin: 1%;
 }
 
+#pick2SavedNumbers {
+  border: 2px;
+  border-style: solid;
+  padding: 1%;
+  margin: 1%;
+  background-color: rgb(219, 188, 255);
+}
 // Pick 3 Number Generator
 
 #pick-3-total-container {

@@ -5,6 +5,8 @@ const Winning = require("../models/winModel.js");
 const luck = require("../models/luckyNumber");
 const assert = require("assert");
 // const axios = require("axios");
+// const mongoose = require("mongoose");
+// const Schema = mongoose.Schema;
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -98,8 +100,8 @@ router.get("/pick2", (req, res, next) => {
 });
 
 router.post("/pick2", (req, res, next) => {
-  User.Pick2NumbersPlayed.find()
-    .then(Pick2NumbersPlayed => {
+  User.NumbersPlayed.find()
+    .then(NumbersPlayed => {
       console.log(" Number Posted!");
 
       res.render("pick2", {
@@ -232,18 +234,18 @@ router.get("/LuckyNumbersPage/edit", (req, res, next) => {
 });
 
 // const numberAPI = axios.create({
-//   baseURL: "https://data.ny.gov/resource/h6w8-42p9.json"
+//   baseURL: "https://data.ny.gov/resource/h6w8-42p9"
 // });
 
-function getNumbers(id) {
-  numberAPI
-    .get(id)
-    .then(response => {
-      console.log(response.data);
-    })
-    .catch(err => {
-      console.error(err);
-    });
-}
+// function getNumbers(id) {
+//   numberAPI
+//     .get(id)
+//     .then(response => {
+//       console.log(response.data);
+//     })
+//     .catch(err => {
+//       console.error(err);
+//     });
+// }
 
 module.exports = router;
