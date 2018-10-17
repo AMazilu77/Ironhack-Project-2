@@ -7,14 +7,14 @@ body {
 }
 
 .btn {
-  background-color: #9858ff; /* Green */
+  background-color: #ae58ff; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 20px;
   margin: 4px 2px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -24,14 +24,14 @@ body {
 }
 
 .btn2 {
-  background-color: #9858ff; /* Green */
+  background-color: #fa746a; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 10px;
   margin: 4px 2px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition-duration: 0.4s; /* Safari */
@@ -39,6 +39,11 @@ body {
   border: 1px;
   border-style: solid;
 }
+
+.btn2:hover {
+  color: black;
+}
+
 .btn:hover {
   color: black;
 }

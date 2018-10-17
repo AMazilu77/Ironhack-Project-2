@@ -26,7 +26,7 @@
             <h2>Pick-2 Number Generator</h2>
 
         </div>
-        <button id="pick-2-master" onclick="randomGenMaster22()"> Give me a number! </button>
+        <button class='btn2' onclick="randomGenMaster22()"> Give me a number! </button>
         {{!-- game rules --}}
         <div class="ui segment" id="Pick2Rules">
             <h3>Rules </h3>
@@ -49,9 +49,10 @@
 
             <div class="ui segment" id='Pick-2-Game-Area'>
 
-                <button id="" class='playthisnumber' onclick="saveNumber22()"> I will play this Number, save it
+                <button class='btn2' onclick="saveNumber22()"> I will play this Number, save it
                 </button>
-                <button class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this number, give me
+                <button class='btn2' class='Dontplaythisnumber' onclick="randomGenMaster22(2)"> I don't like this
+                    number, give me
                     another </button>
                 <h2>Click save numbers to save a list
                     <h4 id="numbersPlayedAreaPick2"> click save number to save the number you want </h4>
@@ -63,7 +64,7 @@
 
                 </div>
             </div>
-            <button onclick="Pick2NumbersPlayed" method="POST">Post it</button>
+            <button class='btn2' onclick="Pick2NumbersPlayed" method="POST">Post it</button>
             <div class="ui segment" id="Pick2-Odds-Advice-Container">
                 <div class="ui segment" id="Pick2-Odds">
                     <h2>Odds</h2>
@@ -76,7 +77,7 @@
                         a one-off
                         number on either and/or both numbers for a $3.00 payout.
                     </p>
-                    <button> Tell me more about odds and probability</button>
+                    <button class='btn2'> Tell me more </button>
                 </div>
 
 
