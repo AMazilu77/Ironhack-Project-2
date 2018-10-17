@@ -4,7 +4,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .btn {
-  background-color: #c526ab;
+  background-color: #9858ff;
   /* Green */
   border: none;
   color: white;
@@ -12,7 +12,7 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 25px;
   margin: 4px 2px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-transition-duration: 0.4s;
