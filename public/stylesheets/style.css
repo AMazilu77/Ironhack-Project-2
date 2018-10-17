@@ -1,67 +1,68 @@
 body {
   padding: 50px;
   background-color: #fbfaf8;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 .btn {
-  width: auto;
-  font-size: 35px;
-  margin: 1%;
-  padding: 1%;
-  background-color: #a7bcff;
+  background-color: #c526ab;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
   border: 1px;
-  border-style: solid;
-}
+  border-style: solid; }
+
+.btn:hover {
+  color: black; }
 
 a {
-  color: black;
-}
+  color: black; }
 
 #lamp {
   height: 250px;
-  width: auto;
-}
+  width: auto; }
 
 #played-numbers-box {
   border: 3px;
   border-color: black;
   border-style: solid;
-  background-color: pink;
-}
+  background-color: pink; }
 
 #genie-dashboard-render {
-  width: 40%;
+  width: 30%;
   height: auto;
   border: 2px;
-  border-style: solid;
-}
+  border-style: solid; }
 
 table,
 th,
 td {
   border: 1px solid black;
-  border-collapse: collapse;
-}
+  border-collapse: collapse; }
 
 th,
 td {
   padding: 15px;
-  text-align: left;
-}
+  text-align: left; }
 
 table#t01 tr:nth-child(even) {
-  background-color: #eee;
-}
+  background-color: #eee; }
 
 table#t01 tr:nth-child(odd) {
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 table#t01 th {
   background-color: black;
-  color: white;
-}
+  color: white; }
 
 #Pick-2-Number-Gen-Total-Container {
   background-color: #b7dcff;
@@ -69,8 +70,7 @@ table#t01 th {
   border-style: solid;
   border-color: black;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-2-Game-Area {
   width: 70%;
@@ -79,8 +79,7 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 .Pick-2-Card {
   padding: 1%;
@@ -91,13 +90,11 @@ table#t01 th {
   border-color: black;
   width: 10%;
   height: 40%;
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 #Pick-2-Card-Container {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 #Pick2Rules {
   background-color: #b7ffef;
@@ -105,8 +102,7 @@ table#t01 th {
   border-style: solid;
   border-color: black;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick2-Advice {
   background-color: #afffaf;
@@ -114,8 +110,7 @@ table#t01 th {
   border-width: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick2-Odds {
   background-color: #fff892;
@@ -123,8 +118,7 @@ table#t01 th {
   border-style: solid;
   width: 30%;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick2-Odds-Advice-Container {
   width: 80%;
@@ -135,8 +129,7 @@ table#t01 th {
   border-style: solid;
   border-color: black;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-2Played-Numbers-Box {
   width: 80%;
@@ -147,8 +140,7 @@ table#t01 th {
   border-style: solid;
   border-color: black;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #pick-3-total-container {
   border: 2px;
@@ -156,8 +148,7 @@ table#t01 th {
   border-color: black;
   background-color: #cad2ff;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #pick-3-gen-box {
   border: 2px;
@@ -165,8 +156,7 @@ table#t01 th {
   border-color: black;
   background-color: #fffce4;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-3-Card-Container {
   display: flex;
@@ -176,8 +166,7 @@ table#t01 th {
   margin: 1%;
   border: 2px;
   border-color: black;
-  border-style: solid;
-}
+  border-style: solid; }
 
 .FL-Pick-3-Number-Card {
   font-size: 70px;
@@ -190,8 +179,7 @@ table#t01 th {
   background-color: white;
   border: 2px;
   border-color: black;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #pick-3-rules-container {
   border: 2px;
@@ -199,8 +187,7 @@ table#t01 th {
   border-style: solid;
   padding: 1%;
   margin: 1%;
-  background-color: #caebff;
-}
+  background-color: #caebff; }
 
 #Pick-3-Odds {
   background-color: #ddffec;
@@ -208,8 +195,7 @@ table#t01 th {
   border-style: solid;
   width: 55%;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-3-Genie-Advice {
   background-color: #adffc1;
@@ -217,8 +203,7 @@ table#t01 th {
   border-style: solid;
   width: 30%;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-3-Saved-Numbers-Container {
   background-color: #ffd5ae;
@@ -226,8 +211,7 @@ table#t01 th {
   border-style: solid;
   width: 96%;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-3-Saved-Numbers {
   background-color: #54f7f7;
@@ -236,13 +220,11 @@ table#t01 th {
   width: 90%;
   height: 50%;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-3-Genie {
   border: 2px;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #Pick-3-Advice-Odds-Container {
   display: flex;
@@ -251,31 +233,27 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Total-Container {
   border: 2px;
   border-style: solid;
   background-color: #fae3ff;
-  padding: 1%;
-}
+  padding: 1%; }
 
 #Pick-4-Rules {
   border: 2px;
   border-style: solid;
   background-color: #a7e3ff;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Number-Gen {
   border: 2px;
   border-style: solid;
   background-color: #bdb1ff;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Inner-Number-Gen {
   display: flex;
@@ -285,40 +263,35 @@ table#t01 th {
   border-style: solid;
   background-color: #b1ffc9;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 .FL-Pick-4-Number-Card {
   border: 2px;
   border-style: solid;
   background-color: white;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Save-Numbers {
   border: 2px;
   border-style: solid;
   background-color: #c2ffff;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Genie-Advice {
   background-color: #ddff8f;
   border: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Odds {
   background-color: #8fd2ff;
   border: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Advice-Odds-Container {
   display: flex;
@@ -327,13 +300,11 @@ table#t01 th {
   border: 2px;
   border-style: solid;
   padding: 1%;
-  margin: 1%;
-}
+  margin: 1%; }
 
 #Pick-4-Genie {
   border: 2px;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #pick-5-total-container {
   background-color: #deccff;
@@ -343,20 +314,17 @@ table#t01 th {
   padding: 1%;
   border: 2px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #pick5genie {
   height: 80%;
   width: auto;
   border: 2px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #FL-Lotto-Number-Gen-Container {
-  background-color: black;
-}
+  background-color: black; }
 
 #pick5-GameBox {
   background-color: #fdb0bd;
@@ -364,8 +332,7 @@ table#t01 th {
   border: 2px;
   margin: 1%;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #pick-5-how-to-play {
   background-color: #9fffdf;
@@ -375,12 +342,10 @@ table#t01 th {
   border: 2px;
   margin: 1%;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 h1 {
-  font-size: 40px;
-}
+  font-size: 40px; }
 
 .pick5Cards {
   display: flex;
@@ -389,8 +354,7 @@ h1 {
   width: 100%;
   border: 2px;
   margin: 1%;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #Pick-5-advice-odds-container {
   display: flex;
@@ -400,8 +364,7 @@ h1 {
   border-color: black;
   margin: 1%;
   padding: 1%;
-  background-color: #5bf7f7;
-}
+  background-color: #5bf7f7; }
 
 #Pick-5-Odds {
   background-color: #9fc9ff;
@@ -411,8 +374,7 @@ h1 {
   border-style: solid;
   border-color: black;
   width: 40%;
-  height: 40%;
-}
+  height: 40%; }
 
 #Pick-5-Advice {
   background-color: #99a3ff;
@@ -421,20 +383,17 @@ h1 {
   border-style: solid;
   border-color: black;
   width: 40%;
-  height: 50%;
-}
+  height: 50%; }
 
 #display {
   width: 350px;
   height: 350px;
   border-width: 2px;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #pick-5-genie {
   border-width: 2px;
-  border-style: solid;
-}
+  border-style: solid; }
 
 #pick-5-Saved-Numbers {
   margin: 1%;
@@ -442,8 +401,7 @@ h1 {
   border: 2px;
   border-style: solid;
   border-color: black;
-  background-color: #bcf8ce;
-}
+  background-color: #bcf8ce; }
 
 .megaMil {
   position: relative;
@@ -461,8 +419,7 @@ h1 {
   border-color: black;
   background-color: blue;
   width: 75px;
-  height: 120px;
-}
+  height: 120px; }
 
 .innerMegaMil {
   display: flex;
@@ -478,20 +435,17 @@ h1 {
   border-color: black;
   width: 85%;
   height: 85%;
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 #megaBall {
-  background-color: red;
-}
+  background-color: red; }
 
 #howToPlay {
   background-color: #faffaf;
   border: 1px;
   border-style: solid;
   border-color: black;
-  padding: 5px;
-}
+  padding: 5px; }
 
 #FL-Lotto-Total-Container {
   border: 1px;
@@ -502,8 +456,7 @@ h1 {
   background-color: #dfd3ff;
   border: 1px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #FL-Master-Container {
   margin-top: 2%;
@@ -512,8 +465,7 @@ h1 {
   height: 40%;
   border: 1px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #FL-Lotto-Number-Gen-Container {
   display: flex;
@@ -526,8 +478,7 @@ h1 {
   height: 200px;
   border: 1px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 .FL-Lotto-Number-Card {
   padding: 5px;
@@ -536,15 +487,13 @@ h1 {
   border-style: solid;
   border-color: black;
   width: 10%;
-  height: 20%;
-}
+  height: 20%; }
 
 #FL-Lotto-Saved-Numbers {
   background-color: white;
   border: 2px;
   border-style: solid;
-  border-color: black;
-}
+  border-color: black; }
 
 #FL-Lotto-Extra {
   background-color: #a1f3c3;
@@ -553,8 +502,7 @@ h1 {
   border-color: black;
   padding: 1%;
   margin-top: 1%;
-  width: 30%;
-}
+  width: 30%; }
 
 #FL-Lotto-Odds {
   padding: 1%;
@@ -563,7 +511,6 @@ h1 {
   border-style: solid;
   border-color: black;
   width: 30%;
-  margin-top: 1%;
-}
+  margin-top: 1%; }
 
 /*# sourceMappingURL=style.css.map */
