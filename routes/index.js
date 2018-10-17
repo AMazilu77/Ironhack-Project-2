@@ -4,7 +4,7 @@ const UserModel = require("../models/user");
 const Winning = require("../models/winModel.js");
 const luck = require("../models/luckyNumber");
 const assert = require("assert");
-const axios = require("axios");
+// const axios = require("axios");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
@@ -231,9 +231,9 @@ router.get("/LuckyNumbersPage/edit", (req, res, next) => {
     });
 });
 
-const numberAPI = axios.create({
-  baseURL: "https://data.ny.gov/resource/h6w8-42p9.json"
-});
+// const numberAPI = axios.create({
+//   baseURL: "https://data.ny.gov/resource/h6w8-42p9.json"
+// });
 
 function getNumbers(id) {
   numberAPI
