@@ -1,7 +1,10 @@
 <form action="/LuckyNumbersPage/luckyNumbersAdd" method="post">
     <label for="luckyNumbers">Number: </label>
-    <input type="text">
+    <input type="number" name="luckyNumber">
     <br>
     <label for="">Comment:</label>
-    <input type="text" name="luckynumber">
-    <button action='/luckyNumbersAdd' onclick='Post' method='POST'> Add Number</button>
+    <input type="text" name="comments">
+    <input type="submit" value="Add Number"></input>
+    {{!-- <button action='/luckyNumbersAdd' onclick="location.href='/luckyNumbersAdd';" method='POST' type="submit">
+        Add
+        Number</button> --}}

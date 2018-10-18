@@ -4,6 +4,7 @@ const UserModel = require("../models/user");
 const Winning = require("../models/winModel.js");
 const luck = require("../models/luckyNumber");
 const assert = require("assert");
+const chalk = require("chalk");
 // const axios = require("axios");
 // const mongoose = require("mongoose");
 // const Schema = mongoose.Schema;
@@ -196,11 +197,15 @@ router.get("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
 // post to add lucky numbers
 
 router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
-  const { luckyNumber, comments } = req.body;
-  const newNumber = new luck({
-    luckyNumber,
-    comments
-  });
+  const newNumber = new luck(req.body);
+  console.log(
+    chalk.red(
+      "this is where the lucky number should be commented",
+      req.body.luckyNumber,
+      req.body.comments,
+      newNumber
+    )
+  );
   newNumber
     .save()
     .then(luckyNumber => {
@@ -216,7 +221,13 @@ router.get("/LuckyNumbersPage/:NumId", luck.findOne);
 router.put("/LuckyNumberPage/:NumId", luck.update);
 
 // Route.delete() requires a callback function but got a [object Undefined]
-// router.delete("/LuckyNumbersPage:NumId", luck.delete);
+// router.get("/LuckyNumbersPage:id", (req, res, next) => {
+//   console.log(req.params._id);
+//   luck.findByIdAndRemove({ _id: req.params._id }, (err, luck) => {
+//     if (err) console.log(err);
+//     else console.log("All gone, deleted");
+//   });
+// });
 
 router.get("/LuckyNumbersPage/edit", (req, res, next) => {
   luck
