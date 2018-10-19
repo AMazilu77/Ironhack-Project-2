@@ -16,9 +16,10 @@
     <button onclick='location.href="/LuckyNumbersPage/luckyNumbersAdd";' class='btn'> Add new Favorite Numbers</button>
     {{#each luck}}
 
-    <P> This week you listed the number {{this.luckyNumber}} as a lucky number because "{{this.comments}}"
-        <button> edit </button>
-        <button action='/luckyNumbersAdd' onclick="location.href='/LuckyNumbersPage:Id';" method="DELETE"> Delete</button>
+    <P> On {{this.createdAt}} you listed the number {{this.luckyNumber}} as a lucky number because
+        "{{this.comments}}"
+        {{!-- <button> edit </button> --}}
+        {{!-- <button action="" onclick="location.href='/LuckyNumbersAdd';" method="DELETE"> Delete</button> --}}
         {{/each}}</P>
 
     <script>
@@ -35,7 +36,7 @@
 
         }
 
-        document.getElementById('btn').addEventListener('click', clicked);;
+
 
     </script>
 

@@ -199,7 +199,7 @@ router.get("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
 router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
   const newNumber = new luck(req.body);
   console.log(
-    chalk.red(
+    chalk.magenta(
       "this is where the lucky number should be commented",
       req.body.luckyNumber,
       req.body.comments,
@@ -212,7 +212,7 @@ router.post("/LuckyNumbersPage/luckyNumbersAdd", (req, res, next) => {
       res.redirect("/userInfo");
     })
     .catch(error => {
-      console.log(error);
+      console.log(chalk.red(error));
     });
 });
 
@@ -221,13 +221,16 @@ router.get("/LuckyNumbersPage/:NumId", luck.findOne);
 router.put("/LuckyNumberPage/:NumId", luck.update);
 
 // Route.delete() requires a callback function but got a [object Undefined]
-// router.get("/LuckyNumbersPage:id", (req, res, next) => {
-//   console.log(req.params._id);
-//   luck.findByIdAndRemove({ _id: req.params._id }, (err, luck) => {
-//     if (err) console.log(err);
-//     else console.log("All gone, deleted");
-//   });
-// });
+router.delete("/:_id", (req, res, next) => {
+  const numberId = req.params._id;
+  luck.remove({ _id: numberId });
+
+  console.log(chalk.blue(req.params._id));
+  luck.findByIdAndRemove({ _id: numberId }, (err, luck) => {
+    if (err) console.log(err);
+    else console.log("All gone, deleted");
+  });
+});
 
 router.get("/LuckyNumbersPage/edit", (req, res, next) => {
   luck

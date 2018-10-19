@@ -33,7 +33,7 @@ const experiencePoints = 1;
 const wishes = 3;
 const megaNum = [
   {
-    drawDate: "2018-07-20",
+    drawDate: "2018-07- 20",
     megaBall: "01",
     multiplier: "02",
     winningNumber: "01 14 30 44 62"
