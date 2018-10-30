@@ -408,8 +408,8 @@ h1 {
   margin: 1%;
   border-style: solid;
   border-color: black;
-  width: 40%;
-  height: 40%; }
+  width: 50%;
+  height: 50%; }
 
 #Pick-5-Advice {
   background-color: #99a3ff;
@@ -417,7 +417,7 @@ h1 {
   border: 2px;
   border-style: solid;
   border-color: black;
-  width: 40%;
+  width: 50%;
   height: 50%; }
 
 #display {
