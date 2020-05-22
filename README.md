@@ -1,4 +1,4 @@
-The Lottery Genie is a structured number generator. The genie will give you psudorandom numbers, but you must wish for them!
+The Original Lottery Genie is a structured number generator. The genie will give you psudorandom numbers, but you must wish for them!
 
 Keep track of all numbers you have ever played. Get notified of winning results. 
 Check out statistics - odds of winning, rules, list of winning numbers, winning number distributions .
